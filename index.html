@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
 
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="fonts/linearicons/style.css">
 
     <link rel="stylesheet" href="css/aos.css">
 
@@ -388,7 +389,45 @@
       <div class="container">
         <div class="row ">
           <div class="col-lg-7">
-            <img src="images/edu_ilastration.png" alt="Image" class="img-fluid" style="margin-bottom: 20%;">
+
+
+
+
+            <div class="wrapper">
+              <div class="inner">
+
+                <form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off">
+                  <h3>Apply Here</h3>
+                  <div class="form-holder">
+                    <span class="lnr lnr-user"></span>
+                    <input type="text" class="form-control" placeholder="Your Name" name="entry.2111929949" id="name">
+                  </div>
+                  <div class="form-holder">
+                    <span class="lnr lnr-envelope"></span>
+                    <input type="email" class="form-control" placeholder="Mail" id="email" name="entry.1298778075">
+                  </div>
+                  <div class="form-holder">
+                    <span class="lnr lnr-phone-handset"></span>
+                    <input type="Number" class="form-control" placeholder="Phone Number" id="number" name="entry.1866997435">
+                  </div>
+
+                  <button type="submit">
+                    <span>Register</span>
+                  </button>
+                </form>
+
+                <h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none; color:#000"> Successfully Registered your Request For SPS</h3>
+
+              </div>
+
+            </div>
+
+
+
+
+
+
+
             <p id="faqs"></p>
           </div >
 
@@ -705,6 +744,52 @@
      
     
   </div> <!-- .site-wrap -->
+
+            <script>
+            function postToGoogle() {
+              var field1 = $("#name").val();
+              var field2 = $("#email").val();
+              var field3 = $("#number").val();
+
+
+              if(field1 == ""){
+                alert('Please Fill Your Name');
+                document.getElementById("name").focus();
+                return false;
+              }
+              if(field2 == ""){
+                alert('Please Fill Your Email');
+                document.getElementById("email").focus();
+                return false;
+              }
+              if(field3 == "" || field3.length > 10 || field3.length < 10){
+                alert('Please Fill Your Mobile Number');
+                document.getElementById("number").focus();
+                return false;
+              }
+
+
+
+
+              $.ajax({
+                url: "https://docs.google.com/forms/d/e/1FAIpQLSdeBLrc3SaialhxlSKWDtAcXF_a6d-Rhum0z36qJlPPpqIBQQ/formResponse?",
+                data: {"entry.2111929949": field1, "entry.1298778075": field2, "entry.1866997435": field3},
+                type: "POST",
+                dataType: "xml",
+                success: function(d)
+                {
+                },
+                error: function(x, y, z)
+                {
+
+                  $('#success-msg').show();
+                  $('#form').hide();
+
+                }
+              });
+              return false;
+            }
+            </script>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
