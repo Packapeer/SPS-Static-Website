@@ -2506,71 +2506,6 @@ button:hover:before, button:hover:after {
 
 /*------------------------------------------------------------Application fom end---------------------------------------------------------*/
 
-/*   last page*/
-.last-page {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.section-last {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.feature-2 {
-  background-color: #F09A9D;
-}
-
-.feature-3 {
-  background-color: #C8C6FA;
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-
-  .chat-height{
-    min-height: 700px;
-  }
-  .aa{
-    display: none;
-  }
-}
-
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
-
-.chat-height{
-  min-height: 700px;
-}
-  .aa{
-    display: none;
-  }
-
-
-
-}
-
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-
-
-  .chat-height{
-    min-height: 700px;
-
-  }
-  .con{
-    height: auto;
-  }
- .chat{
-   height: 100vh;
-   width: auto;
- }
-}
-
-/*   lst page end*/
 
 
 /*scroll top*/
@@ -2704,6 +2639,7 @@ button:hover:before, button:hover:after {
   background-position: center;
   z-index: 1;
   padding: 30px 15px 0px 15px;
+
 }
 
 .contact100-more::before {
@@ -3008,3 +2944,89 @@ textarea.input100 {
 
 
 /*--------------------------------------------------------------------------contactform- End---------------------------------------------------*/
+
+
+/*   last page*/
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+  .chat-height{
+    min-height: 700px;
+  }
+  .aa{
+    display: none;
+  }
+
+  .contact100-more {
+    margin-top: 40%;
+
+
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+  .chat-height {
+    min-height: 700px;
+  }
+
+  .aa {
+    display: none;
+  }
+
+  .contact100-more {
+    margin-top: 40%;
+    margin-left: 15%;
+
+  }
+
+}
+
+  /* Mobile Styles */
+  @media only screen and (max-width: 400px) {
+
+
+    .chat-height {
+      min-height: 700px;
+
+    }
+
+    .con {
+      height: auto;
+    }
+
+    .chat {
+      height: 100vh;
+      width: auto;
+    }
+
+
+  .contact100-more {
+
+    margin-top: 0%;
+    margin-left: 0%;
+  }
+
+  .faq-or {
+
+
+  }
+
+  .chat-or {
+
+
+  }
+
+  .con-or {
+    display: none;
+  }
+
+  .con-fr-or {
+
+  }
+}
+
+/*   lst page end*/
