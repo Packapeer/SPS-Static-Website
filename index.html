@@ -701,51 +701,7 @@
     
   </div> <!-- .site-wrap -->
 
-            <script>
-            function postToGoogle() {
-              var field1 = $("#name").val();
-              var field2 = $("#email").val();
-              var field3 = $("#number").val();
 
-
-              if(field1 == ""){
-                alert('Please Fill Your Name');
-                document.getElementById("name").focus();
-                return false;
-              }
-              if(field2 == ""){
-                alert('Please Fill Your Email');
-                document.getElementById("email").focus();
-                return false;
-              }
-              if(field3 == "" || field3.length > 10 || field3.length < 10){
-                alert('Please Fill Your Mobile Number');
-                document.getElementById("number").focus();
-                return false;
-              }
-
-
-
-
-              $.ajax({
-                url: "https://docs.google.com/forms/d/e/1FAIpQLSdeBLrc3SaialhxlSKWDtAcXF_a6d-Rhum0z36qJlPPpqIBQQ/formResponse?",
-                data: {"entry.2111929949": field1, "entry.1298778075": field2, "entry.1866997435": field3},
-                type: "POST",
-                dataType: "xml",
-                success: function(d)
-                {
-                },
-                error: function(x, y, z)
-                {
-
-                  $('#success-msg').show();
-                  $('#form').hide();
-
-                }
-              });
-              return false;
-            }
-            </script>
   <script>
     //Get the button
     var mybutton = document.getElementById("myBtn");

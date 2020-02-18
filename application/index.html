@@ -1,87 +1,309 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
 <head>
+    <!-- Required meta tags-->
     <meta charset="UTF-8">
-    <title>Application Form | SPS</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SPS School Of Practical Studies">
+    <meta name="author" content="Shabeersha">
+    <meta name="keywords" content="SPS School Of Practical Studies">
+
+    <!-- Title Page-->
+    <title> Register Form | SPS</title>
+
+    <!-- Icons font CSS-->
+
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
 
-
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
 </head>
-<body style="font-family:Montserrat;">
+
+<body>
 <div class="site-wrap"  id="home-section">
     <div class="container">
         <div class="row">
             <div class="col-12 mt-4 text-center ">
-                <h1 class=" site-logo"><a href="../index.html" class="text-black h2 " style="text-decoration: none;">SPS<span class="text-primary">.</span> </a></h1>
+                <h1 class=" site-logo"><a href="index.html" class="text-black h2 ">SPS<span class="text-primary">.</span> </a></h1>
             </div>
         </div>
     </div>
 </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4">
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
-            <!-- multistep form -->
-            <form id="msform">
-                <!-- progressbar -->
-                <ul id="progressbar">
-                    <li class="active">Account Setup</li>
-                    <li>Social Profiles</li>
-                    <li>Personal Details</li>
-                </ul>
-                <!-- fieldsets -->
-                <fieldset>
-                    <h2 class="fs-title">Create your account</h2>
-                    <!--h3 class="fs-subtitle">This is step 1</h3-->
-                    <input type="text" name="" placeholder="Full Name" id="fullname" />
-                    <div class="form-holder">
-                        Male<input type="radio" name=""  id="gender" value="male">
-                        FeMale<input type="radio" name=""  id="gender" value="Female">
+    <div class="page-xwrapper bg-light p-t-180 p-b-100 font-robo">
+        <div class="xwrapper xwrapper--w960">
+            <div class="xcard xcard-2">
+                <div class="xcard-heading"></div>
+                <div class="xcard-body ">
+                    <h2 class="title">Registration</h2>
+                    <div id="success-msg" style="display: none">
+                        <div >
+                            <h2>Congratulations! We have received your application.
+
+                                You will get a call from our side to schedule the telephone interview to the a convenient date
+
+                                Meanwhile we advise you to start learning programming from the first five videos of 100K Coding Challenge
+
+                                *videos*
+
+                                All the best</h2>
+                        </div>
                     </div>
 
-                    <input type="password" name="cpass" placeholder="Confirm Password" />
-                    <input type="button" name="next" class="next action-button" value="Next" />
-                </fieldset>
-                <fieldset>
-                    <h2 class="fs-title">Social Profiles</h2>
-                    <h3 class="fs-subtitle">Your presence on the social network</h3>
-                    <input type="text" name="twitter" placeholder="Twitter" />
-                    <input type="text" name="facebook" placeholder="Facebook" />
-                    <input type="text" name="gplus" placeholder="Google Plus" />
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="button" name="next" class="next action-button" value="Next" />
-                </fieldset>
-                <fieldset>
-                    <h2 class="fs-title">Personal Details</h2>
-                    <h3 class="fs-subtitle">We will never sell it</h3>
-                    <input type="text" name="fname" placeholder="First Name" />
-                    <input type="text" name="lname" placeholder="Last Name" />
-                    <input type="text" name="phone" placeholder="Phone" />
-                    <textarea name="address" placeholder="Address"></textarea>
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="submit" name="submit" class="submit action-button" value="Submit" />
-                </fieldset>
-            </form>
+                    <form id="form" target="_self" onsubmit="return postToGoogle();" action="" method="get" autocomplete="on" >
+                        <div class="input-group">
+                            <input class="input--style-2" type="text" placeholder="Full Name" name="entry.2111929949" id="name">
+                        </div>
+                        <div class="xrow xrow-space">
+
+                            <div class="xcol-2">
+                                   <div class="input-group">
+                                         <input class="input--style-2" type="text" placeholder="Place" name="entry.1990270122" id="city" >
+                                   </div>
+                            </div>
+                            <div class="xcol-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="entry.696493479" id="gender">
+                                            <option disabled="disabled" selected="selected">Gender</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+
+                            <input class="input--style-2" type="text" placeholder="Email" name="entry.1298778075" id="email">
 
 
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
+                        </div>
+                        <div class="xrow xrow-space">
+                            <div class="xcol-2">
+                                <div class="input-group">
+                                    <input class="input--style-2" type="text" placeholder="Contact No" name="entry.1866997435" id="phone">
+                                </div>
+                            </div>
+                            <div class="xcol-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="entry.446699213" id="status">
+                                            <option disabled="disabled" selected="selected">Employment Status</option>
+                                            <option value="Employed">Employed</option>
+                                            <option value="Fresher">Fresher</option>
+                                            <option value="Student">Student</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="entry.124629093" id="Qualification">
+                                    <option disabled="disabled" selected="selected">Educational Qualification</option>
+                                    <option value="B.Tech">B.Tech</option>
+                                    <option value="M.Tech">M.Tech</option>
+                                    <option value="BCA/MCA">BCA/MCA</option>
+                                    <option value="Bsc/Msc">Bsc/Msc</option>
+                                    <option value="Diploma">Diploma</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-2" type="text" placeholder="Name of College / Organisation" name="entry.1707828081" id="college">
+                        </div>
+                        <div class="xrow xrow-space">
+                            <div class="xcol-2">
+                                <div class="input-group">
+                                    <input class="input--style-2" type="text" placeholder="Year of Graduation" name="entry.1607552569" id="graduation-year">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="input-group">
+                           <textarea class="input--style-2" type="text" placeholder="Tell us more about you" name="entry.1548160134" id="Bio"></textarea>
+                        </div>
+                        <div class="input-group">
+                           <textarea class="input--style-2" type="text" placeholder="Why do you want to join SPS?" name="entry.309280185" id="whyjoin" ></textarea>
+                        </div>
+                        <div class="input-group">
+                           <textarea class="input--style-2" type="text" placeholder="What motivates you to work hard every day?" name="entry.1450143765" id="motivate"></textarea>
+                        </div>
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="entry.1485644221" id="heared">
+                                    <option disabled="disabled" selected="selected">From where did you learn about SPS?</option>
+                                    <option value="Friends">Friends</option>
+                                    <option value="Facebook">Facebook</option>
+                                    <option value="Whatsapp_Group">Whatsapp Group</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <span><Input class="input--style-2" type="checkbox" name="entry.1502527653" id="agree" >I agree that I have read and understood all the <a href="../index.html/#faq">FAQs</a></span>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="p-t-30">
+                            <button class="xbtn xbtn--radius xbtn--green" type="submit">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+    <script>
+        function postToGoogle() {
+            var field1 = $("#name").val();
+            var field2 = $("#city").val();
+            var field3 = $("#email").val();
+            var field4 = $("#phone").val();
+            var field5 = $("#gender").val();
+            var field6= $("#college").val();
+            var field7= $("#Qualification").val();
+            var field8= $("#graduation-year").val();
+            var field9= $("#status").val();
+            var field10= $("#Bio").val();
+            var field11= $("#whyjoin").val();
+            var field12 = $("#motivate").val();
+            var field13= $("#heared").val();
+            var field14 = $("#agree").val();
+
+
+            if(field1 == ""){
+                alert('Please Fill Your Name');
+                document.getElementById("name").focus();
+                return false;
+            }
+            if(field2 == ""){
+                alert('Please Fill Your city name');
+                document.getElementById("city").focus();
+                return false;
+            }
+            if(field3 == ""){
+                alert('Please Fill Your Email');
+                document.getElementById("email").focus();
+                return false;
+            }
+            if(field4 == "" || field4.length > 10 || field4.length < 10){
+                alert('Please Fill Your Mobile Number');
+                document.getElementById("number").focus();
+                return false;
+            }
+            if(field5 == ""){
+                alert('Please Select The Gender');
+                document.getElementById("gender").focus();
+                return false;
+            }
+            if(field6 == ""){
+                alert('Please Fill The Name of Your College');
+                document.getElementById("college").focus();
+                return false;
+            }
+            if(field7 == ""){
+                alert('Please Select Your Qualification');
+                document.getElementById("Qualification").focus();
+                return false;
+            }
+            if(field8 == ""){
+                alert('Please Enter the Year of Graduation');
+                document.getElementById("graduation-year").focus();
+                return false;
+            }
+            if(field9 == ""){
+                alert('Please Enter Your Employment Status');
+                document.getElementById("status").focus();
+                return false;
+            }
+            if(field10 == ""){
+                alert('Please Write About you');
+                document.getElementById("Bio").focus();
+                return false;
+            }
+            if(field11 == ""){
+                alert('Please Fill The Column');
+                document.getElementById("whyjoin").focus();
+                return false;
+            }
+            if(field12 == ""){
+                alert('Please Fill The Column');
+                document.getElementById("motivate").focus();
+                return false;
+            }
+            if(field13 == ""){
+                alert('Please Fill The Column');
+                document.getElementById("heared").focus();
+                return false;
+            }
+            if(field14 == ""){
+                alert('Agree to Continue');
+                document.getElementById("agree").focus();
+                return false;
+            }
 
 
 
-<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-db44b196776521ea816683afab021f757616c80860d31da6232dedb8d7cc4862.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
-<script src="main.js"></script>
+
+
+
+            $.ajax({
+                url: "https://docs.google.com/forms/d/e/1FAIpQLSdeBLrc3SaialhxlSKWDtAcXF_a6d-Rhum0z36qJlPPpqIBQQ/formResponse?",
+                data: {"entry.2111929949": field1, "entry.1990270122":field2, "entry.1298778075": field3, "entry.1866997435": field4, "entry.696493479":field5,"entry.1707828081":field6,"entry.124629093":field7,"entry.1607552569":field8,"entry.446699213":field9,"entry.1548160134":field10,"entry.309280185":field11,"entry.1450143765":field12,"entry.1485644221":field13,"entry.1502527653":field14},
+                type: "POST",
+                dataType: "xml",
+                success: function(d)
+                {
+                },
+                error: function(x, y, z)
+                {
+
+                    $('#success-msg').show();
+                    $('#form').hide();
+
+                }
+            });
+            return false;
+        }
+    </script>
+
+
 </body>
+
 </html>
+
+
+
