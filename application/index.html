@@ -1,156 +1,87 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>FormWizard_v1</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="author" content="colorlib.com">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application Form | SPS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
 
-		<!-- MATERIAL DESIGN ICONIC FONT -->
-		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
 
+</head>
+<body style="font-family:Montserrat;">
+<div class="site-wrap"  id="home-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-4 text-center ">
+                <h1 class=" site-logo"><a href="../index.html" class="text-black h2 " style="text-decoration: none;">SPS<span class="text-primary">.</span> </a></h1>
+            </div>
+        </div>
+    </div>
+</div>
 
-		<!-- STYLE CSS -->
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<div class="wrapper">
-            <form action="" id="wizard">
-        		<!-- SECTION 1 -->
-                <h2></h2>
-                <section>
-                    <div class="inner">
-						<div class="image-holder">
-							<img src="images/form-wizard-2.jpg" alt="" >
-						</div>
-						<div class="form-content" >
-							<div class="form-header">
-								<h3>Registration</h3>
-							</div>
-							<p>Please fill with your details</p>
-							<div class="form-row">
-								<div class="form-holder">
-									<input type="text" placeholder="Full Name" class="form-control">
-								</div>
-								<div class="form-holder">
-									<input type="text" placeholder="City / Place" class="form-control">
-								</div>
-							</div>
-							<div class="form-row">
-								<div class="form-holder">
-									<input type="text" placeholder="Your Email" class="form-control">
-								</div>
-								<div class="form-holder">
-									<input type="text" placeholder="Phone Number" class="form-control">
-								</div>
-							</div>
-							<div class="form-row">
-								<div class="form-holder">
-									<input type="text" placeholder="Age" class="form-control">
-								</div>
-								<div class="form-holder" style="align-self: flex-end; transform: translateY(4px);">
-									<div class="checkbox-tick">
-										<label class="male">
-											<input type="radio" name="gender" value="male" checked> Male<br>
-											<span class="checkmark"></span>
-										</label>
-										<label class="female">
-											<input type="radio" name="gender" value="female"> Female<br>
-											<span class="checkmark"></span>
-										</label>
-									</div>
-								</div>
-							</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <!-- multistep form -->
+            <form id="msform">
+                <!-- progressbar -->
+                <ul id="progressbar">
+                    <li class="active">Account Setup</li>
+                    <li>Social Profiles</li>
+                    <li>Personal Details</li>
+                </ul>
+                <!-- fieldsets -->
+                <fieldset>
+                    <h2 class="fs-title">Create your account</h2>
+                    <!--h3 class="fs-subtitle">This is step 1</h3-->
+                    <input type="text" name="" placeholder="Full Name" id="fullname" />
+                    <div class="form-holder">
+                        Male<input type="radio" name=""  id="gender" value="male">
+                        FeMale<input type="radio" name=""  id="gender" value="Female">
+                    </div>
 
-						</div>
-					</div>
-                </section>
-
-				<!-- SECTION 2 -->
-                <h2></h2>
-                <section>
-                    <div class="inner">
-						<div class="image-holder">
-							<img src="images/form-wizard-2.jpg" alt="">
-						</div>
-						<div class="form-content">
-							<div class="form-header">
-								<h3>Registration</h3>
-							</div>
-							<p>Please fill with additional info</p>
-							<div class="form-row">
-								<div class="form-holder w-100">
-									<input type="text" placeholder="Name of College / Organisation" class="form-control">
-								</div>
-							</div>
-							<div class="form-row">
-								<div class="select">
-									<div class="form-holder">
-										<div class="select-control">Qualification</div>
-										<i class="zmdi zmdi-caret-down"></i>
-									</div>
-									<ul class="dropdown">
-										<li rel="B.Tech">B.Tech</li>
-										<li rel="M.Tech">M.Tech</li>
-										<li rel="BCA/MCA">BCA/MCA</li>
-										<li rel="Bsc/Msc">Bsc/Msc</li>
-										<li rel="Diploma">Diploma</li>
-										<li rel="Other">Other</li>
-									</ul>
-								</div>
-								<div class="form-holder">
-									<input type="text" placeholder="Year of Graduation" class="form-control">
-								</div>
-							</div>
-
-							<div class="form-row">
-								<div class="select">
-									<div class="form-holder">
-										<div class="select-control">Employment Status</div>
-										<i class="zmdi zmdi-caret-down"></i>
-									</div>
-									<ul class="dropdown">
-										<li rel="Employed">Employed</li>
-										<li rel="Fresher">Fresher</li>
-										<li rel="Student">Student</li>
-									</ul>
-								</div>
-								<div class="form-holder"></div>
-							</div>
-						</div>
-					</div>
-                </section>
-
-                <!-- SECTION 3 -->
-                <h2></h2>
-                <section>
-                    <div class="inner">
-						<div class="image-holder">
-							<img src="images/form-wizard-2.jpg" alt="">
-						</div>
-						<div class="form-content">
-							<div class="form-header">
-								<h3>Registration</h3>
-							</div>
-							<p>Tell Us About you</p>
-							<div class="form-row">
-								<div class="form-holder w-100">
-									<textarea name="" id="" placeholder="Your message here!" class="form-control" style="height: 99px;"></textarea>
-								</div>
-							</div>
-
-						</div>
-					</div>
-                </section>
+                    <input type="password" name="cpass" placeholder="Confirm Password" />
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset>
+                    <h2 class="fs-title">Social Profiles</h2>
+                    <h3 class="fs-subtitle">Your presence on the social network</h3>
+                    <input type="text" name="twitter" placeholder="Twitter" />
+                    <input type="text" name="facebook" placeholder="Facebook" />
+                    <input type="text" name="gplus" placeholder="Google Plus" />
+                    <input type="button" name="previous" class="previous action-button" value="Previous" />
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset>
+                    <h2 class="fs-title">Personal Details</h2>
+                    <h3 class="fs-subtitle">We will never sell it</h3>
+                    <input type="text" name="fname" placeholder="First Name" />
+                    <input type="text" name="lname" placeholder="Last Name" />
+                    <input type="text" name="phone" placeholder="Phone" />
+                    <textarea name="address" placeholder="Address"></textarea>
+                    <input type="button" name="previous" class="previous action-button" value="Previous" />
+                    <input type="submit" name="submit" class="submit action-button" value="Submit" />
+                </fieldset>
             </form>
-		</div>
 
-		<!-- JQUERY -->
-		<script src="js/jquery-3.3.1.min.js"></script>
 
-		<!-- JQUERY STEP -->
-		<script src="js/jquery.steps.js"></script>
-		<script src="js/main.js"></script>
-		<!-- Template created and distributed by Colorlib -->
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-db44b196776521ea816683afab021f757616c80860d31da6232dedb8d7cc4862.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<script src="main.js"></script>
 </body>
 </html>

@@ -29,7 +29,7 @@ a {
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+  font-family: Montserrat; }
 
 .bg-light {
   background: #f6f6f6 !important; }
@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5,
 .form-control {
   height: 43px;
   border-radius: 30px;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+  font-family: Montserrat; }
   .form-control:active, .form-control:focus {
     border-color: #00d2b5; }
   .form-control:hover, .form-control:active, .form-control:focus {
@@ -2148,7 +2148,7 @@ form.chat .out,
   color: white;
   border-radius: 25px;
   clear: both;
-  font: 400 15px 'Open Sans', sans-serif;
+
 }
 
 form.chat .out {
@@ -2278,7 +2278,7 @@ form.chat input[type='submit'] {
 
 form.chat .out,
 form.chat .in {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 form.chat .message:hover .out {
