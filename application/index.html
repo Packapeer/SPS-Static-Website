@@ -26,6 +26,88 @@
 
     <!-- Main CSS-->
     <link href="css/main.css" rel="stylesheet" media="all">
+
+    <style type="text/css">
+
+
+        .xcontainer.gallery-container {
+            background-color: #fff;
+            color: #35373a;
+            min-height: 100vh;
+            padding: 30px 50px;
+        }
+
+        .gallery-container h3 {
+            text-align: center;
+            margin-top: 50px;
+            font-family: 'Droid Sans', sans-serif;
+            font-weight: bold;
+        }
+
+        .gallery-container p.page-description {
+            text-align: center;
+            margin: 25px auto;
+            font-size: 18px;
+            color: #999;
+        }
+
+        .tz-gallery {
+            padding: 40px;
+        }
+
+        /* Override bootstrap column paddings */
+        .tz-gallery .row > div {
+            padding: 2px;
+        }
+
+        .tz-gallery .lightbox img {
+            width: 100%;
+            border-radius: 0;
+            position: relative;
+        }
+
+        .tz-gallery .lightbox:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -13px;
+            margin-left: -13px;
+            opacity: 0;
+            color: #fff;
+
+            pointer-events: none;
+            z-index: 9000;
+            transition: 0.4s;
+        }
+
+
+        .tz-gallery .lightbox:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+
+            content: '';
+            transition: 0.4s;
+        }
+
+        .tz-gallery .lightbox:hover:after,
+        .tz-gallery .lightbox:hover:before {
+            opacity: 1;
+        }
+
+        .baguetteBox-button {
+            background-color: transparent !important;
+        }
+
+        @media(max-width: 768px) {
+            body {
+                padding: 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -44,22 +126,63 @@
             <div class="xcard xcard-2">
 
                 <div class="xcard-body ">
-                    <h2 class="title">Registration</h2>
+                    <h2 id="title" class="title">Registration</h2>
                     <div id="success-msg" style="display: none">
-                        <div >
-                            <h2>Congratulations! We have received your application.
+                        <div class="xcontainer gallery-container">
 
-                                You will get a call from our side to schedule the telephone interview to the a convenient date
+                            <h3>Congratulations! We have received your application.</h3>
 
-                                Meanwhile we advise you to start learning programming from the first five videos of 100K Coding Challenge
+                            <p class="page-description text-center">You will get a call from our side to schedule the telephone interview to the a convenient date Meanwhile we advise you to start learning programming from the first five videos of 100K Coding Challenge.All The Best.
+                            </p>
 
-                                *videos*
+                            <div class="tz-gallery">
 
-                                All the best</h2>
+                                <div class="row">
+
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <a class="lightbox" href="https://www.youtube.com/watch?v=HW8rDxedc6U">
+                                            <img src="http://img.youtube.com/vi/HW8rDxedc6U/0.jpg">
+                                        </a>
+                                    </div>
+
+
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                <span class="lightbox" href="https://www.youtube.com/watch?v=pDmEYRhyusU">
+                   <img src="http://img.youtube.com/vi/pDmEYRhyusU/0.jpg">
+                </span>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <a class="lightbox" href="https://www.youtube.com/watch?v=qGGqnzvKjmM">
+                                            <img src="http://img.youtube.com/vi/qGGqnzvKjmM/0.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <a class="lightbox" href="https://www.youtube.com/watch?v=W7s0upNfcKY">
+                                            <img src="http://img.youtube.com/vi/W7s0upNfcKY/0.jpg">
+                                        </a>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <a class="lightbox" href="https://www.youtube.com/watch?v=YfaJzXFbFcQ">
+                                            <img src="http://img.youtube.com/vi/YfaJzXFbFcQ/0.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4">
+                                        <a class="lightbox" href="https://www.youtube.com/watch?v=d0drJeqmiws">
+                                            <img src="http://img.youtube.com/vi/d0drJeqmiws/0.jpg">
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
                         </div>
+
+
                     </div>
 
-                    <form name="Register" id="form" target="_self" onsubmit="return postToGoogle();" action="" method="get" autocomplete="off" >
+                    <form name="Register" id="form" target="_self" onsubmit="" action="" method="get" autocomplete="off" >
                         <div class="input-group ">
                             <input class="input--style-2 " type="text" placeholder="Full Name" name="entry.564581389" id="name" >
                         </div>
@@ -169,7 +292,7 @@
 
 
                         <div class="p-t-30">
-                            <button class="xbtn xbtn--radius xbtn--green" type="submit">Register</button>
+                            <button name="submitHandler" class="xbtn xbtn--radius xbtn--green" type="submit">Register</button>
                         </div>
                     </form>
                 </div>
@@ -185,6 +308,10 @@
     <script src="vendor/select2/select2.min.js"></script>
     <script src="vendor/datepicker/moment.min.js"></script>
     <script src="vendor/datepicker/daterangepicker.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
 
     <!-- Main JS-->
     <script src="js/global.js"></script>
@@ -196,43 +323,54 @@
 
             $('form[id="form"]').validate({ // initialize the plugin
                 rules: {
-                    'entry.1298778075': {
+                    'entry.1942764095': {
                         required: true,
                         email: true
                     },
-                    'entry.2111929949': {
+                    'entry.564581389': {
                         required: true,
                         minlength: 5
                     },
-                    'entry.1990270122':{
+                    'entry.365680030':{
                         required:true
                     },
-                    'entry.696493479':{
+                    'entry.1368187102':{
                         required:true
                     },
-                    'entry.1866997435':{
+                    'entry.1945636149':{
                         required:true
                     },
-                    'entry.446699213':{
+                    'entry.1673155085':{
                         required:true
                     },
-                    'entry.124629093':{
+                    'entry.1595388083':{
                         required:true
                     },
-                    'entry.1707828081':{
+                    'entry.245538173':{
                         required:true
                     },
-                    'entry.1607552569':{
+                    'entry.888025760':{
+                        required:true
+                    },
+                    'entry.1261462357':{
+                        required:true
+                    },
+                    'entry.499706772':{
+                        required:true
+                    },
+                    'entry.1923488371':{
+                        required:true
+                    },
+                    'entry.1867335975':{
+                        required:true
+                    },
+                    'entry.795502834':{
                         required:true
                     }
 
-
-
-
-
                 },
                 submitHandler: function (form) {
-
+                    postToGoogle();
                     return false;
                 }
             });
@@ -362,12 +500,14 @@
 
                     $('#success-msg').show();
                     $('#form').hide();
+                    $('#title').hide();
 
                 }
             });
             return false;
         }
     </script>
+
 
 
 </body>
