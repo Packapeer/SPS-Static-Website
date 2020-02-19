@@ -275,7 +275,9 @@
           </div>
           <div class="col-6">
             <h5 class="text-black">The Interview</h5>
-            <p>Appear for the telephone interview. Give the best and honest answers you can.</p>
+            <p>Appear for the telephone interview. Give the best and honest answers you can.
+              Hint: Refer the 100K Coding Challenge video tutorial to answer the programming questions. <a href="https://www.youtube.com/watch?v=HW8rDxedc6U&list=PLY-ecO2csVHeKaBI7lAM1jbIPU8K6fUxY">Click here</a>
+            </p>
           </div>
         </div>
 
@@ -387,10 +389,21 @@
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="out">
 
+
                     <p class="m-0 ng-binding">Do I need a degree to join SPS?</p>
                     <date class="ng-binding"><b class="ng-binding">Shabeer</b> Feb 15, 2:30 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="out">
+
+                  <p class="m-0 ng-binding">SPS interview consists of very basic programming questions and few general questions about yourself.Hint: Refer the 100K Coding Challenge video tutorial to answer the programming questions. <a href="https://www.youtube.com/watch?v=HW8rDxedc6U&list=PLY-ecO2csVHeKaBI7lAM1jbIPU8K6fUxY">Click here</a></p>
+                  <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
+                </div>
+              </div><!-- end ngRepeat: m in messages -->
+
+
 
 
                 <div class="message ng-scope" ng-repeat="m in messages">
