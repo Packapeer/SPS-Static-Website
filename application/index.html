@@ -59,9 +59,9 @@
                         </div>
                     </div>
 
-                    <form id="form" target="_self" onsubmit="return postToGoogle();" action="" method="get" autocomplete="on" >
-                        <div class="input-group">
-                            <input class="input--style-2" type="text" placeholder="Full Name" name="entry.2111929949" id="name">
+                    <form name="Register" id="form" target="_self" onsubmit="return postToGoogle();" action="" method="get" autocomplete="off" >
+                        <div class="input-group ">
+                            <input class="input--style-2 " type="text" placeholder="Full Name" name="entry.2111929949" id="name" >
                         </div>
                         <div class="xrow xrow-space">
 
@@ -85,7 +85,7 @@
                         </div>
                         <div class="input-group">
 
-                            <input class="input--style-2" type="text" placeholder="Email" name="entry.1298778075" id="email">
+                            <input class="input--style-2" type="email" placeholder="Email" name="entry.1298778075" id="email">
 
 
                         </div>
@@ -179,6 +179,8 @@
 
     <!-- Jquery JS-->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.min.js"></script>
     <!-- Vendor JS-->
     <script src="vendor/select2/select2.min.js"></script>
     <script src="vendor/datepicker/moment.min.js"></script>
@@ -186,6 +188,60 @@
 
     <!-- Main JS-->
     <script src="js/global.js"></script>
+<script type="text/javascript">
+
+
+
+        $(document).ready(function () {
+
+            $('form[id="form"]').validate({ // initialize the plugin
+                rules: {
+                    'entry.1298778075': {
+                        required: true,
+                        email: true
+                    },
+                    'entry.2111929949': {
+                        required: true,
+                        minlength: 5
+                    },
+                    'entry.1990270122':{
+                        required:true
+                    },
+                    'entry.696493479':{
+                        required:true
+                    },
+                    'entry.1866997435':{
+                        required:true
+                    },
+                    'entry.446699213':{
+                        required:true
+                    },
+                    'entry.124629093':{
+                        required:true
+                    },
+                    'entry.1707828081':{
+                        required:true
+                    },
+                    'entry.1607552569':{
+                        required:true
+                    }
+
+
+
+
+
+                },
+                submitHandler: function (form) { // for demo
+                    alert('valid form submitted'); // for demo
+                    return false; // for demo
+                }
+            });
+
+        });
+
+
+
+</script>
     <script>
         function postToGoogle() {
             var field1 = $("#name").val();
@@ -204,7 +260,7 @@
             var field14 = $("#agree").val();
 
 
-            if(field1 == ""){
+           /* if(field1 == ""){
                 alert('Please Fill Your Name');
                 document.getElementById("name").focus();
                 return false;
@@ -273,7 +329,7 @@
                 alert('Agree to Continue');
                 document.getElementById("agree").focus();
                 return false;
-            }
+            }*/
 
 
 
