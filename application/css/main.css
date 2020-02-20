@@ -2,13 +2,13 @@
 /* ==========================================================================
    #FONT
    ========================================================================== */
-.font-robo {
-  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
-}
+
 
 /* ==========================================================================
    #GRID
    ========================================================================== */
+
+
 .xrow {
   display: -webkit-box;
   display: -webkit-flex;
@@ -121,9 +121,13 @@ button {
 }
 
 body {
-  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
-  font-weight: 400;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 14px;
+  font-weight:300;
+}
+
+.form-holder input, textarea, select, button {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -219,7 +223,7 @@ h6 {
   padding: 0 25px;
   cursor: pointer;
   color: #fff;
-  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
@@ -255,7 +259,7 @@ input[type="date" i] {
 
 .table-condensed td, .table-condensed th {
   font-size: 14px;
-  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+
   font-weight: 400;
 }
 
@@ -304,7 +308,7 @@ input,textarea {
   box-shadow: none;
   width: 100%;
   font-size: 14px;
-  font-family: inherit;
+
 }
 
 span>input{
@@ -339,8 +343,10 @@ span>input{
 .input--style-2 {
   padding: 9px 0;
   color: #666;
-  font-size: 16px;
-  font-weight: 500;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 14px;
+  font-weight:300;
+
 }
 
 .input--style-2::-webkit-input-placeholder {
@@ -393,8 +399,8 @@ span>input{
   padding-left: 0;
   color: #808080;
   font-size: 16px;
-  font-family: inherit;
-  font-weight: 500;
+
+
 }
 
 .rs-select2 .select2-container .select2-selection--single .select2-selection__arrow {
@@ -462,6 +468,8 @@ span>input{
   font-weight: 700;
   margin-bottom: 37px;
   color: #22d1b5;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
 }
 
 /* ==========================================================================
@@ -487,7 +495,7 @@ span>input{
 }
 
 .xcard-2 .xcard-heading {
-  background: url("../images/bg-heading-02.jpg") top left/cover no-repeat;
+
   width: 0%;
   display: table-cell;
 }

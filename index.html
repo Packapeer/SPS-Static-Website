@@ -56,7 +56,7 @@
                     Pay Only When You Earn.</h2>
                   <p class="mb-3">From Zero to a high paid Software Engineer in 180 days.</p>
                   <div>
-                    <a href="application/index.html" class="btn btn-primary mr-2 mb-2">Apply Now</a>
+                    <a id="apply-now" href="application/index.html" class="btn btn-primary mr-2 mb-2">Apply Now</a>
                     <p class="mb-2">(NB: Read all the FAQs carefully before
                       you<br> submit the application)</p>
                   </div>
@@ -545,7 +545,7 @@
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="out">
 
-                    <p class="m-0 ng-binding">Can I apply again if I failed the interview?</p>
+                    <p class="m-0 ng-binding">Can I apply again if I failed the interview? <span class="txt1" style='font-size:25px;'>😐</span></p>
                     <date class="ng-binding"><b class="ng-binding">Shabeer</b> Feb 15, 2:30 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
@@ -554,10 +554,20 @@
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
 
-                    <p class="m-0 ng-binding">Yes, you can apply till you get qualified. But be prepared thoroughly before you make your each attempt.</p>
+                    <p class="m-0 ng-binding">Yes, you can apply till you get qualified<span class="txt1" style='font-size:25px;'>&#128512;</span>.</p>
                     <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
+
+                    <p class="m-0 ng-binding">But be prepared thoroughly before you make each attempt<span class="txt1" style='font-size:25px;'>😉</span>.</p>
+                    <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+
 
 
 
@@ -575,18 +585,44 @@
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
 
-                    <p class="m-0 ng-binding">No. There are no upfront fees and you pay via an ISA (detailed explanation in the following questions) once you get a job. However, we request a fully refundable deposit of Rs 10,000 once you get selected, to confirm your spot in a batch. We do this because we’ve limited spots in the program and we need to make sure someone else can’t take away this opportunity from you by false confirmation. We refund the full amount of Rs 10,000 when you complete the program.</p>
+                    <p class="m-0 ng-binding">No. There are no upfront fees and you pay via an <b>ISA</b> (detailed explanation in the following questions) once you get a job <span class="txt1" style='font-size:25px;'>&#128077;</span></p>
+                    <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
+
+                    <p class="m-0 ng-binding">However, we request a fully refundable deposit of Rs 10,000 once you get selected, to confirm your seat in a batch </p>
+                    <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
+
+                    <p class="m-0 ng-binding">We do this because we’ve limited seats in the program and we need to make sure someone else can’t take away this opportunity from you by false confirmation</p>
+                    <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
+
+                    <p class="m-0 ng-binding">We refund the full amount of Rs 10,000 when you complete the program<span class="txt1" style='font-size:25px;'>😊</span></p>
                     <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
 
 
 
-
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="out">
 
-                    <p class="m-0 ng-binding">Are there any other hidden charges?</p>
+                    <p class="m-0 ng-binding">Are there any other hidden charges <span class="txt1" style='font-size:25px;'>🧐</span>?</p>
                     <date class="ng-binding"><b class="ng-binding">Shabeer</b> Feb 15, 2:30 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
@@ -597,48 +633,25 @@
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
 
-                    <p class="m-0 ng-binding">No, there are no other hidden charges like admission fee, exam fee, certificate fee, blah blah blah. But candidates are requested to pay a small amount for the infrastructure facilities that you use like internet, dedicated workspace, cleaning and maintenance etc., which usually ranges between Rs. 2500 to 3500 per month depends upon the SPS hub you get.</p>
+                    <p class="m-0 ng-binding">No, there are no other hidden charges like admission fee, exam fee, certificate fee, blah blah blah <span class="txt1" style='font-size:25px;'>😜</span></p>
                     <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
 
 
-
-                <div class="message ng-scope" ng-repeat="m in messages">
-                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="out">
-
-                    <p class="m-0 ng-binding">What is an ISA and how does it work?</p>
-                    <date class="ng-binding"><b class="ng-binding">Shabeer</b> Feb 15, 2:30 AM </date>
-                  </div>
-                </div><!-- end ngRepeat: m in messages -->
-
-
-
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
 
-                    <p class="m-0 ng-binding">An ISA or Income Share Agreement is used for paying SPS tuition once you have got a job at the salary you deserve. You will pay 15% of your monthly income for a maximum period of 36 months or a maximum cap amount of Rs 5 lakhs. Since SPS does not charge any fees upfront, the ISA model incentivises us to provide superior training and access to the highest paying opportunities for you.</p>
+                    <p class="m-0 ng-binding">But candidates are requested to pay a small amount for the infrastructure facilities that you use like internet, dedicated workspace, cleaning and maintenance etc.,<span class="txt1" style='font-size:25px;'>➕➖➗✖</span></p>
                     <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
 
 
-
-                <div class="message ng-scope" ng-repeat="m in messages">
-                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="out">
-
-                    <p class="m-0 ng-binding">What happens if I quit the program? Do I still have to pay?</p>
-                    <date class="ng-binding"><b class="ng-binding">Shabeer</b> Feb 15, 2:30 AM </date>
-                  </div>
-                </div><!-- end ngRepeat: m in messages -->
-
-
-
-
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
 
-                    <p class="m-0 ng-binding">If you quit or do not pass the performance reviews during the program, you will not be bound by the income share agreement and we will go our separate ways.</p>
+                    <p class="m-0 ng-binding">which usually ranges between Rs. 2500 to 3500 per month depends upon the SPS hub you get<span class="txt1" style='font-size:25px;'>🙂</span></p>
                     <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
@@ -649,7 +662,7 @@
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="out">
 
-                    <p class="m-0 ng-binding">When is the security deposit not refunded ?</p>
+                    <p class="m-0 ng-binding">What is an ISA and how does it work <span class="txt1" style='font-size:25px;'>🤔</span>?</p>
                     <date class="ng-binding"><b class="ng-binding">Shabeer</b> Feb 15, 2:30 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
@@ -659,7 +672,48 @@
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
 
-                    <p class="m-0 ng-binding">The only scenario when your security deposit is not refunded is when you get terminated from the program due to your deliberate poor performances. This is the only way we can hold you accountable and stay away from non serious candidates.</p>
+                    <p class="m-0 ng-binding">An ISA or Income Share Agreement is used for paying SPS tuition once you have got a job at the salary you deserve</p>
+                    <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
+
+                    <p class="m-0 ng-binding">You will pay 15% of your monthly income for a maximum period of 36 months or a maximum cap amount of Rs 5 lakhs</p>
+                    <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
+
+                    <p class="m-0 ng-binding">Since SPS does not charge any fees upfront, the ISA model incentivises us to provide superior training and access to the highest paying opportunities for you<span class="txt1" style='font-size:25px;'>😊</span></p>
+                    <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+
+
+
+
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="out">
+
+                    <p class="m-0 ng-binding">What happens if I quit the program? Do I still have to pay <span class="txt1" style='font-size:25px;'>🤔</span>?</p>
+                    <date class="ng-binding"><b class="ng-binding">Shabeer</b> Feb 15, 2:30 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+
+
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
+
+                    <p class="m-0 ng-binding">If you quit or do not pass the performance reviews during the program, you will not be bound by the income share agreement and we will go our separate ways <span class="txt1" style='font-size:25px;'>🤷‍♂</span></p>
                     <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
@@ -670,7 +724,41 @@
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="out">
 
-                    <p class="m-0 ng-binding">Can I end the contract early?</p>
+                    <p class="m-0 ng-binding">When is the security deposit not refunded <span class="txt1" style='font-size:25px;'>😢</span>?</p>
+                    <date class="ng-binding"><b class="ng-binding">Shabeer</b> Feb 15, 2:30 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
+
+                    <p class="m-0 ng-binding">Only scenario when your security deposit is not refunded is when you get terminated from the program due to your deliberate poor performances <span class="txt1" style='font-size:25px;'>🔻</span></p>
+                    <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
+
+                    <p class="m-0 ng-binding">This is the only way we can hold you accountable and stay away from non serious candidates <span class="txt1" style='font-size:25px;'>💪</span></p>
+                    <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+
+
+
+
+
+
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="out">
+
+                    <p class="m-0 ng-binding">Can I end the contract early <span class="txt1" style='font-size:25px;'>🤨</span>?</p>
                     <date class="ng-binding"><b class="ng-binding">Shabeer</b> Feb 15, 2:30 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
@@ -682,7 +770,7 @@
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
 
-                    <p class="m-0 ng-binding">Yes. If you would like to end your contract early, you can pay the amount equivalent to the payment cap on the contract minus any payments already made.</p>
+                    <p class="m-0 ng-binding">Yes. If you would like to end your contract early, you can pay the amount equivalent to the payment cap on the contract minus any payments already made <span class="txt1" style='font-size:25px;'>😊</span> .</p>
                     <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
@@ -692,7 +780,7 @@
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="out">
 
-                    <p class="m-0 ng-binding">Does SPS help me get a job?</p>
+                    <p class="m-0 ng-binding">Does SPS help me get a job <span class="txt1" style='font-size:25px;'>👷‍♀</span> ?</p>
                     <date class="ng-binding"><b class="ng-binding">Shabeer</b> Feb 15, 2:30 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
@@ -702,7 +790,32 @@
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
 
-                    <p class="m-0 ng-binding">We do everything we possibly can! We have a full team dedicated to career development. They help you prepare a resume and portfolio, practice interviews, and even help you in salary negotiation. At the end of the day though, youre the one who needs to apply, interview, and land the job.</p>
+                    <p class="m-0 ng-binding">We do everything we possibly can! <span class="txt1" style='font-size:25px;'>💪</span></p>
+                    <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
+
+                    <p class="m-0 ng-binding">We have a full team dedicated to career development<span class="txt1" style='font-size:25px;'>🥇</span></p>
+                    <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
+
+                    <p class="m-0 ng-binding">They help you prepare a resume and portfolio, practice interviews, and even help you in salary negotiation <span class="txt1" style='font-size:25px;'>💰</span></p>
+                    <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
+
+                    <p class="m-0 ng-binding">At the end of the day though, you're the one who needs to apply, interview, and land the job<span class="txt1" style='font-size:25px;'>✌</span></p>
                     <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
@@ -714,7 +827,7 @@
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="out">
 
-                    <p class="m-0 ng-binding">Do I have to take the first job Im offered?</p>
+                    <p class="m-0 ng-binding">Do I have to take the first job I'm offered <span class="txt1" style='font-size:25px;'>🤨</span> ?</p>
                     <date class="ng-binding"><b class="ng-binding">Shabeer</b> Feb 15, 2:30 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
@@ -727,7 +840,16 @@
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
 
-                    <p class="m-0 ng-binding">No, we dont control where you work. Since developers tend to get raises fairly quickly, we do recommend not over optimizing your job search and getting a job as fast as possible.</p>
+                    <p class="m-0 ng-binding">No, we dont control where you work<span class="txt1" style='font-size:25px;'>&#128512;</span>.</p>
+                    <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
+
+                    <p class="m-0 ng-binding">Since developers tend to get raises fairly quickly, we do recommend not over optimizing your job search and getting a job as fast as possible <span class="txt1" style='font-size:25px;'>&#128077;</span>.</p>
                     <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
@@ -738,7 +860,7 @@
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="out">
 
-                    <p class="m-0 ng-binding">Do I have to work for the same company for 36 months? Can I switch jobs?</p>
+                    <p class="m-0 ng-binding">Do I have to work for the same company for 36 months? Can I switch jobs <span class="txt1" style='font-size:25px;'>🤨</span>?</p>
                     <date class="ng-binding"><b class="ng-binding">Shabeer</b> Feb 15, 2:30 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
@@ -749,7 +871,16 @@
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
 
-                    <p class="m-0 ng-binding">No, its all up to you. You can switch jobs whenever you want to.</p>
+                    <p class="m-0 ng-binding">No, its all up to you<span class="txt1" style='font-size:25px;'>🤷‍♀</span>.</p>
+                    <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
+
+                    <p class="m-0 ng-binding">You can switch jobs whenever you want to<span class="txt1" style='font-size:25px;'>🤗</span></p>
                     <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
@@ -772,7 +903,15 @@
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
 
-                    <p class="m-0 ng-binding">Your ISA payments start when you start earning. If you didnt get any job 6  months after you complete the SPS program, the ISA automatically expires after 6 such deferred-payment months.</p>
+                    <p class="m-0 ng-binding">Your ISA payments start when you start earning <span class="txt1" style='font-size:25px;'>💰</span> </p>
+                    <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
+
+                    <p class="m-0 ng-binding">If you didn't get any job 6 months after you complete the SPS program, the ISA automatically expires after 6 such deferred-payment months<span class="txt1" style='font-size:25px;'>&#128077;</span></p>
                     <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
@@ -794,7 +933,7 @@
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
 
-                    <p class="m-0 ng-binding">ISAs are not loans so they have no interest.</p>
+                    <p class="m-0 ng-binding">ISAs are not loans so they have no interest <span class="txt1" style='font-size:25px;'>🚫</span></p>
                     <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
@@ -819,10 +958,21 @@
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
 
-                    <p class="m-0 ng-binding">No, there are no online batches for SPS. Candidates must be willing to move to the locations that we have arranged for you.</p>
+                    <p class="m-0 ng-binding">No, <span class="txt1" style='font-size:25px;'>😕</span> there are no online batches for SPS.</p>
                     <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
+
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
+
+                    <p class="m-0 ng-binding">If you want to achieve something worthwhile in life, you must be ready to move <span class="txt1" style='font-size:25px;'>🙂</span></p>
+                    <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+
 
 
 
@@ -844,7 +994,15 @@
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
 
-                    <p class="m-0 ng-binding">No, SPS programs are full-time. Candidates must be ready to dedicate 8-10 hours daily inorder to fully reap the benefits of this program.</p>
+                    <p class="m-0 ng-binding">No, <span class="txt1" style='font-size:25px;'>😕</span> SPS programs are full-time.</p>
+                    <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
+
+                    <p class="m-0 ng-binding">You can’t achieve anything worthwhile in life being a part-timer<span class="txt1" style='font-size:25px;'>🤐</span></p>
                     <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
@@ -857,7 +1015,7 @@
                 <div class="message ng-scope" ng-repeat="m in messages">
                   <div ng-class="(m.direction==1) ? 'in': 'out'" class="out">
 
-                    <p class="m-0 ng-binding">Do I need to bring my own laptop?</p>
+                    <p class="m-0 ng-binding">Do I need to bring my own laptop <span class="txt1" style='font-size:25px;'>💻</span> ?</p>
                     <date class="ng-binding"><b class="ng-binding">Shabeer</b> Feb 15, 2:30 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
@@ -874,6 +1032,34 @@
                     <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
                   </div>
                 </div><!-- end ngRepeat: m in messages -->
+
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
+
+                    <p class="m-0 ng-binding">If you don’t have one try to get at least a used one<span class="txt1" style='font-size:25px;'>&#128077;</span></p>
+                    <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="out">
+
+                    <p class="m-0 ng-binding">I want to join SPS. What should I do <span class="txt1" style='font-size:25px;'>🥺</span> ?</p>
+                    <date class="ng-binding"><b class="ng-binding">Shabeer</b> Feb 15, 2:30 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+
+                <div class="message ng-scope" ng-repeat="m in messages">
+                  <div ng-class="(m.direction==1) ? 'in': 'out'" class="in">
+
+                    <p class="m-0 ng-binding">Click on the <a href="#apply-now">Apply now</a> button, and submit your application.<br>All the best <span class="txt1" style='font-size:25px;'>&#128512;</span><span class="txt1" style='font-size:25px;'>&#128077;</span></p>
+                    <date class="ng-binding"><b class="ng-binding">Faizal</b> Feb 15, 2:31 AM </date>
+                  </div>
+                </div><!-- end ngRepeat: m in messages -->
+
+
 
 
 
