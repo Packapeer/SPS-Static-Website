@@ -312,3 +312,40 @@ jQuery(document).ready(function($) {
 })(jQuery);
 
 
+$(document).ready(function() {
+  $('#vidbt1').on('click', function(ev) {
+ 
+    $("#vid1")[0].src += "&autoplay=1";
+    ev.preventDefault();
+ 
+  });
+});
+
+$(document).ready(function() {
+	$('#vidbt2').on('click', function(ev) {
+   
+	  $("#vid2")[0].src += "&autoplay=1";
+	  ev.preventDefault();
+   
+	});
+  });
+
+  $(document).ready(function() {
+	$('#vidbt3').on('click', function(ev) {
+   
+	  $("#vid3")[0].src += "&autoplay=1";
+	  ev.preventDefault();
+   
+	});
+  });
+
+  $(document).ready(function() {
+	$('#vidbt4').on('click', function(ev) {
+   
+	  $("#vid4")[0].src += "&autoplay=1";
+	  ev.preventDefault();
+   
+	});
+  });
+
+
