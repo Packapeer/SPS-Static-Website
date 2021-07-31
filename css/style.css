@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5,
   -moz-appearance: none;
   appearance: none;
   margin-top: 2rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 .bg-black {
   background: #000; }
