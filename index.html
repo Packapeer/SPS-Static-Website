@@ -1414,14 +1414,21 @@
     });
   </script>
   <script>
+    // dark theme code
     const select = document.getElementById('theme-select')
     const html = document.getElementById('html')
+    const elems = ['html','img','iframe']
     select.addEventListener('change',()=> {
       if(select.value === "dark"){
-        html.classList.add('dark')
+        elems.forEach(tag=> {
+          document.querySelector(tag).classList.add('dark')
+        })
       }
       if(select.value !== "dark"){
-        html.classList.remove("dark")
+        elems.forEach(tag=> {
+          document.querySelector(tag).classList.remove('dark')
+        })
+
       }
     })
   </script>
