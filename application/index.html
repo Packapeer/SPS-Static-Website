@@ -130,7 +130,7 @@
                 <!-- <h1 class=" site-logo"><a href="../index.html" class="text-black h2 " style="text-decoration: none; font-family: Montserrat;">SPS<span class="text-primary">.</span> </a></h1> -->
                 <h1 class=" site-logo" style="font-weight: 700;  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
                 ">
-                <a href="index.html" class="text-black ">BROCAMP(SPS) <sub><span style="font-size: 1rem;font-weight: 400;">by</span><span  style="font-size: 1.2rem;">&nbsp;<span style="background: black;color: white;padding: 0.2rem;">BRO</span><span style="padding: 0.1rem;">TOTYPE</span></sub></a>
+                <a href="/" class="text-black ">BROCAMP(SPS) <sub><span style="font-size: 1rem;font-weight: 400;">by</span><span  style="font-size: 1.2rem;">&nbsp;<span style="background: black;color: white;padding: 0.2rem;">BRO</span><span style="padding: 0.1rem;">TOTYPE</span></sub></a>
             </div>
         </div>
     </div>
@@ -394,7 +394,9 @@
                         required:true
                     },
                     'entry.245538173':{
-                        required:true
+                        required:true,
+                        minlength:4,
+                        maxlength:4
                     },
                     'entry.888025760':{
                         required:true
@@ -544,7 +546,7 @@
                 },
                 error: function(x, y, z)
                 {
-
+                    mixpanel.track(new URLSearchParams(window.location.search).get('ref')+"-Application-Form-Submited");
                     $('#success-msg').show();
                     $('#form').hide();
                     $('#title').hide();
