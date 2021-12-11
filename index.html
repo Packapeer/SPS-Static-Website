@@ -86,7 +86,7 @@
               Pay Only When You Earn.</h2>
             <p class="mb-3">From Zero to a high paid Software Engineer in 180 days.</p>
             <div>
-              <a id="apply-now" href="application/index.html" class="btn btn-primary mr-2 mb-2">Apply Now</a>
+              <a id="apply-now" onclick="clickApply(event)" class="btn btn-primary mr-2 mb-2">Apply Now</a>
               <p class="mb-2">(NB: Read all the FAQs carefully before
                 you<br> submit the application)</p>
             </div>
@@ -1553,6 +1553,29 @@
       mixpanel.track(new URLSearchParams(window.location.search).get('ref'));
     }else{
       mixpanel.track('Direct visit');
+    }
+
+
+
+
+    function clickApply(e){
+      e.preventDefault();
+      if(new URLSearchParams(window.location.search).get('ref')){
+        const ref = new URLSearchParams(window.location.search).get('ref');
+        // console.log(ref+"Apply-clicked");
+
+        mixpanel.track(ref+"-Apply-Clicked");
+        window.open('application/index.html/?ref='+ref,"_self");
+
+
+      }else{
+        // href="application/index.html"
+        mixpanel.track("Direct-Apply-Clicked");
+        // console.log("direct Applied");
+        window.open('application/index.html',"_self");
+
+      }
+
     }
     
     </script>
