@@ -1547,7 +1547,7 @@
     
     // Enabling the debug mode flag is useful during implementation,
     // but it's recommended you remove it for production
-    mixpanel.init('5300b633d03b20cc591d92a5d505aeba', {debug: true});
+    mixpanel.init('5300b633d03b20cc591d92a5d505aeba');
 
     if(new URLSearchParams(window.location.search).get('ref')){ 
       mixpanel.track(new URLSearchParams(window.location.search).get('ref'));
