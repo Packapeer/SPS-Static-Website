@@ -475,6 +475,13 @@
             var field12 = $("#motivate").val();
             var field13 = $("#heared").val();
             var field14 = $("#agree").val();
+            var referral;
+
+            if (new URLSearchParams(window.location.search).get('ref')) {
+                        referral = new URLSearchParams(window.location.search).get('ref');
+                    } else {
+                        referral = "Direct";
+                    }
 
 
             /* if(field1 == ""){
@@ -569,7 +576,8 @@
                     "entry.499706772": field11,
                     "entry.1923488371": field12,
                     "entry.1867335975": field13,
-                    "entry.795502834": field14
+                    "entry.795502834": field14,
+                    "entry.975756192": referral
                 },
                 type: "POST",
                 dataType: "xml",
