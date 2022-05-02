@@ -241,7 +241,7 @@ Author URL: http://w3layouts.com
     <script>
       (() => {
         // Specify the deadline date
-        const deadlineDate = new Date("January 27, 2025 23:59:59").getTime();
+        const deadlineDate = new Date("May 9, 2022 23:59:59").getTime();
 
         // Cache all countdown boxes into consts
         const countdownDays = document.querySelector(
@@ -266,7 +266,7 @@ Author URL: http://w3layouts.com
           const distance = deadlineDate - currentDate;
 
           // Calculations the data for remaining days, hours, minutes and seconds
-          const days = Math.floor(distance / (100000 * 60 * 60 * 24));
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
           const hours = Math.floor(
             (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
           );
