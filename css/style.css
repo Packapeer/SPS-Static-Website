@@ -2519,7 +2519,7 @@ button:hover:before, button:hover:after {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 100px;
   right: 30px;
   z-index: 99;
   font-size: 18px;
@@ -2539,6 +2539,13 @@ button:hover:before, button:hover:after {
 }
 
 /*end scroll top*/
+
+/* Facebook chat button style */
+
+.fb-root iframe html body div div div div div div{
+  background-color: #22d1b5;
+
+}
 
 
 
