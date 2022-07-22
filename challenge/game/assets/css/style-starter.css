@@ -1358,6 +1358,12 @@ a.link-style:hover:before {
   line-height: 50px;
 }
 
+
+.title-medium {
+  font-size: 20px;
+  font-weight: 600;
+}
+
 @media (max-width: 1080px) {
   .title-big {
     font-size: 40px !important;
@@ -1580,14 +1586,20 @@ header {
 
 .w3l-banner .title-banner {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 20px;
   line-height: 60px;
   font-weight: 100;
 }
 
+.w3l-banner .subtitle-banner {
+  font-weight: 600;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .w3l-banner .title-banner span {
   display: block;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 65px;
   font-weight: 600;
 }
@@ -1738,7 +1750,7 @@ header {
 @media (max-width: 1080px) {
   .w3l-banner .title-banner span,
   .w3l-banner .title-banner {
-    font-size: 50px;
+    font-size: 20px;
     line-height: 55px;
   }
 }
@@ -1749,7 +1761,7 @@ header {
   }
   .w3l-banner .title-banner span,
   .w3l-banner .title-banner {
-    font-size: 45px;
+    font-size: 20px;
     line-height: 50px;
   }
   .video-gd-right img {
@@ -1792,7 +1804,7 @@ header {
   }
   .w3l-banner .title-banner span,
   .w3l-banner .title-banner {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 50px;
   }
   .w3l-banner .title-text {
@@ -1823,7 +1835,7 @@ header {
 @media (max-width: 384px) {
   .w3l-banner .title-banner span,
   .w3l-banner .title-banner {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 50px;
   }
   .w3l-banner .title-text {
@@ -1844,7 +1856,7 @@ header {
 @media (max-width: 370px) {
   .w3l-banner .title-banner span,
   .w3l-banner .title-banner {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 50px;
   }
   .w3l-banner .title-text {
@@ -1859,7 +1871,7 @@ header {
   }
   .w3l-banner .title-banner span,
   .w3l-banner .title-banner {
-    font-size: 35px;
+    font-size: 20px;
     line-height: 40px;
   }
   .w3l-logos .logo-view img {
