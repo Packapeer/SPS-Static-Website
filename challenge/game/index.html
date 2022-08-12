@@ -14,10 +14,16 @@ Author URL: http://w3layouts.com
 
   <!-- Google fonts -->
 
+  <link href="assets/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+  <link href="assets/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+
   <link href="//fonts.googleapis.com/css?family=Cabin:400,500,600&amp;subset=latin-ext,vietnamese" rel="stylesheet" />
 
   <!-- Template CSS -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./assets/css/style-starter.css" />
+  <link rel="stylesheet" href="./assets/select2/select2.min.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
 <body>
@@ -45,8 +51,98 @@ Author URL: http://w3layouts.com
               Jumpstart Your Career to a High Paying Job.
             </h5 class="pt-5">
             <div class="py-3">
-              <a onclick="window.scrollTo(0, document.body.scrollHeight);"
-                class="btn btn-style btn-primary mt-2 mt-md-5">Register Now</a>
+              <button class="btn btn-style btn-primary mt-2 mt-md-5" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">Register Now</button>
+              <div class="modal fade text-start" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                  <div class="modal-content">
+                    <div class="card card-2 scroll-y">
+                      <div class="card-body">
+                        <h2 class="title">Registration Form</h2>
+                        <form id="registration-form-1">
+                          <div class="row row-space">
+                            <div class="col-2">
+                              <div class="input-group">
+                                <input class="input--style-2" type="text" placeholder="Name" name="Name" required>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="input-group">
+                                <input class="input--style-2" type="text" placeholder="Email" name="Email" required>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row row-space">
+                            <div class="col-2">
+                              <div class="input-group">
+                                <input class="input--style-2" type="text" placeholder="Mobile" name="Mobile" required>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="input-group">
+                                <div class="rs-select2 js-select-simple select--no-search w-100">
+                                  <select name="gender" name="EmploymentStatus">
+                                    <option disabled="disabled" selected="selected">Employment Status</option>
+                                    <option value="Student">Student</option>
+                                    <option value="Employed">Employed</option>
+                                    <option value="Fresher">Fresher</option>
+                                  </select>
+                                  <div class="select-dropdown"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row row-space">
+                            <div class="col-2">
+                              <div class="input-group">
+                                <div class="rs-select2 js-select-simple select--no-search w-100">
+                                  <select name="gender" name="EducationalQualification">
+                                    <option disabled="disabled" selected="selected">Educational Qualification</option>
+                                    <option value="B. Tech">B. Tech</option>
+                                    <option value="M. Tech">M. Tech</option>
+                                    <option value="BCA/MCA">BCA/MCA</option>
+                                    <option value="B.Sc/M.Sc">B.Sc/M.Sc</option>
+                                    <option value="Diploma">Diploma</option>
+                                    <option value="Other">Other</option>
+                                  </select>
+                                  <div class="select-dropdown"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="input-group">
+                                <div class="rs-select2 js-select-simple select--no-search w-100">
+                                  <select name="gender" name="Source">
+                                    <option disabled="disabled" selected="selected">How did you know about game
+                                      development challenge</option>
+                                    <option value="Youtube">Youtube</option>
+                                    <option value="Instagram">Instagram</option>
+                                    <option value="Facebook">Facebook</option>
+                                    <option value="LinkedIn">LinkedIn</option>
+                                    <option value="WhatsApp">WhatsApp</option>
+                                    <option value="Referred by a friend">
+                                      Referred by a friend
+                                    </option>
+                                    <option value="Other">Other</option>
+                                  </select>
+                                  <div class="select-dropdown"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input-group">
+                            <input class="input--style-2" type="text" placeholder="Tell us about you" name="About">
+                          </div>
+                          <div class="p-t-30">
+                            <button class="btn btn--radius btn-primary" type="submit" id="form-submit-1">Submit</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-md-6 left-wthree-img mt-lg-0 mt-4">
@@ -130,8 +226,98 @@ Author URL: http://w3layouts.com
   <section class="w3l-homeblock1 py-5 text-center">
     <div class="container py-lg-3 py-md-2">
       <h3 class="title-big mb-lg-5 mb-3">Follow your passion by learning what you like.</h3>
-      <a onclick="window.scrollTo(0, document.body.scrollHeight);" class="btn btn-style btn-primary mt-5">Register
-        Now</a>
+      <button class="btn btn-style btn-primary mt-2 mt-md-5" data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop2">Register Now</button>
+      <div class="modal fade text-start" id="staticBackdrop2" tabindex="-1" aria-labelledby="staticBackdropLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="card card-2 scroll-y">
+              <div class="card-body">
+                <h2 class="title">Registration Form</h2>
+                <form id="registration-form-2">
+                  <div class="row row-space">
+                    <div class="col-2">
+                      <div class="input-group">
+                        <input class="input--style-2" type="text" placeholder="Name" name="Name" required>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="input-group">
+                        <input class="input--style-2" type="text" placeholder="Email" name="Email" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row row-space">
+                    <div class="col-2">
+                      <div class="input-group">
+                        <input class="input--style-2" type="text" placeholder="Mobile" name="Mobile" required>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="input-group">
+                        <div class="rs-select2 js-select-simple select--no-search w-100">
+                          <select name="gender" name="EmploymentStatus">
+                            <option disabled="disabled" selected="selected">Employment Status</option>
+                            <option value="Student">Student</option>
+                            <option value="Employed">Employed</option>
+                            <option value="Fresher">Fresher</option>
+                          </select>
+                          <div class="select-dropdown"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row row-space">
+                    <div class="col-2">
+                      <div class="input-group">
+                        <div class="rs-select2 js-select-simple select--no-search w-100">
+                          <select name="gender" name="EducationalQualification">
+                            <option disabled="disabled" selected="selected">Educational Qualification</option>
+                            <option value="B. Tech">B. Tech</option>
+                            <option value="M. Tech">M. Tech</option>
+                            <option value="BCA/MCA">BCA/MCA</option>
+                            <option value="B.Sc/M.Sc">B.Sc/M.Sc</option>
+                            <option value="Diploma">Diploma</option>
+                            <option value="Other">Other</option>
+                          </select>
+                          <div class="select-dropdown"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="input-group">
+                        <div class="rs-select2 js-select-simple select--no-search w-100">
+                          <select name="gender" name="Source">
+                            <option disabled="disabled" selected="selected">How did you know about game
+                              development challenge</option>
+                            <option value="Youtube">Youtube</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="WhatsApp">WhatsApp</option>
+                            <option value="Referred by a friend">
+                              Referred by a friend
+                            </option>
+                            <option value="Other">Other</option>
+                          </select>
+                          <div class="select-dropdown"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input-group">
+                    <input class="input--style-2" type="text" placeholder="Tell us about you" name="About">
+                  </div>
+                  <div class="p-t-30">
+                    <button class="btn btn--radius btn-primary" type="submit" id="form-submit-2">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- middle grid -->
@@ -174,49 +360,48 @@ Author URL: http://w3layouts.com
   </section>
   <!-- //middle grid -->
   <section>
-    <div class="background">
-      <div class="container">
-        <div class="screen">
-          <div class="screen-header">
-            <div class="screen-header-left">
-              <div class="screen-header-button close"></div>
-              <div class="screen-header-button maximize"></div>
-              <div class="screen-header-button minimize"></div>
+    <div class="card card-2 scroll-y">
+      <div class="card-body">
+        <h2 class="title">Registration Form</h2>
+        <form id="registration-form-3">
+          <div class="row row-space">
+            <div class="col-2">
+              <div class="input-group">
+                <input class="input--style-2" type="text" placeholder="Name" name="Name" required>
+              </div>
             </div>
-            <div class="screen-header-middle">
-              <h3 class="text-center">
-                Registration Form
-              </h3>
-            </div>
-            <div class="screen-header-right">
-              <div class="screen-header-ellipsis"></div>
-              <div class="screen-header-ellipsis"></div>
-              <div class="screen-header-ellipsis"></div>
+            <div class="col-2">
+              <div class="input-group">
+                <input class="input--style-2" type="text" placeholder="Email" name="Email" required>
+              </div>
             </div>
           </div>
-          <div class="screen-body">
-            <div class="screen-body-item2">
-              <form id="registration-form" class="app-form">
-                <div class="app-form-group">
-                  <input class="app-form-control" type="text" name="Name" placeholder="NAME" required />
-                </div>
-                <div class="app-form-group">
-                  <input class="app-form-control" type="text" name="Email" placeholder="EMAIL" required />
-                </div>
-                <div class="app-form-group">
-                  <input class="app-form-control" type="text" name="Mobile" placeholder="MOBILE NO" required />
-                </div>
-                <div class="app-form-group">
-                  <select id="month" class="select" name="EmploymentStatus">
-                    <option hidden>Employment Status</option>
+          <div class="row row-space">
+            <div class="col-2">
+              <div class="input-group">
+                <input class="input--style-2" type="text" placeholder="Mobile" name="Mobile" required>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="input-group">
+                <div class="rs-select2 js-select-simple select--no-search w-100">
+                  <select name="gender" name="EmploymentStatus">
+                    <option disabled="disabled" selected="selected">Employment Status</option>
                     <option value="Student">Student</option>
                     <option value="Employed">Employed</option>
                     <option value="Fresher">Fresher</option>
                   </select>
+                  <div class="select-dropdown"></div>
                 </div>
-                <div class="app-form-group">
-                  <select id="month" class="select" name="EducationalQualification">
-                    <option hidden>Educational Qualification</option>
+              </div>
+            </div>
+          </div>
+          <div class="row row-space">
+            <div class="col-2">
+              <div class="input-group">
+                <div class="rs-select2 js-select-simple select--no-search w-100">
+                  <select name="gender" name="EducationalQualification">
+                    <option disabled="disabled" selected="selected">Educational Qualification</option>
                     <option value="B. Tech">B. Tech</option>
                     <option value="M. Tech">M. Tech</option>
                     <option value="BCA/MCA">BCA/MCA</option>
@@ -224,12 +409,16 @@ Author URL: http://w3layouts.com
                     <option value="Diploma">Diploma</option>
                     <option value="Other">Other</option>
                   </select>
+                  <div class="select-dropdown"></div>
                 </div>
-                <div class="app-form-group">
-                  <select id="mounth" class="select" name="Source">
-                    <option hidden>
-                      How did you know about game development challenge
-                    </option>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="input-group">
+                <div class="rs-select2 js-select-simple select--no-search w-100">
+                  <select name="gender" name="Source">
+                    <option disabled="disabled" selected="selected">How did you know about game
+                      development challenge</option>
                     <option value="Youtube">Youtube</option>
                     <option value="Instagram">Instagram</option>
                     <option value="Facebook">Facebook</option>
@@ -240,19 +429,18 @@ Author URL: http://w3layouts.com
                     </option>
                     <option value="Other">Other</option>
                   </select>
+                  <div class="select-dropdown"></div>
                 </div>
-                <div class="app-form-group message">
-                  <input class="app-form-control" type="text" name="About" placeholder="Tell us about you" />
-                </div>
-                <div class="app-form-group buttons">
-                  <button type="submit" class="app-form-button" id="form-submit">
-                    SUBMIT
-                  </button>
-                </div>
-              </form>
+              </div>
             </div>
           </div>
-        </div>
+          <div class="input-group">
+            <input class="input--style-2" type="text" placeholder="Tell us about you" name="About">
+          </div>
+          <div class="p-t-30">
+            <button class="btn btn--radius btn-primary" type="submit" id="form-submit-3">Submit</button>
+          </div>
+        </form>
       </div>
     </div>
   </section>
@@ -266,14 +454,15 @@ Author URL: http://w3layouts.com
     </button>
     <script src="./assets/js/jquery-3.3.1.min.js"></script>
     <script>
-      const url = "https://script.google.com/macros/s/AKfycbyVNQ4S_KG1_cHhhhVyprZOsAwi8ltt4MOIJXusmNshIvF3LWNzxCfa3QrsKnJNTFsZYw/exec";
-      const form = document.querySelector("#registration-form");
-      const formButton = document.querySelector("#form-submit");
+      const form1 = document.querySelector("#registration-form-1");
+      const form2 = document.querySelector("#registration-form-2");
+      const form3 = document.querySelector("#registration-form-3");
+      const formButton1 = document.querySelector("#form-submit-1");
+      const formButton2 = document.querySelector("#form-submit-2");
+      const formButton3 = document.querySelector("#form-submit-3");
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-
-        const data = Object.fromEntries(new FormData(e.target).entries());
+      const postToSheet = (formButton, data) => {
+        const url = "https://script.google.com/macros/s/AKfycbyVNQ4S_KG1_cHhhhVyprZOsAwi8ltt4MOIJXusmNshIvF3LWNzxCfa3QrsKnJNTFsZYw/exec";
 
         formButton.innerText = "SUBMITING PLEASE WAIT";
         formButton.setAttribute("disabled", true);
@@ -291,6 +480,27 @@ Author URL: http://w3layouts.com
             alert("Something went wrong please try again.");
           },
         });
+      }
+
+      form1.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const data = Object.fromEntries(new FormData(e.target).entries());
+        postToSheet(formButton1, data);
+      });
+
+      form2.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const data = Object.fromEntries(new FormData(e.target).entries());
+        postToSheet(formButton2, data);
+      });
+
+      form3.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const data = Object.fromEntries(new FormData(e.target).entries());
+        postToSheet(formButton3, data);
       });
     </script>
     <script>
@@ -346,7 +556,9 @@ Author URL: http://w3layouts.com
   </script>
   <!--//MENU-JS-->
 
-  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/select2.min.js"></script>
+  <script src="assets/js/global.js"></script>
 </body>
 
 </html>
