@@ -650,6 +650,11 @@ h6,
   }
 }
 
+.scroll-y {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
 .btn {
   display: inline-block;
   font-weight: 400;
