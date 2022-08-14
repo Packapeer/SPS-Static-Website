@@ -4,456 +4,306 @@ Author URL: http://w3layouts.com
 -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta
-      name="description"
-      content="Learn Python in Malayalam with tutorials and clear your doubts 24/7 for FREE"
-    />
-    <title>Learn Python for free within 20 days</title>
 
-    <title>Brototype Learning Club</title>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Learn Python in Malayalam with tutorials and clear your doubts 24/7 for FREE" />
+  <title>Learn Python for free within 20 days</title>
 
-    <!-- Google fonts -->
+  <title>Brototype Learning Club</title>
 
-    <link
-      href="//fonts.googleapis.com/css?family=Cabin:400,500,600&amp;subset=latin-ext,vietnamese"
-      rel="stylesheet"
-    />
+  <!-- Google fonts -->
 
-    <!-- Template CSS -->
-    <link rel="stylesheet" href="./assets/css/style-starter.css" />
-  </head>
+  <link href="assets/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+  <link href="assets/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
 
-  <body>
-    <!-- header -->
-    <header id="site-header" class="fixed-top">
+  <link href="//fonts.googleapis.com/css?family=Cabin:400,500,600&amp;subset=latin-ext,vietnamese" rel="stylesheet" />
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/style-starter.css" />
+  <link rel="stylesheet" href="./assets/select2/select2.min.css" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <header id="site-header" class="fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg stroke">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/images/logo ai trademark-01 (1).png" alt="" />
+        </a>
+      </nav>
+    </div>
+  </header>
+  <!-- //header -->
+  <section class="w3l-banner py-5" id="work">
+    <div class="midd-w3">
       <div class="container">
-        <nav class="navbar navbar-expand-lg stroke">
-          <a class="navbar-brand" href="index.html">
-            <img src="./assets/images/logo ai trademark-01 (1).png" alt="" />
-          </a>
-        </nav>
-      </div>
-    </header>
-    <!-- //header -->
-    <section class="w3l-banner py-5" id="work">
-      <div class="midd-w3">
-        <div class="container">
-          <div class="row align-items-center">
-            <div
-              class="col-lg-6 about-right-faq align-self text-center text-md-left"
-            >
-              <h3 class="title-banner"><span>Learning Club</span></h3>
-              <h1 class="mt-4 textColor title-text">
-                Here’s The <span class="text-danger">FREE</span> <br />
-                and Easiest Way to Learn Coding in <br /><span
-                  class="text-danger"
-                  >10 Days</span
-                >
-              </h1>
-              <div class="py-3">
-                <a
-                  onclick="window.scrollTo(0, document.body.scrollHeight);"
-                  class="btn btn-style btn-primary mt-2 mt-md-5"
-                  >Register Now</a
-                >
-              </div>
-              <div class="row align-center">
-                <div
-                  class="Stars mt-1"
-                  style="--rating: 4.6"
-                  aria-label="Rating of this product is 4.9 out of 5."
-                ></div>
-                <div>
-                  <p class="m-0 star-text">
-                    Rated 4.9 out of 5 | 40000+ Enrolled
-                  </p>
+        <div class="row align-items-center">
+          <div class="col-lg-6 about-right-faq align-self text-center text-md-left">
+            <h3 class="title-banner"><span>Learning Club</span></h3>
+            <h1 class="mt-4 textColor title-text">
+              Here’s The <span class="text-danger">FREE</span> <br />
+              and Easiest Way to Learn Coding in <br /><span class="text-danger">10 Days</span>
+            </h1>
+            <div class="py-3">
+              <button class="btn btn-style btn-primary mt-2 mt-md-5" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">Register Now</button>
+              <div class="modal fade text-start" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                  <div class="modal-content">
+                    <div class="card card-2 scroll-y">
+                      <div class="card-body">
+                        <h2 class="title">Registration Form</h2>
+                        <form id="registration-form-1">
+                          <div class="row row-space">
+                            <div class="col-2">
+                              <div class="input-group">
+                                <input class="input--style-2" type="text" placeholder="Name" name="Name" required>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="input-group">
+                                <input class="input--style-2" type="text" placeholder="Email" name="Email" required>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row row-space">
+                            <div class="col-2">
+                              <div class="input-group">
+                                <input class="input--style-2" type="text" placeholder="Mobile" name="Mobile" required>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="input-group">
+                                <div class="rs-select2 js-select-simple select--no-search w-100">
+                                  <select name="gender" name="EmploymentStatus">
+                                    <option disabled="disabled" selected="selected">Employment Status</option>
+                                    <option value="Student">Student</option>
+                                    <option value="Employed">Employed</option>
+                                    <option value="Fresher">Fresher</option>
+                                  </select>
+                                  <div class="select-dropdown"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row row-space">
+                            <div class="col-2">
+                              <div class="input-group">
+                                <div class="rs-select2 js-select-simple select--no-search w-100">
+                                  <select name="gender" name="EducationalQualification">
+                                    <option disabled="disabled" selected="selected">Educational Qualification</option>
+                                    <option value="B. Tech">B. Tech</option>
+                                    <option value="M. Tech">M. Tech</option>
+                                    <option value="BCA/MCA">BCA/MCA</option>
+                                    <option value="B.Sc/M.Sc">B.Sc/M.Sc</option>
+                                    <option value="Diploma">Diploma</option>
+                                    <option value="Other">Other</option>
+                                  </select>
+                                  <div class="select-dropdown"></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-2">
+                              <div class="input-group">
+                                <div class="rs-select2 js-select-simple select--no-search w-100">
+                                  <select name="gender" name="Source">
+                                    <option disabled="disabled" selected="selected">How did you know about game
+                                      development challenge</option>
+                                    <option value="Youtube">Youtube</option>
+                                    <option value="Instagram">Instagram</option>
+                                    <option value="Facebook">Facebook</option>
+                                    <option value="LinkedIn">LinkedIn</option>
+                                    <option value="WhatsApp">WhatsApp</option>
+                                    <option value="Referred by a friend">
+                                      Referred by a friend
+                                    </option>
+                                    <option value="Other">Other</option>
+                                  </select>
+                                  <div class="select-dropdown"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="input-group">
+                            <input class="input--style-2" type="text" placeholder="Tell us about you" name="About">
+                          </div>
+                          <div class="p-t-30">
+                            <button class="btn btn--radius btn-primary" type="submit" id="form-submit-1">Submit</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 left-wthree-img mt-lg-0 mt-4">
-              <div class="position-relative">
-                <img
-                  src="./assets/images/sddefault.webp"
-                  alt="photo1"
-                  class="img-fluid"
-                />
+            <div class="row align-center">
+              <div class="Stars mt-1" style="--rating: 4.6" aria-label="Rating of this product is 4.9 out of 5."></div>
+              <div>
+                <p class="m-0 star-text">
+                  Rated 4.9 out of 5 | 40000+ Enrolled
+                </p>
               </div>
+            </div>
+          </div>
+          <div class="col-md-6 left-wthree-img mt-lg-0 mt-4">
+            <div class="position-relative">
+              <img src="./assets/images/sddefault.webp" alt="photo1" class="img-fluid" />
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="w3l-homeblock1 py-5">
-      <div class="container py-lg-5 py-4">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <h3 class="title-big mb-4">Who Can Join This Challenge</h3>
-            <ul class="custom-list p-3">
-              <li class="mb-3">Anyone who loves IT can join.</li>
-              <li class="mb-3">Anyone who loves to make money can join</li>
-              <li class="mb-3">
-                Anyone with a high interest in learning a new skill can join.
-              </li>
-              <li class="mb-3">Anyone who wants a career change can join.</li>
-              <li class="mb-3">
-                Anyone who is currently struggling with coding can join.
-              </li>
-              <li class="mb-3">
-                Anyone who quits coding after trying for a few days can join.
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-5 mt-lg-0 mt-4">
-            <img
-              src="./assets//images/imagetc1.webp"
-              class="img-fluid radius-image"
-              alt="photo4"
-            />
-          </div>
+    </div>
+  </section>
+  <section class="w3l-homeblock1 py-5">
+    <div class="container py-lg-5 py-4">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h3 class="title-big mb-4">Who Can Join This Challenge</h3>
+          <ul class="custom-list p-3">
+            <li class="mb-3">Anyone who loves IT can join.</li>
+            <li class="mb-3">Anyone who loves to make money can join</li>
+            <li class="mb-3">
+              Anyone with a high interest in learning a new skill can join.
+            </li>
+            <li class="mb-3">Anyone who wants a career change can join.</li>
+            <li class="mb-3">
+              Anyone who is currently struggling with coding can join.
+            </li>
+            <li class="mb-3">
+              Anyone who quits coding after trying for a few days can join.
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-5 mt-lg-0 mt-4">
+          <img src="./assets//images/imagetc1.webp" class="img-fluid radius-image" alt="photo4" />
         </div>
       </div>
-    </section>
-    <section class="w3l-homeblock2 py-md-5 py-2">
-      <div class="container py-5">
-        <div class="row align-items-center">
-          <div class="col-lg-5 mb-5 mobile-hidden">
-            <img
-              src="./assets/images/imagetc.webp"
-              class="img-fluid radius-image"
-              alt="photo4"
-            />
-          </div>
-          <div class="col-lg-7">
-            <h3 class="title-big mb-4">Coding: Why You Should Learn It</h3>
-            <ul class="custom-list p-3">
-              <li class="mb-3">
-                Attractive Salary and Multiple Career Opportunities
-              </li>
-              <li class="mb-3">Gives you a great career flexibility</li>
-              <li class="mb-3">
-                Coding is a High-income skill with high demand
-              </li>
-              <li class="mb-3">
-                Gives you a new perspective to problem-solving
-              </li>
-              <li class="mb-3">
-                Coding knowledge helps you to innovate new technologies.
-              </li>
-            </ul>
-          </div>
+    </div>
+  </section>
+  <section class="w3l-homeblock2 py-md-5 py-2">
+    <div class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-5 mobile-hidden">
+          <img src="./assets/images/imagetc.webp" class="img-fluid radius-image" alt="photo4" />
+        </div>
+        <div class="col-lg-7">
+          <h3 class="title-big mb-4">Coding: Why You Should Learn It</h3>
+          <ul class="custom-list p-3">
+            <li class="mb-3">
+              Attractive Salary and Multiple Career Opportunities
+            </li>
+            <li class="mb-3">Gives you a great career flexibility</li>
+            <li class="mb-3">
+              Coding is a High-income skill with high demand
+            </li>
+            <li class="mb-3">
+              Gives you a new perspective to problem-solving
+            </li>
+            <li class="mb-3">
+              Coding knowledge helps you to innovate new technologies.
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-    <section class="w3l-homeblock1 py-5 text-center">
-      <div class="container py-lg-3 py-md-2">
-        <h3 class="title-big mb-lg-5 mb-3">Not yet registered?</h3>
-        <h3 class="title-big mb-lg-5 mb-3">Hurry up!</h3>
-        <a
-          onclick="window.scrollTo(0, document.body.scrollHeight);"
-          class="btn btn-style btn-primary mt-5"
-          >Register Now</a
-        >
-      </div>
-    </section>
-    <section class="w3l-homeblock2" id="about">
-      <div class="homeblock2 py-5">
-        <div class="container py-lg-5 py-md-3">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-lg-4 col-md-6">
-              <div class="position-relative">
-                <img
-                  src="./assets/images/sir.webp"
-                  alt="photo2"
-                  class="radius-image img-fluid"
-                />
-              </div>
-            </div>
-            <div class="col-lg-4 mt-lg-0">
-              <p style="color: black" class="text-center text-md-left">
-                Take advantage of our Malayalam Basic Coding Tutorial with 24/7
-                support for 10 days and learn to code.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="w3l-homeblock1" id="about">
-      <div class="homeblock2 pt-3 pb-5">
-        <div class="text-center">
-          <h1 class="mb-3 title-big">What You’ll Learn In 10 Days</h1>
-        </div>
-        <div class="container">
-          <button class="collapsible active">
-            <span class="font-weight-bold">Day 1:</span> Introduction to
-            Programming:
-          </button>
-          <div class="content">
-            <p>
-              In the introduction section you’ll get a general aspect of
-              programming such as the importance of programming, basic
-              terminologies used in programming, etc.
-            </p>
-          </div>
-          <button class="collapsible">
-            <span class="font-weight-bold">Day 2:</span> Variables & Datatypes
-          </button>
-          <div class="content">
-            <p>
-              Day 2 is the actual beginning of programming, here you’ll discover
-              what is programming? How to input variables, what are integers,
-              what are data types, how to print output, etc. So you’ll get a
-              strong foundation in a programming language.
-            </p>
-          </div>
-          <button class="collapsible">
-            <span class="font-weight-bold">Day 3:</span> Conditional Statements:
-          </button>
-          <div class="content">
-            <p>
-              In this class, you’ll learn about conditional statements such as
-              if, if else, nested if, else if ladder, and finally the switch
-              statement with simple examples.
-            </p>
-          </div>
-          <button class="collapsible">
-            <span class="font-weight-bold">Day 4:</span> Looping concept:
-          </button>
-          <div class="content">
-            <p>
-              This is one of the most important topics of programming. Here
-              you’ll learn FOR loop with simple examples.
-            </p>
-          </div>
-          <button class="collapsible">
-            <span class="font-weight-bold">Day 5:</span> Array and Array
-            operations:
-          </button>
-          <div class="content">
-            <p>
-              After learning the loop concept we take you to the array section.
-              In this section you’ll learn how to input a value into an array,
-              retrieve that value from an array, searching and sorting values
-              from an array.
-            </p>
-          </div>
-          <button class="collapsible">
-            <span class="font-weight-bold">Day 6:</span> Functions:
-          </button>
-          <div class="content">
-            <p>
-              On the 6th day you’ll learn everything about functions and their
-              type with proper examples.
-            </p>
-          </div>
-          <button class="collapsible">
-            <span class="font-weight-bold">Day 7:</span> OOP Concept:
-          </button>
-          <div class="content">
-            <p>
-              On day 7 you’ll learn the most powerful concept of programming
-              which is the OOP concept. You'll learn what is class, how to
-              create one, what is an object, how to create an object, etc.
-            </p>
-          </div>
-          <button class="collapsible">
-            <span class="font-weight-bold">Day 8:</span> Constructors,
-            Inheritance:
-          </button>
-          <div class="content">
-            <p>
-              On day 8 you will learn the important concept of OOPs with simple
-              examples. These concepts are so useful for your programming
-              interview.
-            </p>
-          </div>
-          <button class="collapsible">
-            <span class="font-weight-bold">Day 9:</span> Abstract, Exceptions,
-            Threads:
-          </button>
-          <div class="content">
-            <p>
-              On day9 you’ll learn some other concepts of OOPs. After day 9
-              you’ll gain the potential for attending a coding interview because
-              you learned the OOPs.
-            </p>
-          </div>
-          <button class="collapsible">
-            <span class="font-weight-bold">Day 10:</span> Calculator project:
-          </button>
-          <div class="content">
-            <p>
-              On day 10 which is the final day of our class, you’ll do a real
-              calculator project from scratch. you can add this project to your
-              resume, this will help you to build a good portfolio.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- middle grid -->
-    <section class="w3l-homeblock2">
-      <div class="container py-lg-3 py-2">
-        <div class="row align-items-center text-center">
-          <div class="col-lg-12">
-            <h3 class="title-big mb-4">About Brototype</h3>
-            <p>
-              Brototype is Kerala's No:1 tech Youtube channel for students who
-              are looking for a good career in the tech industry. Our mission is
-              to make a positive change in the lives of people by providing them
-              with valuable information and actionable steps.
-            </p>
-            <p>
-              Over the past 2 years, we have changed more than 1000s of
-              students' lives by providing high-demand tech skills.
-            </p>
-          </div>
-          <img
-            src="./assets/images/channel.webp"
-            alt="2 lakh + youtube subscribers"
-            class="img-fluid mt-4"
-          />
-        </div>
-      </div>
-    </section>
-    <section class="w3l-homeblock1 py-5">
-      <div class="container py-lg-5 py-4">
-        <div class="row">
-          <div class="col-lg-6 align-self">
-            <h3 class="title-big mb-4">
-              Get career advice from Nikhil Kilivayil.
-            </h3>
-            <p class="m-0">
-              Complete the tutorial and get career advice from Nikil Kilivayil.
-              In this zoom meeting, you can ask all your doubts related to your
-              career in It.
-            </p>
-          </div>
-          <div class="col-lg-6 mt-lg-0 mt-4">
-            <img
-              src="assets/images/sir-png.webp"
-              class="img-fluid radius-image"
-              alt="photo4"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- //middle grid -->
-    <section>
-      <div class="background">
-        <div class="container">
-          <div class="screen">
-            <div class="screen-header">
-              <div class="screen-header-left">
-                <div class="screen-header-button close"></div>
-                <div class="screen-header-button maximize"></div>
-                <div class="screen-header-button minimize"></div>
-              </div>
-              <div class="screen-header-right">
-                <div class="screen-header-ellipsis"></div>
-                <div class="screen-header-ellipsis"></div>
-                <div class="screen-header-ellipsis"></div>
-              </div>
-            </div>
-            <div class="screen-body">
-              <div class="screen-body-item1 left">
-                <div class="app-title">
-                  <span>Enroll</span>
-                  <span>Now</span>
-                </div>
-              </div>
-              <div class="screen-body-item2">
-                <form id="registration-form" class="app-form">
-                  <div class="app-form-group">
-                    <input
-                      class="app-form-control"
-                      type="text"
-                      name="Name"
-                      placeholder="NAME"
-                      required
-                    />
+    </div>
+  </section>
+  <section class="w3l-homeblock1 py-5 text-center">
+    <div class="container py-lg-3 py-md-2">
+      <h3 class="title-big mb-lg-5 mb-3">Not yet registered?</h3>
+      <h3 class="title-big mb-lg-5 mb-3">Hurry up!</h3>
+      <button class="btn btn-style btn-primary mt-2 mt-md-5" data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop2">Register Now</button>
+      <div class="modal fade text-start" id="staticBackdrop2" tabindex="-1" aria-labelledby="staticBackdropLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div class="modal-content">
+            <div class="card card-2 scroll-y">
+              <div class="card-body">
+                <h2 class="title">Registration Form</h2>
+                <form id="registration-form-2">
+                  <div class="row row-space">
+                    <div class="col-2">
+                      <div class="input-group">
+                        <input class="input--style-2" type="text" placeholder="Name" name="Name" required>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="input-group">
+                        <input class="input--style-2" type="text" placeholder="Email" name="Email" required>
+                      </div>
+                    </div>
                   </div>
-                  <div class="app-form-group">
-                    <input
-                      class="app-form-control"
-                      type="text"
-                      name="Email"
-                      placeholder="EMAIL"
-                      required
-                    />
+                  <div class="row row-space">
+                    <div class="col-2">
+                      <div class="input-group">
+                        <input class="input--style-2" type="text" placeholder="Mobile" name="Mobile" required>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="input-group">
+                        <div class="rs-select2 js-select-simple select--no-search w-100">
+                          <select name="gender" name="EmploymentStatus">
+                            <option disabled="disabled" selected="selected">Employment Status</option>
+                            <option value="Student">Student</option>
+                            <option value="Employed">Employed</option>
+                            <option value="Fresher">Fresher</option>
+                          </select>
+                          <div class="select-dropdown"></div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="app-form-group">
-                    <input
-                      class="app-form-control"
-                      type="text"
-                      name="Mobile"
-                      placeholder="MOBILE NO"
-                      required
-                    />
+                  <div class="row row-space">
+                    <div class="col-2">
+                      <div class="input-group">
+                        <div class="rs-select2 js-select-simple select--no-search w-100">
+                          <select name="gender" name="EducationalQualification">
+                            <option disabled="disabled" selected="selected">Educational Qualification</option>
+                            <option value="B. Tech">B. Tech</option>
+                            <option value="M. Tech">M. Tech</option>
+                            <option value="BCA/MCA">BCA/MCA</option>
+                            <option value="B.Sc/M.Sc">B.Sc/M.Sc</option>
+                            <option value="Diploma">Diploma</option>
+                            <option value="Other">Other</option>
+                          </select>
+                          <div class="select-dropdown"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div class="input-group">
+                        <div class="rs-select2 js-select-simple select--no-search w-100">
+                          <select name="gender" name="Source">
+                            <option disabled="disabled" selected="selected">How did you know about game
+                              development challenge</option>
+                            <option value="Youtube">Youtube</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="WhatsApp">WhatsApp</option>
+                            <option value="Referred by a friend">
+                              Referred by a friend
+                            </option>
+                            <option value="Other">Other</option>
+                          </select>
+                          <div class="select-dropdown"></div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="app-form-group">
-                    <select id="month" class="select" name="EmploymentStatus">
-                      <option hidden>Employment Status</option>
-                      <option value="Student">Student</option>
-                      <option value="Employed">Employed</option>
-                      <option value="Fresher">Fresher</option>
-                    </select>
+                  <div class="input-group">
+                    <input class="input--style-2" type="text" placeholder="Tell us about you" name="About">
                   </div>
-                  <div class="app-form-group">
-                    <select
-                      id="month"
-                      class="select"
-                      name="EducationalQualification"
-                    >
-                      <option hidden>Educational Qualification</option>
-                      <option value="B. Tech">B. Tech</option>
-                      <option value="M. Tech">M. Tech</option>
-                      <option value="BCA/MCA">BCA/MCA</option>
-                      <option value="B.Sc/M.Sc">B.Sc/M.Sc</option>
-                      <option value="Diploma">Diploma</option>
-                      <option value="Other">Other</option>
-                    </select>
-                  </div>
-                  <div class="app-form-group">
-                    <select id="mounth" class="select" name="Source">
-                      <option hidden>
-                        How did you know about learning club
-                      </option>
-                      <option value="Youtube">Youtube</option>
-                      <option value="Instagram">Instagram</option>
-                      <option value="Facebook">Facebook</option>
-                      <option value="LinkedIn">LinkedIn</option>
-                      <option value="WhatsApp">WhatsApp</option>
-                      <option value="Referred by a friend">
-                        Referred by a friend
-                      </option>
-                      <option value="Other">Other</option>
-                    </select>
-                  </div>
-                  <div class="app-form-group message">
-                    <input
-                      class="app-form-control"
-                      type="text"
-                      name="About"
-                      placeholder="Tell us about you"
-                    />
-                  </div>
-                  <div class="app-form-group buttons">
-                    <button
-                      type="submit"
-                      class="app-form-button"
-                      id="form-submit"
-                    >
-                      SUBMIT
-                    </button>
+                  <div class="p-t-30">
+                    <button class="btn btn--radius btn-primary" type="submit" id="form-submit-2">Submit</button>
                   </div>
                 </form>
               </div>
@@ -461,97 +311,351 @@ Author URL: http://w3layouts.com
           </div>
         </div>
       </div>
-    </section>
-    <!-- //middle -->
-    <!-- //logos Section -->
-    <!-- footer block -->
-    <section class="w3l-footer-29-main" id="footer">
-      <!-- move top -->
-      <button onclick="topFunction()" id="movetop" title="Go to top">
-        <span>⇪</span>
-      </button>
-      <script src="./assets/js/jquery-3.3.1.min.js"></script>
-      <script>
-        const url =
-          "https://script.google.com/macros/s/AKfycbyx7yr7Ta3a7YsVd-lZA9rNMCsC1_iBSe_pbdFeSMpoOlzuxuhd-mCTCVzWFyTTOXUVwg/exec";
-        const form = document.querySelector("#registration-form");
-        const formButton = document.querySelector("#form-submit");
+    </div>
+  </section>
+  <section class="w3l-homeblock2" id="about">
+    <div class="homeblock2 py-5">
+      <div class="container py-lg-5 py-md-3">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="position-relative">
+              <img src="./assets/images/sir.webp" alt="photo2" class="radius-image img-fluid" />
+            </div>
+          </div>
+          <div class="col-lg-4 mt-lg-0">
+            <p style="color: black" class="text-center text-md-left">
+              Take advantage of our Malayalam Basic Coding Tutorial with 24/7
+              support for 10 days and learn to code.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="w3l-homeblock1" id="about">
+    <div class="homeblock2 pt-3 pb-5">
+      <div class="text-center">
+        <h1 class="mb-3 title-big">What You’ll Learn In 10 Days</h1>
+      </div>
+      <div class="container">
+        <button class="collapsible active">
+          <span class="font-weight-bold">Day 1:</span> Introduction to
+          Programming:
+        </button>
+        <div class="content">
+          <p>
+            In the introduction section you’ll get a general aspect of
+            programming such as the importance of programming, basic
+            terminologies used in programming, etc.
+          </p>
+        </div>
+        <button class="collapsible">
+          <span class="font-weight-bold">Day 2:</span> Variables & Datatypes
+        </button>
+        <div class="content">
+          <p>
+            Day 2 is the actual beginning of programming, here you’ll discover
+            what is programming? How to input variables, what are integers,
+            what are data types, how to print output, etc. So you’ll get a
+            strong foundation in a programming language.
+          </p>
+        </div>
+        <button class="collapsible">
+          <span class="font-weight-bold">Day 3:</span> Conditional Statements:
+        </button>
+        <div class="content">
+          <p>
+            In this class, you’ll learn about conditional statements such as
+            if, if else, nested if, else if ladder, and finally the switch
+            statement with simple examples.
+          </p>
+        </div>
+        <button class="collapsible">
+          <span class="font-weight-bold">Day 4:</span> Looping concept:
+        </button>
+        <div class="content">
+          <p>
+            This is one of the most important topics of programming. Here
+            you’ll learn FOR loop with simple examples.
+          </p>
+        </div>
+        <button class="collapsible">
+          <span class="font-weight-bold">Day 5:</span> Array and Array
+          operations:
+        </button>
+        <div class="content">
+          <p>
+            After learning the loop concept we take you to the array section.
+            In this section you’ll learn how to input a value into an array,
+            retrieve that value from an array, searching and sorting values
+            from an array.
+          </p>
+        </div>
+        <button class="collapsible">
+          <span class="font-weight-bold">Day 6:</span> Functions:
+        </button>
+        <div class="content">
+          <p>
+            On the 6th day you’ll learn everything about functions and their
+            type with proper examples.
+          </p>
+        </div>
+        <button class="collapsible">
+          <span class="font-weight-bold">Day 7:</span> OOP Concept:
+        </button>
+        <div class="content">
+          <p>
+            On day 7 you’ll learn the most powerful concept of programming
+            which is the OOP concept. You'll learn what is class, how to
+            create one, what is an object, how to create an object, etc.
+          </p>
+        </div>
+        <button class="collapsible">
+          <span class="font-weight-bold">Day 8:</span> Constructors,
+          Inheritance:
+        </button>
+        <div class="content">
+          <p>
+            On day 8 you will learn the important concept of OOPs with simple
+            examples. These concepts are so useful for your programming
+            interview.
+          </p>
+        </div>
+        <button class="collapsible">
+          <span class="font-weight-bold">Day 9:</span> Abstract, Exceptions,
+          Threads:
+        </button>
+        <div class="content">
+          <p>
+            On day9 you’ll learn some other concepts of OOPs. After day 9
+            you’ll gain the potential for attending a coding interview because
+            you learned the OOPs.
+          </p>
+        </div>
+        <button class="collapsible">
+          <span class="font-weight-bold">Day 10:</span> Calculator project:
+        </button>
+        <div class="content">
+          <p>
+            On day 10 which is the final day of our class, you’ll do a real
+            calculator project from scratch. you can add this project to your
+            resume, this will help you to build a good portfolio.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- middle grid -->
+  <section class="w3l-homeblock2">
+    <div class="container py-lg-3 py-2">
+      <div class="row align-items-center text-center">
+        <div class="col-lg-12">
+          <h3 class="title-big mb-4">About Brototype</h3>
+          <p>
+            Brototype is Kerala's No:1 tech Youtube channel for students who
+            are looking for a good career in the tech industry. Our mission is
+            to make a positive change in the lives of people by providing them
+            with valuable information and actionable steps.
+          </p>
+          <p>
+            Over the past 2 years, we have changed more than 1000s of
+            students' lives by providing high-demand tech skills.
+          </p>
+        </div>
+        <img src="./assets/images/channel.webp" alt="2 lakh + youtube subscribers" class="img-fluid mt-4" />
+      </div>
+    </div>
+  </section>
+  <section class="w3l-homeblock1 py-5">
+    <div class="container py-lg-5 py-4">
+      <div class="row">
+        <div class="col-lg-6 align-self">
+          <h3 class="title-big mb-4">
+            Get career advice from Nikhil Kilivayil.
+          </h3>
+          <p class="m-0">
+            Complete the tutorial and get career advice from Nikil Kilivayil.
+            In this zoom meeting, you can ask all your doubts related to your
+            career in It.
+          </p>
+        </div>
+        <div class="col-lg-6 mt-lg-0 mt-4">
+          <img src="assets/images/sir-png.webp" class="img-fluid radius-image" alt="photo4" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //middle grid -->
+  <section>
+    <div class="card card-2 scroll-y">
+      <div class="card-body">
+        <h2 class="title">Registration Form</h2>
+        <form id="registration-form-3">
+          <div class="row row-space">
+            <div class="col-2">
+              <div class="input-group">
+                <input class="input--style-2" type="text" placeholder="Name" name="Name" required>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="input-group">
+                <input class="input--style-2" type="text" placeholder="Email" name="Email" required>
+              </div>
+            </div>
+          </div>
+          <div class="row row-space">
+            <div class="col-2">
+              <div class="input-group">
+                <input class="input--style-2" type="text" placeholder="Mobile" name="Mobile" required>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="input-group">
+                <div class="rs-select2 js-select-simple select--no-search w-100">
+                  <select name="gender" name="EmploymentStatus">
+                    <option disabled="disabled" selected="selected">Employment Status</option>
+                    <option value="Student">Student</option>
+                    <option value="Employed">Employed</option>
+                    <option value="Fresher">Fresher</option>
+                  </select>
+                  <div class="select-dropdown"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row row-space">
+            <div class="col-2">
+              <div class="input-group">
+                <div class="rs-select2 js-select-simple select--no-search w-100">
+                  <select name="gender" name="EducationalQualification">
+                    <option disabled="disabled" selected="selected">Educational Qualification</option>
+                    <option value="B. Tech">B. Tech</option>
+                    <option value="M. Tech">M. Tech</option>
+                    <option value="BCA/MCA">BCA/MCA</option>
+                    <option value="B.Sc/M.Sc">B.Sc/M.Sc</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <div class="select-dropdown"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="input-group">
+                <div class="rs-select2 js-select-simple select--no-search w-100">
+                  <select name="gender" name="Source">
+                    <option disabled="disabled" selected="selected">How did you know about game
+                      development challenge</option>
+                    <option value="Youtube">Youtube</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="LinkedIn">LinkedIn</option>
+                    <option value="WhatsApp">WhatsApp</option>
+                    <option value="Referred by a friend">
+                      Referred by a friend
+                    </option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <div class="select-dropdown"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input-group">
+            <input class="input--style-2" type="text" placeholder="Tell us about you" name="About">
+          </div>
+          <div class="p-t-30">
+            <button class="btn btn--radius btn-primary" type="submit" id="form-submit-3">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- //middle -->
+  <!-- //logos Section -->
+  <!-- footer block -->
+  <<section class="w3l-footer-29-main" id="footer">
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+      <span>⇪</span>
+    </button>
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <script>
+      const form1 = document.querySelector("#registration-form-1");
+      const form2 = document.querySelector("#registration-form-2");
+      const form3 = document.querySelector("#registration-form-3");
+      const formButton1 = document.querySelector("#form-submit-1");
+      const formButton2 = document.querySelector("#form-submit-2");
+      const formButton3 = document.querySelector("#form-submit-3");
 
-        form.addEventListener("submit", (e) => {
-          e.preventDefault();
+      const postToSheet = (formButton, data) => {
+        const url = "https://script.google.com/macros/s/AKfycbyx7yr7Ta3a7YsVd-lZA9rNMCsC1_iBSe_pbdFeSMpoOlzuxuhd-mCTCVzWFyTTOXUVwg/exec";
 
-          const data = Object.fromEntries(new FormData(e.target).entries());
-
-          formButton.innerText = "SUBMITING PLEASE WAIT";
-          formButton.setAttribute("disabled", true);
-          $.ajax({
-            url: url,
-            data: data,
-            method: "post",
-            success: function (response) {
-              location.href = "https://t.me/+Lxul8-bGI5o0MWM1";
-              formButton.innerText = "SUBMIT";
-              formButton.setAttribute("disabled", false);
-              form.reset();
-            },
-            error: function (err) {
-              alert("Something went wrong please try again.");
-            },
-          });
+        formButton.innerText = "SUBMITING PLEASE WAIT";
+        formButton.setAttribute("disabled", true);
+        $.ajax({
+          url: url,
+          data: data,
+          method: "post",
+          success: function (response) {
+            location.href = "https://t.me/+Lxul8-bGI5o0MWM1";
+            formButton.innerText = "SUBMIT";
+            formButton.setAttribute("disabled", false);
+            form.reset();
+          },
+          error: function (err) {
+            alert("Something went wrong please try again.");
+          },
         });
-      </script>
-      <script>
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-          scrollFunction();
-        };
+      }
 
-        function scrollFunction() {
-          if (
-            document.body.scrollTop > 20 ||
-            document.documentElement.scrollTop > 20
-          ) {
-            document.getElementById("movetop").style.display = "block";
-          } else {
-            document.getElementById("movetop").style.display = "none";
-          }
-        }
+      form1.addEventListener("submit", (e) => {
+        e.preventDefault();
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
+        const data = Object.fromEntries(new FormData(e.target).entries());
+        postToSheet(formButton1, data);
+      });
+
+      form2.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const data = Object.fromEntries(new FormData(e.target).entries());
+        postToSheet(formButton2, data);
+      });
+
+      form3.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const data = Object.fromEntries(new FormData(e.target).entries());
+        postToSheet(formButton3, data);
+      });
+    </script>
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("movetop").style.display = "block";
+        } else {
+          document.getElementById("movetop").style.display = "none";
         }
-      </script>
-      <!-- /move top -->
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- /move top -->
     </section>
     <!-- //footer block -->
-
-    <!-- Template JavaScript -->
-    <!-- //Script for counter -->
-    <!-- disable body scroll which navbar is in active -->
-    <script>
-      $(function () {
-        $(".navbar-toggler").click(function () {
-          $("body").toggleClass("noscroll");
-        });
-      });
-    </script>
-    <!-- disable body scroll which navbar is in active -->
-
-    <!--/MENU-JS-->
-    <script>
-      $(window).on("scroll", function () {
-        var scroll = $(window).scrollTop();
-
-        if (scroll >= 80) {
-          $("#site-header").addClass("nav-fixed");
-        } else {
-          $("#site-header").removeClass("nav-fixed");
-        }
-      });
-    </script>
-    <!--//MENU-JS-->
 
     <script>
       var coll = document.getElementsByClassName("collapsible");
@@ -577,6 +681,33 @@ Author URL: http://w3layouts.com
       }
     </script>
 
-    <script src="assets/js/bootstrap.min.js"></script>
-  </body>
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+      $(function () {
+        $(".navbar-toggler").click(function () {
+          $("body").toggleClass("noscroll");
+        });
+      });
+    </script>
+    <!-- disable body scroll which navbar is in active -->
+
+    <!--/MENU-JS-->
+    <script>
+      $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+          $("#site-header").addClass("nav-fixed");
+        } else {
+          $("#site-header").removeClass("nav-fixed");
+        }
+      });
+    </script>
+    <!--//MENU-JS-->
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/global.js"></script>
+</body>
+
 </html>
