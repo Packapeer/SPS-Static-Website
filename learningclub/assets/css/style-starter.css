@@ -650,6 +650,11 @@ h6,
   }
 }
 
+.scroll-y {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -698,6 +703,11 @@ h6,
 
 .navbar-brand > img {
   width: 20rem;
+}
+
+.background {
+  display: flex;
+  min-height: 100vh;
 }
 
 .collapsible {
@@ -780,7 +790,7 @@ h6,
 
 .screen {
   position: relative;
-  background: #3e3e3e;
+  background: var(--bg-light);
   border-radius: 15px;
 }
 
@@ -801,13 +811,18 @@ h6,
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  background: #4d4d4f;
+  background: var(--bg-light);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 
-.screen-header-left {
-  margin-right: auto;
+.screen-header-middle {
+  margin: 0 auto;
+}
+
+.screen-header-middle > h3 {
+  color: #ea1d6f;
+  font-size: 22px;
 }
 
 .screen-header-button {
@@ -928,16 +943,18 @@ h6,
 }
 
 .app-form-button {
-  background: none;
-  border: none;
-  color: #ea1d6f;
+  background: #ea1d6f;
+  border: solid 1px #ea1d6f;
+  border-radius: 24px;
+  color: #ffffff;
   font-size: 14px;
   cursor: pointer;
+  padding: 0.8rem 2.8rem;
   outline: none;
 }
 
 .app-form-button:hover {
-  color: #b9134f;
+  background: #b9134f;
 }
 
 @media screen and (max-width: 520px) {
@@ -1418,6 +1435,12 @@ a.link-style:hover:before {
   line-height: 50px;
 }
 
+
+.title-medium {
+  font-size: 20px;
+  font-weight: 600;
+}
+
 @media (max-width: 1080px) {
   .title-big {
     font-size: 40px !important;
@@ -1635,29 +1658,35 @@ header {
 
 .w3l-banner {
   margin-top: 90px;
-  background-color: var(--bg-color);
+  background-color: var(--bg-light);
 }
 
 .w3l-banner .title-banner {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 20px;
   line-height: 60px;
   font-weight: 100;
 }
 
+.w3l-banner .subtitle-banner {
+  font-weight: 600;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .w3l-banner .title-banner span {
   display: block;
-  font-size: 36px;
+  font-size: 20px;
   line-height: 65px;
   font-weight: 600;
 }
 
 .w3l-banner .title-text {
-  font-size: 64px;
+  font-size: 56px;
 }
 
 .w3l-banner .title-text > span {
-  font-size: 72px;
+  font-size: 64px;
   font-weight: 900;
 }
 
@@ -1798,7 +1827,7 @@ header {
 @media (max-width: 1080px) {
   .w3l-banner .title-banner span,
   .w3l-banner .title-banner {
-    font-size: 50px;
+    font-size: 20px;
     line-height: 55px;
   }
 }
@@ -1809,7 +1838,7 @@ header {
   }
   .w3l-banner .title-banner span,
   .w3l-banner .title-banner {
-    font-size: 45px;
+    font-size: 20px;
     line-height: 50px;
   }
   .video-gd-right img {
@@ -1852,7 +1881,7 @@ header {
   }
   .w3l-banner .title-banner span,
   .w3l-banner .title-banner {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 50px;
   }
   .w3l-banner .title-text {
@@ -1883,7 +1912,7 @@ header {
 @media (max-width: 384px) {
   .w3l-banner .title-banner span,
   .w3l-banner .title-banner {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 50px;
   }
   .w3l-banner .title-text {
@@ -1904,7 +1933,7 @@ header {
 @media (max-width: 370px) {
   .w3l-banner .title-banner span,
   .w3l-banner .title-banner {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 50px;
   }
   .w3l-banner .title-text {
@@ -1919,7 +1948,7 @@ header {
   }
   .w3l-banner .title-banner span,
   .w3l-banner .title-banner {
-    font-size: 35px;
+    font-size: 20px;
     line-height: 40px;
   }
   .w3l-logos .logo-view img {
