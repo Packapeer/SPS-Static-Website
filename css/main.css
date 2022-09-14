@@ -402,6 +402,7 @@ input {
 .title {
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 26px !important;
   margin-bottom: 37px;
 }
 

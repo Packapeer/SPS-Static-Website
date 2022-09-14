@@ -348,6 +348,15 @@ $(document).ready(function () {
 	});
 });
 
+$(document).ready(function () {
+	$('#vidbt6').on('click', function (ev) {
+
+		$("#vid6")[0].src += "&autoplay=1";
+		ev.preventDefault();
+
+	});
+});
+
 //videoplayer----------------------------------------------------------------------------------------------------------------------------
 
 
@@ -423,6 +432,11 @@ function onYouTubeIframeAPIReady() {
 		}
 	});
 	vid5 = new YT.Player('vid5', {
+		events: {
+			'onStateChange': onPlayer5StateChange
+		}
+	});
+	vid6 = new YT.Player('vid6', {
 		events: {
 			'onStateChange': onPlayer5StateChange
 		}
