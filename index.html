@@ -67,6 +67,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/util.css">
   <link rel="stylesheet" href="css/technology-list-style.css">
+  <link rel="stylesheet" href="css/select2/select2.min.css">
+  <link rel="stylesheet" href="css/main.css">
 
   <!-- Facebook Pixel Code -->
   <script>
@@ -1531,6 +1533,106 @@
     </div>
   </div>
 
+  <div class="modal fade" id="staticBackdrop" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="row">
+          <div class="mr-3 ml-auto p-3" onclick="$('#staticBackdrop').modal('hide');" style="cursor: pointer;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg"
+              viewBox="0 0 16 16">
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+            </svg>
+          </div>
+        </div>
+        <div class="card card-2 scroll-y border-0" style="box-shadow: none !important;">
+          <div class="card-body pt-3">
+            <h2 class="title">Registration Form</h2>
+            <form id="registration-form-1">
+              <div class="row row-space">
+                <div class="col">
+                  <div class="input-group">
+                    <input class="input--style-2" type="text" placeholder="Name" name="Name" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-group">
+                    <input class="input--style-2" type="text" placeholder="Email" name="Email" required>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-space">
+                <div class="col-md-6">
+                  <div class="input-group">
+                    <input class="input--style-2" type="text" placeholder="Mobile" name="Mobile" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-group">
+                    <div class="rs-select2 js-select-simple select--no-search w-100">
+                      <select name="EmploymentStatus">
+                        <option disabled="disabled" selected="selected">Employment Status</option>
+                        <option value="Student">Student</option>
+                        <option value="Employed">Employed</option>
+                        <option value="Fresher">Fresher</option>
+                      </select>
+                      <div class="select-dropdown"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-space">
+                <div class="col-md-6">
+                  <div class="input-group">
+                    <div class="rs-select2 js-select-simple select--no-search w-100">
+                      <select name="EducationalQualification">
+                        <option disabled="disabled" selected="selected">Educational Qualification</option>
+                        <option value="B. Tech">B. Tech</option>
+                        <option value="M. Tech">M. Tech</option>
+                        <option value="BCA/MCA">BCA/MCA</option>
+                        <option value="B.Sc/M.Sc">B.Sc/M.Sc</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="Other">Other</option>
+                      </select>
+                      <div class="select-dropdown"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-group">
+                    <div class="rs-select2 js-select-simple select--no-search w-100">
+                      <select name="Source">
+                        <option disabled="disabled" selected="selected">How did you know about game
+                          development challenge</option>
+                        <option value="Youtube">Youtube</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="LinkedIn">LinkedIn</option>
+                        <option value="WhatsApp">WhatsApp</option>
+                        <option value="Referred by a friend">
+                          Referred by a friend
+                        </option>
+                        <option value="Other">Other</option>
+                      </select>
+                      <div class="select-dropdown"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="input-group">
+                <input class="input--style-2" type="text" placeholder="Tell us about you" name="About">
+              </div>
+              <div class="p-t-30">
+                <button class="btn btn--radius btn-primary" type="submit" id="form-submit-1">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -1599,6 +1701,13 @@
       } else {
         mybutton.style.display = "none";
       }
+
+      if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        $('#staticBackdrop').modal('show');
+        $('#staticBackdrop').on('hidden.bs.modal', function (event) {
+          $('#staticBackdrop').remove();
+        })
+      }
     }
 
     // When the user clicks on the button, scroll to the top of the document
@@ -1606,6 +1715,38 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+  </script>
+  <script>
+    const form1 = document.querySelector("#registration-form-1");
+    const formButton1 = document.querySelector("#form-submit-1");
+
+    const postToSheet = (formButton, data) => {
+      const url = "https://script.google.com/macros/s/AKfycbzwezMm4zJktKoxgbo66G661cHhDOswcFWjBV4ASJXZtmnmZa5hBCzr2g7U4GfncHyM/exec";
+
+      formButton.innerText = "SUBMITING PLEASE WAIT";
+      formButton.setAttribute("disabled", true);
+      $.ajax({
+        url: url,
+        data: data,
+        method: "post",
+        success: function (response) {
+          location.href = "https://t.me/+Lxul8-bGI5o0MWM1";
+          formButton.innerText = "SUBMIT";
+          formButton.setAttribute("disabled", false);
+          form.reset();
+        },
+        error: function (err) {
+          alert("Something went wrong please try again.");
+        },
+      });
+    }
+
+    form1.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const data = Object.fromEntries(new FormData(e.target).entries());
+      postToSheet(formButton1, data);
+    });
   </script>
 
   <script src="js/jquery-3.3.1.min.js"></script>
@@ -1624,6 +1765,7 @@
 
   <script src="vendor/animsition/js/animsition.min.js"></script>
   <script src="vendor/select2/select2.min.js"></script>
+  <script src="js/global.js"></script>
   <script>
     $(".selection-2").select2({
       minimumResultsForSearch: 20,
