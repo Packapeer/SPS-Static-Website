@@ -1716,6 +1716,38 @@
       document.documentElement.scrollTop = 0;
     }
   </script>
+  <script>
+    const form1 = document.querySelector("#registration-form-1");
+    const formButton1 = document.querySelector("#form-submit-1");
+
+    const postToSheet = (formButton, data) => {
+      const url = "https://script.google.com/macros/s/AKfycbzYzrk64mH-DVL-2m8heDSUMa6cLHLgVWsR_Nn35VVzmm1dNO7KrSh7f6dzdTeRljL6dw/exec";
+
+      formButton.innerText = "SUBMITING PLEASE WAIT";
+      formButton.setAttribute("disabled", true);
+      $.ajax({
+        url: url,
+        data: data,
+        method: "post",
+        success: function (response) {
+          location.href = "https://t.me/+Lxul8-bGI5o0MWM1";
+          formButton.innerText = "SUBMIT";
+          formButton.setAttribute("disabled", false);
+          form.reset();
+        },
+        error: function (err) {
+          alert("Something went wrong please try again.");
+        },
+      });
+    }
+
+    form1.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const data = Object.fromEntries(new FormData(e.target).entries());
+      postToSheet(formButton1, data);
+    });
+  </script>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
