@@ -1730,10 +1730,12 @@
         data: data,
         method: "post",
         success: function (response) {
-          location.href = "https://t.me/+Lxul8-bGI5o0MWM1";
-          formButton.innerText = "SUBMIT";
-          formButton.setAttribute("disabled", false);
-          form.reset();
+          formButton.innerText = "Successfully Registered";
+          setTimeout(() => {
+            $('#staticBackdrop').modal('hide');
+            formButton.setAttribute("disabled", false);
+            form.reset();
+          }, 500);
         },
         error: function (err) {
           alert("Something went wrong please try again.");
