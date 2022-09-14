@@ -124,26 +124,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-h2 {
-  font-size: 30px;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-h4 {
-  font-size: 18px;
-}
-
-h5 {
-  font-size: 15px;
-}
-
-h6 {
-  font-size: 13px;
-}
-
 /* ==========================================================================
    #BACKGROUND
    ========================================================================== */
@@ -196,20 +176,6 @@ h6 {
 /* ==========================================================================
    #BUTTON
    ========================================================================== */
-.btn {
-  line-height: 40px;
-  display: inline-block;
-  padding: 0 25px;
-  cursor: pointer;
-  color: #fff;
-  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  font-size: 14px;
-  font-weight: 700;
-}
 
 .btn--radius {
   -webkit-border-radius: 3px;
