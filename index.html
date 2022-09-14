@@ -119,12 +119,12 @@
 
             <div id="vidbt1"
               onclick="this.nextElementSibling.style.display='block';this.style.display='none';onPlayer1click()">
-              <img src="images/whats_sps.png" class="img-fluid mb-5" style="cursor:pointer" />
+              <img src="images/whats_brocamp.jpeg" class="img-fluid mb-5" style="cursor:pointer" />
             </div>
             <div style="display:none">
               <div class="embed-responsive embed-responsive-16by9 mb-5">
                 <iframe id="vid1" class="embed-responsive-item"
-                  src="https://www.youtube.com/embed/I9QGnNvrmoY?enablejsapi=1"
+                  src="https://www.youtube.com/embed/FAtALEO7eDU?enablejsapi=1"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
               </div>
@@ -210,12 +210,12 @@
 
             <div id="vidbt2"
               onclick="this.nextElementSibling.style.display='block'; this.style.display='none';onPlayer2click()">
-              <img src="images/Howspsworks.png" class="img-fluid mt-5 mb-5 " style="cursor:pointer;" />
+              <img src="images/Howbrocampworks.jpeg" class="img-fluid mt-5 mb-5 " style="cursor:pointer;" />
             </div>
             <div style="display:none">
               <div class="embed-responsive embed-responsive-16by9 mt-5 mb-5">
                 <iframe id="vid2" class="embed-responsive-item"
-                  src="https://www.youtube.com/embed/ckub1RSlhic?enablejsapi=1"
+                  src="https://www.youtube.com/embed/V9K1H1N_Be8?enablejsapi=1"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen></iframe>
               </div>
@@ -483,12 +483,12 @@
 
           <div id="vidbt3"
             onclick="this.nextElementSibling.style.display='block'; this.style.display='none';onPlayer3click()">
-            <img src="images/whocanjoinsps.png" class="img-fluid mt-5 mb-5 " style="cursor:pointer;" />
+            <img src="images/whocanjoinbrocamp.jpeg" class="img-fluid mt-5 mb-5 " style="cursor:pointer;" />
           </div>
           <div style="display:none">
             <div class="embed-responsive embed-responsive-16by9 mt-5 mb-5">
               <iframe id="vid3" class="embed-responsive-item"
-                src="https://www.youtube.com/embed/xkmM6h32lnM?enablejsapi=1"
+                src="https://www.youtube.com/embed/ozGEU5DJnPU?enablejsapi=1"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             </div>
@@ -572,12 +572,12 @@
 
           <div id="vidbt4"
             onclick="this.nextElementSibling.style.display='block'; this.style.display='none';onPlayer4click()">
-            <img src="images/howmuchdoesitcost.png" class="img-fluid mt-5 mb-5 " style="cursor:pointer;" />
+            <img src="images/howmuchdoesitcost.jpeg" class="img-fluid mt-5 mb-5 " style="cursor:pointer;" />
           </div>
           <div style="display:none">
             <div class="embed-responsive embed-responsive-16by9 mt-5 mb-5">
               <iframe id="vid4" class="embed-responsive-item"
-                src="https://www.youtube.com/embed/vhG3wKGp2mc?enablejsapi=1"
+                src="https://www.youtube.com/embed/oBToihm3oLw?enablejsapi=1"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             </div>
@@ -613,7 +613,7 @@
 
       <div id="vidbt5"
         onclick="this.nextElementSibling.style.display='block'; this.style.display='none';onPlayer5click()">
-        <img src="images/ConvocationCeremony.png" class="img-fluid mt-5 mb-5" style="cursor:pointer;" />
+        <img src="images/ConvocationCeremony.jpeg" class="img-fluid mt-5 mb-5" style="cursor:pointer;" />
       </div>
       <div style="display:none">
         <div class="embed-responsive embed-responsive-16by9 mt-5 mb-5">
@@ -1730,10 +1730,12 @@
         data: data,
         method: "post",
         success: function (response) {
-          location.href = "https://t.me/+Lxul8-bGI5o0MWM1";
-          formButton.innerText = "SUBMIT";
-          formButton.setAttribute("disabled", false);
-          form.reset();
+          formButton.innerText = "Successfully Registered";
+          setTimeout(() => {
+            $('#staticBackdrop').modal('hide');
+            formButton.setAttribute("disabled", false);
+            form.reset();
+          }, 500);
         },
         error: function (err) {
           alert("Something went wrong please try again.");
