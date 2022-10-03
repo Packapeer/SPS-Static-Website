@@ -1,0 +1,601 @@
+@import url("../fonts/EuclidCircularAFull/stylesheet.css");
+
+@font-face {
+  font-family: "Billabong";
+  src: url("../fonts/Billabong/e721330050ecfe81b4e5455e1a308181.eot"); /* IE9*/
+  src: url("../fonts/Billabong/e721330050ecfe81b4e5455e1a308181.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../fonts/Billabong/e721330050ecfe81b4e5455e1a308181.woff2")
+      format("woff2"),
+    /* chrome、firefox */
+      url("../fonts/Billabong/e721330050ecfe81b4e5455e1a308181.woff")
+      format("woff"),
+    /* chrome、firefox */
+      url("../fonts/Billabong/e721330050ecfe81b4e5455e1a308181.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("../fonts/Billabong/e721330050ecfe81b4e5455e1a308181.svg#Billabong")
+      format("svg"); /* iOS 4.1- */
+}
+
+* {
+  font-family: Euclid Circular A;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+/* custom scrollbar end */
+
+.primaryColor {
+  color: #37e0c6;
+}
+
+.logo {
+  font-family: "Billabong";
+  margin-bottom: 0;
+  font-size: 1.65rem;
+  line-height: 2rem;
+  letter-spacing: 1px;
+}
+
+.sublogo {
+  font-family: "Billabong";
+  margin: -0.5rem 0 0 1.5rem;
+  font-size: 0.8rem;
+}
+
+#menuicon {
+  height: 24px;
+}
+
+#successDiv {
+  height: calc(100vh - 100px);
+}
+
+#successDiv a {
+  color: #37e0c6;
+  border: #37e0c6 solid 1px;
+  border-radius: 12px;
+}
+
+/* -------------------sideMenu---------------------- */
+.offcanvas {
+  background: #00000094 0% 0% no-repeat padding-box;
+  opacity: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
+.offcanvas-end {
+  width: 80vw;
+}
+
+.offcanvas-backdrop {
+  background: #00000057 0% 0% no-repeat padding-box;
+  opacity: 1 !important;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.offcanvas .logo2 {
+  font-size: 2rem;
+  color: #37e0c6;
+}
+
+.offcanvas .menulogo {
+  width: 12rem;
+  margin-bottom: 2rem;
+}
+
+.offcanvas .closebutton {
+  width: 3rem;
+  height: 1.5rem;
+}
+
+.offcanvas .active {
+  color: #37e0c6;
+}
+
+.offcanvas .menutitle {
+  color: #b2bcbc;
+  font-size: 0.9rem;
+}
+
+.offcanvas .menuitem img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.offcanvas #menuIconWhatsapp {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* -------------------sideMenu end---------------------- */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .mainDiv {
+    height: auto;
+  }
+
+  .logo {
+    font-size: 2.2rem;
+  }
+  .sublogo {
+    font-size: 1rem;
+  }
+
+  #menuicon {
+    height: 30px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
+@import url("../fonts/EuclidCircularAFull/stylesheet.css");
+
+@font-face {
+  font-family: "Billabong";
+  src: url("../fonts/Billabong/e721330050ecfe81b4e5455e1a308181.eot"); /* IE9*/
+  src: url("../fonts/Billabong/e721330050ecfe81b4e5455e1a308181.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../fonts/Billabong/e721330050ecfe81b4e5455e1a308181.woff2")
+      format("woff2"),
+    /* chrome、firefox */
+      url("../fonts/Billabong/e721330050ecfe81b4e5455e1a308181.woff")
+      format("woff"),
+    /* chrome、firefox */
+      url("../fonts/Billabong/e721330050ecfe81b4e5455e1a308181.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("../fonts/Billabong/e721330050ecfe81b4e5455e1a308181.svg#Billabong")
+      format("svg"); /* iOS 4.1- */
+}
+
+* {
+  font-family: Euclid Circular A;
+  /* font-size: 1rem; */
+}
+
+#formSuccessMainDiv #logoBgBlackGradient {
+  z-index: 1;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  padding: 0 0 1rem 0;
+}
+
+#formSuccessMainDiv .logoFont {
+  font-family: "Billabong";
+}
+
+#formSuccessMainDiv .mainlogo {
+  width: 12rem;
+  margin: 1rem 0 0 0;
+}
+
+#formSuccessMainDiv #menuIcon1 {
+  margin: 1rem 0 0 0;
+  height: 2rem;
+}
+
+#formSuccessMainDiv #mainVideoDiv video {
+  height: calc(100vh - 220px);
+  object-fit: cover;
+}
+
+#formSuccessMainDiv #vjs_video_3 {
+  height: calc(100vh - 220px);
+}
+
+#formSuccessMainDiv #headtext01 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#formSuccessMainDiv #headtext01 span {
+  color: #37e0c6;
+}
+
+#formSuccessMainDiv #text01 {
+  font-size: 0.88rem;
+}
+
+#formSuccessMainDiv .box {
+  border: 1px #37e0c6 solid;
+  border-radius: 14px;
+  font-weight: 700;
+  box-shadow: 6px 6px 16px #181c1c19;
+}
+
+#formSuccessMainDiv .box {
+  color: #37e0c6;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+#formSuccessMainDiv #menuicon2 {
+  display: none;
+}
+
+.maxheight100 {
+  max-height: 100vh;
+}
+
+#formSuccessMainDiv #copyright {
+  font-size: 0.8rem;
+}
+
+#formSuccessMainDiv .helpbtn {
+  text-align: left;
+  color: #ffffff;
+  border: #3bc93b solid 1px;
+  border-radius: 45px;
+  margin: 0 0 0.9rem 0.8rem;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 17px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: inherit;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 5px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+/* custom scrollbar end */
+
+/* -------------------sideMenu---------------------- */
+.offcanvas {
+  background: #00000094 0% 0% no-repeat padding-box;
+  opacity: 1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(30px);
+}
+
+.offcanvas-end {
+  width: 80vw;
+}
+
+.offcanvas-backdrop {
+  background: #00000057 0% 0% no-repeat padding-box;
+  opacity: 1 !important;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.offcanvas .logo2 {
+  font-size: 2rem;
+  color: #37e0c6;
+}
+
+.offcanvas .menulogo {
+  width: 12rem;
+  margin-bottom: 2rem;
+}
+
+.offcanvas .closebutton {
+  width: 3rem;
+  height: 1.5rem;
+}
+
+.offcanvas .active {
+  color: #37e0c6;
+}
+
+.offcanvas .menutitle {
+  color: #b2bcbc;
+  font-size: 0.9rem;
+}
+
+.offcanvas .menuitem img {
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.offcanvas #menuIconWhatsapp {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* -------------------sideMenu end---------------------- */
+
+/* --------------------------------------- Player Style ------------------------------------------------------- */
+
+/* Change all text and icon colors in the player. */
+.video-js {
+  color: #ff4351;
+}
+
+/* Change the border of the big play button. */
+.vjs-big-play-button {
+  border-color: #ff4351;
+}
+
+/* Change the color of various "bars". */
+.vjs-volume-level,
+.vjs-play-progress,
+.vjs-slider-bar {
+  background: #ff4351;
+}
+.video-js .vjs-play-progress {
+  background-color: #ff4351;
+}
+
+.video-js .vjs-control-bar {
+  background-color: unset;
+}
+
+.video-js .vjs-time-control,
+.video-js .vjs-picture-in-picture-control,
+.video-js .vjs-fullscreen-control {
+  display: none;
+}
+
+.video-js .vjs-big-play-button {
+  top: 50% !important;
+  left: 50% !important;
+  border-color: #ff4351;
+  border-radius: 50%;
+  height: 2.5em;
+  width: 2.5em;
+  transform: translate(-50%, -50%) !important;
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+  top: 18%;
+}
+
+.video-js .vjs-play-control {
+  display: none;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+
+/* 
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  #formSuccessMainDiv .mainlogo {
+    width: 8rem;
+  }
+  .offcanvas .menulogo {
+    width: 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #formSuccessMainDiv .mainlogo {
+    width: 10rem;
+  }
+  .offcanvas .menulogo {
+    width: 10rem;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #formSuccessMainDiv #menuIconDiv1 {
+    display: none;
+  }
+
+  #formSuccessMainDiv .mainlogo {
+    font-size: 2.7rem;
+    margin: 1.5rem 0 0 1.5rem;
+  }
+  #formSuccessMainDiv #mainVideoDiv video {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  #formSuccessMainDiv #vjs_video_3 {
+    height: 100vh;
+  }
+  #formSuccessMainDiv #menuicon2 {
+    display: block;
+    width: 2rem;
+    margin-top: 1.5rem;
+  }
+
+  #formSuccessMainDiv #headtext01 {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+
+  #formSuccessMainDiv #text01 {
+    font-size: 1rem;
+  }
+
+  #formSuccessMainDiv .box {
+    font-size: 1.2rem;
+  }
+
+  #formSuccessMainDiv .md-padding {
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+  }
+
+  #formSuccessMainDiv .menuitem {
+    font-size: 1.13rem;
+  }
+
+  #formSuccessMainDiv .helpbtn {
+    margin: unset;
+  }
+
+  /* -------------------sideMenu---------------------- */
+
+  .offcanvas-end {
+    width: 28vw;
+  }
+
+  .offcanvas .closebutton {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .offcanvas .menutitle {
+    font-size: 1rem;
+  }
+
+  /* -------------------sideMenu end---------------------- */
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #formSuccessMainDiv #menuNeedHelpId {
+    font-size: 0.99rem;
+  }
+  #formSuccessMainDiv #copyright {
+    font-size: 0.75rem;
+  }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  #formSuccessMainDiv #menuNeedHelpId {
+    font-size: 1.1rem;
+  }
+  #formSuccessMainDiv #copyright {
+    font-size: 0.86rem;
+  }
+
+  #formSuccessMainDiv #headtext01 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  #formSuccessMainDiv #menuicon2 {
+    display: block;
+    width: 3rem;
+    margin-top: 2.5rem;
+  }
+
+  .offcanvas .logo2 {
+    font-size: 3rem;
+  }
+
+  #formSuccessMainDiv .menuitem {
+    font-size: 1.5rem;
+  }
+  .offcanvas .menuitem img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .offcanvas .menutitle {
+    font-size: 1.3rem;
+  }
+
+  #formSuccessMainDiv #menuNeedHelpId {
+    font-size: 1.4rem;
+  }
+  .offcanvas #menuIconWhatsapp {
+    width: 2.3rem;
+    height: 2.3rem;
+  }
+
+  #formSuccessMainDiv #copyright {
+    font-size: 1.1rem;
+  }
+
+  #formSuccessMainDiv #headtext01 {
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+
+  #formSuccessMainDiv #text01 {
+    font-size: 1.25rem;
+  }
+
+  #formSuccessMainDiv .boxTitle1 {
+    font-size: 1.6rem;
+  }
+
+  #formSuccessMainDiv .boxTitle2 {
+    font-size: 1.3rem;
+  }
+
+  #formSuccessMainDiv .box:hover > .boxTitle2 {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 786px) {
+  .col-md-9 {
+    width: 67%;
+  }
+
+  .col-md-3 {
+    width: 33%;
+  }
+
+  .offcanvas-end {
+    width: 33vw;
+  }
+
+  .offcanvas #menuIconWhatsapp {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
+  #formSuccessMainDiv #copyright {
+    font-size: 0.7rem;
+  }
+
+  #formSuccessMainDiv .helpbtn p {
+    font-size: 0.8rem;
+  }
+}
