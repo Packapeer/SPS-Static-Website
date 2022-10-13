@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Learn web designing for free</title>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="A minimal and responsive HTML5 landing page built on lightweight, clean and customizable code.">
+  <meta name="viewport" content="width=device-width">
+  <link rel="apple-touch-icon-precomposed" href="./media/favicon.png">
+  <link rel="icon" href="./media/favicon.png">
+  <link rel="mask-icon" href="./media/favicon.svg" color="rgb(36,38,58)">
+  <link rel="shortcut icon" href="./media/favicon.png">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body class="page page-home preload">
+
+  <header class="header-main dark">
+    <nav>
+      <a href="./index.html" class="logo mb-3" rel="home">
+        <img src="./media/content/logo.png" alt="">
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="modal fade text-start" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="form-card border-0 p-3 scroll-y">
+            <div class="card-body">
+              <h4 class="title text-center">Registration Form</h4>
+              <form id="registration-form">
+                <div class="row row-space m-0">
+                  <div class="col-2 m-0">
+                    <div class="input-group">
+                      <input class="input--style-2" type="text" placeholder="Name" name="Name" required>
+                    </div>
+                  </div>
+                  <div class="col-2 m-0">
+                    <div class="input-group">
+                      <input class="input--style-2" type="text" placeholder="Email" name="Email" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row row-space m-0">
+                  <div class="col-2 m-0">
+                    <div class="input-group">
+                      <input class="input--style-2" type="text" placeholder="Mobile" name="Mobile" required>
+                    </div>
+                  </div>
+                  <div class="col-2 m-0">
+                    <div class="input-group">
+                      <div class="rs-select2 js-select-simple select--no-search w-100">
+                        <select name="EmploymentStatus">
+                          <option disabled="disabled" selected="selected">Employment Status</option>
+                          <option value="Student">Student</option>
+                          <option value="Employed">Employed</option>
+                          <option value="Fresher">Fresher</option>
+                        </select>
+                        <div class="select-dropdown"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row row-space m-0">
+                  <div class="col-2 m-0">
+                    <div class="input-group">
+                      <div class="rs-select2 js-select-simple select--no-search w-100">
+                        <select name="EducationalQualification">
+                          <option disabled="disabled" selected="selected">Educational Qualification</option>
+                          <option value="B. Tech">B. Tech</option>
+                          <option value="M. Tech">M. Tech</option>
+                          <option value="BCA/MCA">BCA/MCA</option>
+                          <option value="B.Sc/M.Sc">B.Sc/M.Sc</option>
+                          <option value="Diploma">Diploma</option>
+                          <option value="Other">Other</option>
+                        </select>
+                        <div class="select-dropdown"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-2 m-0">
+                    <div class="input-group">
+                      <div class="rs-select2 js-select-simple select--no-search w-100">
+                        <select name="Source">
+                          <option disabled="disabled" selected="selected">How did you know about learning club</option>
+                          <option value="Youtube">Youtube</option>
+                          <option value="Instagram">Instagram</option>
+                          <option value="Facebook">Facebook</option>
+                          <option value="LinkedIn">LinkedIn</option>
+                          <option value="WhatsApp">WhatsApp</option>
+                          <option value="Referred by a friend">
+                            Referred by a friend
+                          </option>
+                          <option value="Other">Other</option>
+                        </select>
+                        <div class="select-dropdown"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-2">
+                  <div class="input-group">
+                    <input class="input--style-2" type="text" placeholder="Tell us about you" name="About">
+                  </div>
+                  <div class="p-t-30">
+                    <button class="btn btn--radius btn-primary" type="submit" id="form-submit">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="bg-image-hero center-tablet dark overlay-hero">
+      <div class="full-screen -margin-bottom middle padding padding-top-tablet">
+        <div class="row max-width-l">
+          <div class="col-one-half middle">
+            <div>
+              <h1 class="hero">Learn <br /> Web Designing <br />Anytime, Anywhere</h1>
+              <p class="lead">Become a web designer in 20 days for FREE</p>
+              <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="button button-primary space-top"
+                role="button">Signup for FREE</a>
+            </div>
+            <div class="logos">
+              <div class="logo-container">
+                <img src="./media/content/c.png" alt="" class="logo-image img-fluid">
+              </div>
+              <div class="logo-container">
+                <img src="./media/content/java.png" alt="" class="logo-image img-fluid">
+              </div>
+              <div class="logo-container">
+                <img src="./media/content/html.png" alt="" class="logo-image img-fluid">
+              </div>
+              <div class="logo-container">
+                <img src="./media/content/css.png" alt="" class="logo-image img-fluid">
+              </div>
+              <div class="logo-container">
+                <img src="./media/content/javascript.png" alt="" class="logo-image img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="col-one-half middle">
+            <img src="media/content/illustration.png" alt="Hero Illustration">
+          </div>
+        </div>
+      </div>
+      <div class="padding">
+        <div class="row margin-bottom max-width-l">
+          <div class="col-one-half middle">
+            <h3>Basic Coding</h3>
+            <p class="paragraph">Through the Learning Club, you could study the basics of app development and build your
+              own applications.</p>
+          </div>
+          <div class="col-one-half">
+            <img class="rounded" src="media/content/100k.png" alt="Editor">
+          </div>
+        </div>
+        <div class="row max-width-l reverse-order">
+          <div class="col-one-half">
+            <img class="rounded" src="media/content/web_design.png" alt="Sketch">
+          </div>
+          <div class="col-one-half middle">
+            <h3>Web Designing</h3>
+            <p class="paragraph">Here, you’ll be able to build a responsive website and can upskill yourself in
+              coding.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gradient-light -margin-bottom-2 overlay padding">
+      <div class="center max-width-m">
+        <h2>Start or Switch</h2>
+        <p class="paragraph">Whether you are beginning your career or you are planning to change or switch to another
+          career, this is your best destination.</p>
+      </div>
+      <div class="margin-top max-width-l">
+        <div class="logos">
+          <div class="logo-container">
+            <img src="./media/content/c.png" alt="" class="logo-image img-fluid">
+          </div>
+          <div class="logo-container">
+            <img src="./media/content/java.png" alt="" class="logo-image img-fluid">
+          </div>
+          <div class="logo-container">
+            <img src="./media/content/html.png" alt="" class="logo-image img-fluid">
+          </div>
+          <div class="logo-container">
+            <img src="./media/content/css.png" alt="" class="logo-image img-fluid">
+          </div>
+          <div class="logo-container">
+            <img src="./media/content/javascript.png" alt="" class="logo-image img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="padding margin-top">
+      <div class="max-width-l">
+        <div class="center margin-top">
+          <h2>Learning Club Journey</h2>
+        </div>
+        <div class="row margin-top timeline">
+          <div class="col-one-fourth">
+            <div class="signup"></div>
+            <div class="timeline-content">
+              <h5>Sign up</h5>
+              <p>By clicking the link to join you’ll be taken to a google form.</p>
+            </div>
+          </div>
+          <div class="col-one-fourth">
+            <div class="submit"></div>
+            <div class="timeline-content">
+              <h5>Submit</h5>
+              <p>Fill in the details and submit, then, you’ll be redirected to a Telegram page.</p>
+            </div>
+          </div>
+          <div class="col-one-fourth">
+            <div class="join-telegram"></div>
+            <div class="timeline-content">
+              <h5>Join</h5>
+              <p>Join the telegram group.</p>
+            </div>
+          </div>
+          <div class="col-one-fourth">
+            <div class="learning"></div>
+            <div class="timeline-content">
+              <h5>Learn</h5>
+              <p>You’ll get expert classes and 24/7 tech support through the telegram channel.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light padding">
+      <div class="card card-content dark max-width-l">
+        <form class="row reduce-spacing">
+          <div class="col-two-thirds center-tablet middle">
+            <h3 class="space-none">Ready to get started?</h3>
+          </div>
+          <div class="col-one-third middle">
+            <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="signup.html" class="button button-primary"
+              role="button">Signup for FREE</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="bg-gradient-light padding">
+      <div class="center max-width-l">
+        <h2>Benefits</h2>
+      </div>
+      <div class="row margin-top max-width-l">
+        <div class="col-one-fourth card card-content dark">
+          <h4>Highest salary packages & high demand</h4>
+        </div>
+        <div class="col-one-fourth card card-content dark">
+          <h4>Problem resolving capabilities</h4>
+        </div>
+        <div class="col-one-fourth card card-content dark">
+          <h4>Multiple career opportunities & career flexibility.</h4>
+        </div>
+        <div class="col-one-fourth card card-content dark">
+          <h4>Innovation of new technologies</h4>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer-main bg-gradient-primary dark overlay-shape-06">
+    <div class="padding">
+      <div class="card card-content dark margin-bottom max-width-l">
+        <form class="row reduce-spacing">
+          <div class="col-two-thirds center-tablet middle">
+            <h3 class="space-none">Ready to get started?</h3>
+          </div>
+          <div class="col-one-third middle">
+            <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="signup.html" class="button button-primary"
+              role="button">Signup for FREE</a>
+          </div>
+        </form>
+      </div>
+      <div class="row center-desktop max-width-l">
+        <div class="col-one-half">
+          <h4>Brototype</h4>
+          <p>Brototype is Kerala's #1 tech-career YouTube channel for students looking to build a career in the tech
+            industry. We help you develop coding skills for free by providing various programming tutorials &
+            tech-career topics in Malayalam, that help you achieve a job in the IT industry.</p>
+        </div>
+        <div class="col-one-half">
+          <h4>Connect</h4>
+          <ul class="blank">
+            <li><a href="https://www.youtube.com/c/BrototypeMalayalam">YouTube</a></li>
+            <li><a href="https://www.instagram.com/brototype.malayalam/">Instagram</a></li>
+            <li><a href="https://in.linkedin.com/company/brototype">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/brototypemalayalam">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="copyright"><span>Copyright © </span><a href="https://brototype.in/" target="_blank">Packapeer
+        Academy</a><span> -
+        Pvt Ltd 2022</span></p>
+  </footer>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="./js/select2.min.js"></script> -->
+  <script src="./js/ajax.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
