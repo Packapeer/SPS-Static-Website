@@ -32,6 +32,21 @@ Array.from(document.getElementsByClassName('nav-toggle')).forEach(function (el) 
   });
 });
 
+window.onscroll = function () { scrollFunction() };
+
+let isPopupClosed = false;
+
+function scrollFunction() {
+  if (isPopupClosed) return;
+
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    $('#staticBackdrop').modal('show');
+    $('#staticBackdrop').on('hidden.bs.modal', function (event) {
+      isPopupClosed = true;
+    })
+  }
+}
+
 // Prevent background from scrolling on mobile when navigation is toggled
 
 document.addEventListener('touchmove', function (evt) {
