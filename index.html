@@ -1890,40 +1890,6 @@
       document.documentElement.scrollTop = 0;
     }
   </script>
-  <script>
-    const form1 = document.querySelector("#registration-form-1");
-    const formButton1 = document.querySelector("#form-submit-1");
-
-    const postToSheet = (formButton, data) => {
-      const url = "https://script.google.com/macros/s/AKfycbzwezMm4zJktKoxgbo66G661cHhDOswcFWjBV4ASJXZtmnmZa5hBCzr2g7U4GfncHyM/exec";
-
-      formButton.innerText = "SUBMITING PLEASE WAIT";
-      formButton.setAttribute("disabled", true);
-      $.ajax({
-        url: url,
-        data: data,
-        method: "post",
-        success: function (response) {
-          formButton.innerText = "Successfully Registered";
-          setTimeout(() => {
-            $('#staticBackdrop').modal('hide');
-            formButton.setAttribute("disabled", false);
-            form.reset();
-          }, 500);
-        },
-        error: function (err) {
-          alert("Something went wrong please try again.");
-        },
-      });
-    }
-
-    form1.addEventListener("submit", (e) => {
-      e.preventDefault();
-
-      const data = Object.fromEntries(new FormData(e.target).entries());
-      postToSheet(formButton1, data);
-    });
-  </script>
 
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -2222,19 +2188,10 @@
         type: "POST",
         dataType: "xml",
         success: function (d) {
-          $('#staticBackdrop').remove();
+          $('#staticBackdrop').modal('hide');
         },
         error: function (x, y, z) {
-          if (new URLSearchParams(window.location.search).get('ref')) {
-            $('#staticBackdrop').remove();
-          } else {
-            mixpanel.track('Direct-Application-Form-Submit');
-          }
-
-          $('#success-msg').show();
-          $('#form').hide();
-          $('#title').hide();
-
+          $('#staticBackdrop').modal('hide');
         }
       });
       return false;
