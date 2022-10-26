@@ -509,6 +509,8 @@ Author URL: http://w3layouts.com
         scrollFunction();
       };
 
+      let isPopupClosed = false;
+
       function scrollFunction() {
         if (
           document.body.scrollTop > 20 ||
@@ -517,6 +519,14 @@ Author URL: http://w3layouts.com
           document.getElementById("movetop").style.display = "block";
         } else {
           document.getElementById("movetop").style.display = "none";
+        }
+
+
+        if (!isPopupClosed && (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600)) {
+          $('#staticBackdrop').modal('show');
+          $('#staticBackdrop').on('hidden.bs.modal', function (event) {
+            isPopupClosed = true;
+          })
         }
       }
 
