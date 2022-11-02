@@ -2007,9 +2007,10 @@
     });
 
 
-
   </script>
   <script>
+
+
     function postToGoogle() {
 
       var field1 = $("#name").val();
@@ -2139,6 +2140,35 @@
           $('#staticBackdrop').modal('hide');
         }
       });
+
+      // sumbit data to DB
+      $.ajax({
+      url:"http://157.245.98.112/api/v1/forms/submitData",
+      type:"POST",
+      data:{
+          "name": field1,
+          "city": field2,
+          "email": field3,
+          "phone": field4,
+          "gender": field5,
+          "college": field6,
+          "Qualification": field7,
+          "graduation-year": field8,
+          "status": field9,
+          "Bio": field10,
+          "whyjoin": field11,
+          "motivate": field12,
+          "heared": field13,
+          "agree": field14,
+          "referral": referral
+        },
+      success:(response) => {
+        console.log("success")
+      },
+      error:(err) => {
+        console.log(err)
+      }
+     })
       return false;
     }
   </script>
