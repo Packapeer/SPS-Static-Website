@@ -55,7 +55,22 @@ document.addEventListener('touchmove', function (evt) {
 
 const form = document.getElementById('registration-form');
 
+document.getElementById('mobileInput').addEventListener('keyup', (e) => {
+  if (form.elements["Mobile"].value.length !== 10) {
+    document.getElementById('error').innerText = 'Mobile number must contain 10 numbers';
+  } else {
+    document.getElementById('error').innerText = '';
+  }
+})
+
+
 const postToSheet = function (formButton, data) {
+  if (data.Mobile.length !== 10) {
+    return document.getElementById('error').innerText = 'Mobile number must contain 10 numbers';
+  }
+
+  document.getElementById('error').innerText = '';
+
   const url = "https://script.google.com/macros/s/AKfycbyy0gdAJ9unFBskV5r6EO17TuNY6fQWeLK78fPQOZT6uCKFbbd1qaWyDirSZ6yKjAixsQ/exec";
 
   formButton.innerText = "SUBMITING PLEASE WAIT";
