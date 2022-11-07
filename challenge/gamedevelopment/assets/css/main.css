@@ -1,4 +1,3 @@
-
 /* ==========================================================================
    #FONT
    ========================================================================== */
@@ -58,7 +57,9 @@ html {
   margin: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
@@ -71,12 +72,23 @@ html {
  * A very simple reset that sits on top of Normalize.css.
  */
 body,
-h1, h2, h3, h4, h5, h6,
-blockquote, p, pre,
-dl, dd, ol, ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p,
+pre,
+dl,
+dd,
+ol,
+ul,
 figure,
 hr,
-fieldset, legend {
+fieldset,
+legend {
   margin: 0;
   padding: 0;
 }
@@ -126,7 +138,12 @@ body {
   font-size: 14px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 400;
 }
 
@@ -246,7 +263,8 @@ input[type="date" i] {
   padding: 14px;
 }
 
-.table-condensed td, .table-condensed th {
+.table-condensed td,
+.table-condensed th {
   font-size: 14px;
   font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
   font-weight: 400;
@@ -267,7 +285,8 @@ input[type="date" i] {
   margin-top: 5px;
 }
 
-.daterangepicker::after, .daterangepicker::before {
+.daterangepicker::after,
+.daterangepicker::before {
   display: none;
 }
 
@@ -374,7 +393,10 @@ input {
   height: 36px;
 }
 
-.rs-select2 .select2-container .select2-selection--single .select2-selection__rendered {
+.rs-select2
+  .select2-container
+  .select2-selection--single
+  .select2-selection__rendered {
   line-height: 36px;
   padding-left: 0;
   color: #808080;
@@ -383,7 +405,10 @@ input {
   font-weight: 500;
 }
 
-.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow {
+.rs-select2
+  .select2-container
+  .select2-selection--single
+  .select2-selection__arrow {
   height: 34px;
   right: 4px;
   display: -webkit-box;
@@ -403,13 +428,20 @@ input {
   align-items: center;
 }
 
-.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow b {
+.rs-select2
+  .select2-container
+  .select2-selection--single
+  .select2-selection__arrow
+  b {
   display: none;
 }
 
-.rs-select2 .select2-container .select2-selection--single .select2-selection__arrow:after {
+.rs-select2
+  .select2-container
+  .select2-selection--single
+  .select2-selection__arrow:after {
   font-family: "Material-Design-Iconic-Font";
-  content: '\f2f9';
+  content: "\f2f9";
   font-size: 18px;
   color: #ccc;
   -webkit-transition: all 0.4s ease;
@@ -418,7 +450,10 @@ input {
   transition: all 0.4s ease;
 }
 
-.rs-select2 .select2-container.select2-container--open .select2-selection--single .select2-selection__arrow::after {
+.rs-select2
+  .select2-container.select2-container--open
+  .select2-selection--single
+  .select2-selection__arrow::after {
   -webkit-transform: rotate(-180deg);
   -moz-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
@@ -437,6 +472,11 @@ input {
   border: 1px solid #e0e0e0;
   margin-top: 5px;
   overflow: hidden;
+}
+
+.mobilefield {
+  display: flex;
+  align-items: center;
 }
 
 /* ==========================================================================

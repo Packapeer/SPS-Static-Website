@@ -72,13 +72,20 @@ Author URL: http://w3layouts.com
                               </div>
                             </div>
                           </div>
-                          <div class="row row-space">
-                            <div class="col-2">
-                              <div class="input-group">
-                                <input class="input--style-2" type="text" placeholder="Mobile" name="Mobile" required>
+                          <div class="row row-space m-0">
+                            <div class="col-2 m-0 p-0">
+                              <div class="mobilefield">
+                                <h4 class="mb-4 pb-2">
+                                  +91&nbsp;&nbsp;
+                                </h4>
+                                <div class="input-group">
+                                  <input class="input--style-2" type="text" placeholder="Mobile" name="Mobile"
+                                    id="mobileInput1">
+                                </div>
                               </div>
+                              <div class="text-danger" id="error"></div>
                             </div>
-                            <div class="col-2">
+                            <div class="col-2 m-0 p-0">
                               <div class="input-group">
                                 <div class="rs-select2 js-select-simple select--no-search w-100">
                                   <select name="EmploymentStatus">
@@ -247,13 +254,20 @@ Author URL: http://w3layouts.com
                       </div>
                     </div>
                   </div>
-                  <div class="row row-space">
-                    <div class="col-2">
-                      <div class="input-group">
-                        <input class="input--style-2" type="text" placeholder="Mobile" name="Mobile" required>
+                  <div class="row row-space m-0">
+                    <div class="col-2 m-0 p-0">
+                      <div class="mobilefield">
+                        <h4 class="mb-4 pb-2">
+                          +91&nbsp;&nbsp;
+                        </h4>
+                        <div class="input-group">
+                          <input class="input--style-2" type="text" placeholder="Mobile" name="Mobile"
+                            id="mobileInput2">
+                        </div>
                       </div>
+                      <div class="text-danger" id="error2"></div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2 m-0 p-0">
                       <div class="input-group">
                         <div class="rs-select2 js-select-simple select--no-search w-100">
                           <select name="EmploymentStatus">
@@ -375,13 +389,19 @@ Author URL: http://w3layouts.com
               </div>
             </div>
           </div>
-          <div class="row row-space">
-            <div class="col-2">
-              <div class="input-group">
-                <input class="input--style-2" type="text" placeholder="Mobile" name="Mobile" required>
+          <div class="row row-space m-0">
+            <div class="col-2 m-0 p-0">
+              <div class="mobilefield">
+                <h4 class="mb-4 pb-2">
+                  +91&nbsp;&nbsp;
+                </h4>
+                <div class="input-group">
+                  <input class="input--style-2" type="text" placeholder="Mobile" name="Mobile" id="mobileInput3">
+                </div>
               </div>
+              <div class="text-danger" id="error3"></div>
             </div>
-            <div class="col-2">
+            <div class="col-2 m-0 p-0">
               <div class="input-group">
                 <div class="rs-select2 js-select-simple select--no-search w-100">
                   <select name="EmploymentStatus">
@@ -459,6 +479,9 @@ Author URL: http://w3layouts.com
       const formButton1 = document.querySelector("#form-submit-1");
       const formButton2 = document.querySelector("#form-submit-2");
       const formButton3 = document.querySelector("#form-submit-3");
+      const mobileInput1 = document.querySelector("#mobileInput1");
+      const mobileInput2 = document.querySelector("#mobileInput2");
+      const mobileInput3 = document.querySelector("#mobileInput3");
 
       const postToSheet = (formButton, data) => {
         const url = "https://script.google.com/macros/s/AKfycbx7AWDtDtlIzhpvevbjKkYvizV1lSKFOtWt9z9DoJT2u1BlIWXy6gEETATqxjiT_V0Y/exec";
@@ -485,6 +508,13 @@ Author URL: http://w3layouts.com
         e.preventDefault();
 
         const data = Object.fromEntries(new FormData(e.target).entries());
+
+        if (data.Mobile.length !== 10) {
+          return document.getElementById('error').innerText = 'Mobile number must contain 10 numbers';
+        }
+
+        document.getElementById('error').innerText = '';
+
         postToSheet(formButton1, data);
       });
 
@@ -492,6 +522,13 @@ Author URL: http://w3layouts.com
         e.preventDefault();
 
         const data = Object.fromEntries(new FormData(e.target).entries());
+
+        if (data.Mobile.length !== 10) {
+          return document.getElementById('error2').innerText = 'Mobile number must contain 10 numbers';
+        }
+
+        document.getElementById('error').innerText = '';
+
         postToSheet(formButton2, data);
       });
 
@@ -499,8 +536,39 @@ Author URL: http://w3layouts.com
         e.preventDefault();
 
         const data = Object.fromEntries(new FormData(e.target).entries());
+
+        if (data.Mobile.length !== 10) {
+          return document.getElementById('error3').innerText = 'Mobile number must contain 10 numbers';
+        }
+
+        document.getElementById('error').innerText = '';
+
         postToSheet(formButton3, data);
       });
+
+      mobileInput1.addEventListener('keyup', () => {
+        if (form1.elements["Mobile"].value.length !== 10) {
+          document.getElementById('error').innerText = 'Mobile number must contain 10 numbers';
+        } else {
+          document.getElementById('error').innerText = '';
+        }
+      })
+
+      mobileInput2.addEventListener('keyup', () => {
+        if (form2.elements["Mobile"].value.length !== 10) {
+          document.getElementById('error2').innerText = 'Mobile number must contain 10 numbers';
+        } else {
+          document.getElementById('error2').innerText = '';
+        }
+      })
+
+      mobileInput3.addEventListener('keyup', () => {
+        if (form3.elements["Mobile"].value.length !== 10) {
+          document.getElementById('error3').innerText = 'Mobile number must contain 10 numbers';
+        } else {
+          document.getElementById('error3').innerText = '';
+        }
+      })
     </script>
     <script>
       // When the user scrolls down 20px from the top of the document, show the button
