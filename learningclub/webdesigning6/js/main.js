@@ -63,6 +63,7 @@ document.getElementById('mobileInput').addEventListener('keyup', (e) => {
   }
 })
 
+
 const postToSheet = function (formButton, data) {
   if (data.Mobile.length !== 10) {
     return document.getElementById('error').innerText = 'Mobile number must contain 10 numbers';
