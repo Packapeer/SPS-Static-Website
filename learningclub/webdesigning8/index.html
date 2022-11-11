@@ -51,17 +51,21 @@
                   </div>
                   <div class="col-2 m-0">
                     <div class="input-group">
-                      <input class="input--style-2" type="text" placeholder="Email" name="Email" required>
+                      <input class="input--style-2" type="email" placeholder="Email" name="Email" required>
                     </div>
                   </div>
                 </div>
                 <div class="row row-space m-0">
                   <div class="col-2 m-0">
-                    <div class="input-group">
-                      <input class="input--style-2" type="text" placeholder="Mobile" name="Mobile" required>
+                    <div class="mobilefield">
+                      <div>
+                        +91&nbsp;&nbsp;
+                      </div>
+                      <input type="text" placeholder="Mobile" name="Mobile" id="mobileInput">
                     </div>
+                    <div class="text-danger" id="error"></div>
                   </div>
-                  <div class="col-2 m-0">
+                  <div class="col-2 m-0 mt-4 pt-2 pt-md-0 mt-md-0">
                     <div class="input-group">
                       <div class="rs-select2 js-select-simple select--no-search w-100">
                         <select name="EmploymentStatus">
@@ -319,7 +323,6 @@
         Academy</a><span> -
         Pvt Ltd 2022</span></p>
   </footer>
-
   <script src="./js/bootstrap.bundle.min.js"></script>
   <!-- <script src="./js/select2.min.js"></script> -->
   <script src="./js/ajax.js"></script>
