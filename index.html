@@ -1514,8 +1514,8 @@
                 </span>
 
                 <span class="txt3">
-                  <a href="tel:+919061748014">+91 9061748014</a><br>
-                  <a href="tel:+919995512471">+91 9995512471</a><br>
+                  <a href="tel:+919995587641">+91 9995587641</a><br>
+                  <a href="tel:+918714602027">+91 8714602027</a><br>
                 </span>
               </div>
             </div>
@@ -2136,9 +2136,9 @@
 
       // sumbit data to DB
       $.ajax({
-      url:"http://157.245.98.112/api/v1/forms/submitData",
-      type:"POST",
-      data:{
+        url: "http://157.245.98.112/api/v1/forms/submitData",
+        type: "POST",
+        data: {
           "name": field1,
           "city": field2,
           "email": field3,
@@ -2155,13 +2155,13 @@
           "agree": field14,
           "referral": referral
         },
-      success:(response) => {
-        console.log("success")
-      },
-      error:(err) => {
-        console.log(err)
-      }
-     })
+        success: (response) => {
+          console.log("success")
+        },
+        error: (err) => {
+          console.log(err)
+        }
+      })
       return false;
     }
   </script>
