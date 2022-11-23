@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>BROCAMP</title>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="A minimal and responsive HTML5 landing page built on lightweight, clean and customizable code.">
+  <meta name="viewport" content="width=device-width">
+  <link rel="apple-touch-icon-precomposed" href="./media/favicon.png">
+  <link rel="icon" href="./media/favicon.png">
+  <link rel="mask-icon" href="./media/favicon.svg" color="rgb(36,38,58)">
+  <link rel="shortcut icon" href="./media/favicon.png">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/form.css">
+</head>
+
+<body class="page page-home preload">
+
+  <header class="header-main dark">
+    <nav>
+      <a href="./index.html" class="logo mb-3" rel="home">
+        <img src="./media/content/logo.png" alt="">
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="modal fade text-start" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+        <div class="modal-content">
+          <div class="mr-3 ms-auto p-3" onclick="$('#staticBackdrop').modal('hide');" style="cursor: pointer;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x-lg"
+              viewBox="0 0 16 16">
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+            </svg>
+          </div>
+          <div class="form-card border-0 p-3 scroll-y">
+            <div class="card-body">
+              <h4 class="title text-center">Registration Form</h4>
+              <form id="registration-form">
+                <div class="row row-space m-0">
+                  <div class="col-2 m-0">
+                    <div class="input-group">
+                      <input class="input--style-2" type="text" placeholder="Name" name="Name" required>
+                    </div>
+                  </div>
+                  <div class="col-2 m-0">
+                    <div class="input-group">
+                      <input class="input--style-2" type="email" placeholder="Email" name="Email" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row row-space m-0">
+                  <div class="col-2 m-0">
+                    <div class="mobilefield">
+                      <div>
+                        +91&nbsp;&nbsp;
+                      </div>
+                      <input type="text" placeholder="Mobile" name="Mobile" id="mobileInput">
+                    </div>
+                    <div class="text-danger" id="error"></div>
+                  </div>
+                  <div class="col-2 m-0 mt-4 pt-2 pt-md-0 mt-md-0">
+                    <div class="input-group">
+                      <div class="rs-select2 js-select-simple select--no-search w-100">
+                        <select name="EmploymentStatus">
+                          <option disabled="disabled" selected="selected">Employment Status</option>
+                          <option value="Student">Student</option>
+                          <option value="Employed">Employed</option>
+                          <option value="Fresher">Fresher</option>
+                        </select>
+                        <div class="select-dropdown"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row row-space m-0">
+                  <div class="col-2 m-0">
+                    <div class="input-group">
+                      <div class="rs-select2 js-select-simple select--no-search w-100">
+                        <select name="EducationalQualification">
+                          <option disabled="disabled" selected="selected">Educational Qualification</option>
+                          <option value="B. Tech">B. Tech</option>
+                          <option value="M. Tech">M. Tech</option>
+                          <option value="BCA/MCA">BCA/MCA</option>
+                          <option value="B.Sc/M.Sc">B.Sc/M.Sc</option>
+                          <option value="Diploma">Diploma</option>
+                          <option value="Other">Other</option>
+                        </select>
+                        <div class="select-dropdown"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-2 m-0">
+                    <div class="input-group">
+                      <div class="rs-select2 js-select-simple select--no-search w-100">
+                        <select name="Source">
+                          <option disabled="disabled" selected="selected">How did you know about learning club</option>
+                          <option value="Youtube">Youtube</option>
+                          <option value="Instagram">Instagram</option>
+                          <option value="Facebook">Facebook</option>
+                          <option value="LinkedIn">LinkedIn</option>
+                          <option value="WhatsApp">WhatsApp</option>
+                          <option value="Referred by a friend">
+                            Referred by a friend
+                          </option>
+                          <option value="Other">Other</option>
+                        </select>
+                        <div class="select-dropdown"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-2">
+                  <div class="input-group">
+                    <input class="input--style-2" type="text" placeholder="Tell us about you" name="About">
+                  </div>
+                  <div class="p-t-30">
+                    <button class="btn btn--radius btn-primary" type="submit" id="form-submit">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="bg-image-hero center-tablet dark overlay-hero">
+      <div class="full-screen -margin-bottom middle padding padding-top-tablet">
+        <div class="row max-width-l">
+          <div class="col-one-half middle">
+            <div>
+              <h1 class="hero">Get a High-Income <br> IT Job Without<br> a degree </h1>
+              <p class="lead">Start or switch your career with us <br>
+                300+ successful placements and 2000+ ongoing students</p>
+              <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="button button-primary space-top"
+                role="button">Get started</a>
+              <p style="font-size: .7rem;margin-left: 1rem;">4.7 google rating</p>
+            </div>
+            <!-- <div class="logos">
+              <div class="logo-container">
+                <img src="./media/content/c.png" alt="" class="logo-image img-fluid">
+              </div>
+              <div class="logo-container">
+                <img src="./media/content/java.png" alt="" class="logo-image img-fluid">
+              </div>
+              <div class="logo-container">
+                <img src="./media/content/html.png" alt="" class="logo-image img-fluid">
+              </div>
+              <div class="logo-container">
+                <img src="./media/content/css.png" alt="" class="logo-image img-fluid">
+              </div>
+              <div class="logo-container">
+                <img src="./media/content/javascript.png" alt="" class="logo-image img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="col-one-half middle">
+            <img src="media/content/illustration.png" alt="Hero Illustration">
+          </div> -->
+          </div>
+        </div>
+        <!-- <div class="padding">
+        <div class="row margin-bottom max-width-l">
+          <div class="col-one-half middle">
+            <h3>Basic Coding</h3>
+            <p class="paragraph">Through the Learning Club, you could study the basics of app development and build your
+              own applications.</p>
+          </div>
+          <div class="col-one-half">
+            <img class="rounded" src="media/content/100k.png" alt="Editor">
+          </div>
+        </div>
+        <div class="row max-width-l reverse-order">
+          <div class="col-one-half">
+            <img class="rounded" src="media/content/web_design.png" alt="Sketch">
+          </div>
+          <div class="col-one-half middle">
+            <h3>Web Designing</h3>
+            <p class="paragraph">Here, you’ll be able to build a responsive website and can upskill yourself in
+              coding.</p>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <section class="bg-gradient-light -margin-bottom-2 overlay padding">
+      <div class="center max-width-m">
+        <h2>What we offer</h2>
+
+      </div>
+      <div class="margin-top max-width-l">
+        <div class="logoss">
+          <div class="logo-container">
+            <h3>Pay After Placement</h3><br>
+            <p>You do not have to pay a huge fee upfront in order to join the program. Pay the tuition fees
+              only after you get placed.</p>
+          </div>
+          <div class="logo-container">
+            <h3>High-Income Job</h3><br>
+
+            <p>All over the world, tech companies are looking for work profiles that can work under no
+              guidance and have industrial experience. We have adapted the method of self-learning
+              because of the high demand for profiles that can do research and develop by themselves.</p>
+          </div>
+          <div class="logo-container">
+            <h3>Placement Support</h3><br>
+
+            <p>The placement support Brocamp offers is carried out by our dedicated placement team, and
+              they will provide you with quality assistance in order to get you to a successful career.</p>
+          </div>
+
+          <!-- <div class="logo-container">
+            <img src="./media/content/javascript.png" alt="" class="logo-image img-fluid">
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="padding margin-top">
+      <div class="max-width-l">
+        <br>
+        <div class="center max-width-m">
+          <h2>Domain categories <br> we have for you</h2>
+
+        </div>
+        <div class="logos-categories">
+          <div class="logo-container-categories">
+            <h3>web development</h3>
+
+          </div>
+          <div class="logo-container-categories">
+
+            <h3>Mobile App Development</h3>
+          </div>
+          <div class="logo-container-categories">
+            <h3>Cyber Security</h3>
+          </div>
+          <div class="logo-container-categories">
+            <h3>Artificial Intelligence</h3>
+          </div>
+          <div class="logo-container-categories">
+            <h3>web development</h3>
+          </div>
+          <div class="logo-container-categories">
+            <h3>Machine Learning</h3>
+          </div>
+          <div class="logo-container-categories">
+            <h3>Data Science</h3>
+          </div>
+          <div class="logo-container-categories">
+            <h3>Augmented Reality</h3>
+          </div>
+          <div class="logo-container-categories">
+            <h3>Blockchain</h3>
+          </div>
+          <div class="logo-container-categories">
+            <h3>Virtual Reality</h3>
+          </div>
+          <div class="logo-container-categories">
+            <h3>Software Testing</h3>
+          </div>
+          <div class="logo-container-categories">
+            <h3>DevOps</h3>
+          </div>
+
+          <!-- <div class="logo-container">
+            <img src="./media/content/javascript.png" alt="" class="logo-image img-fluid">
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light padding">
+
+      <div class="card card-content dark max-width-l">
+        <form class="row reduce-spacing">
+          <div class="col-two-thirds center-tablet middle">
+            <h3 class="space-none">Ready to get started?</h3>
+          </div>
+          <div class="col-one-third middle">
+            <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="signup.html" class="button button-primary"
+              role="button">Get Started</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="bg-gradient-light padding ">
+      <div class="center max-width-l">
+        <h2>Placement statistics</h2>
+      </div>
+      <div style="justify-content: center;align-items:center;">
+        <div class="row cen margin-top max-width-l">
+          <div class="col-one-fourth card card-content-statics dark">
+            <h4>Non-Tech degree students</h4>
+            <h4><span class="percentage">58.67%</span></h4>
+          </div>
+          <div class="col-one-fourth card card-content-statics dark">
+            <h4>College Dropouts</h4>
+            <h4><span class="percentage">7%</span> </h4>
+          </div>
+          <div class="col-one-fourth card card-content-statics dark">
+            <h4>Students with CS background</h4>
+            <h4><span class="percentage">34.33%</span></h4>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="bg-gradient-light -margin-bottom-2 overlay padding faqs">
+      <div class="center max-width-m">
+        <h2>FAQs</h2>
+
+      </div>
+      <div class="margin-top max-width-l">
+        <div class="logoss">
+          <div class="logo-container">
+            <h3>Do I need prior knowledge in the software field to join Brocamp?</h3><br>
+            <p>No, you do not need any prior knowledge to join Brocamp. Even if you are a fresher or not
+              from the tech field, you could build up a successful IT career through the Brocamp program.</p>
+          </div>
+          <div class="logo-container">
+            <h3>Can I get a high paying IT job without a degree?</h3><br>
+
+            <p>Yes, for sure. Brocamp helps you get IT jobs without having a degree. If you have a plus-two
+              qualification, you can join Brocamp and get access to many more IT career opportunities.</p>
+          </div>
+
+          <br>
+          <br>
+          <!-- <div class="logo-container">
+            <img src="./media/content/javascript.png" alt="" class="logo-image img-fluid">
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer-main bg-gradient-primary dark overlay-shape-06">
+    <div class="padding">
+      <div class="card card-content dark margin-bottom max-width-l">
+        <form class="row reduce-spacing">
+          <div class="col-two-thirds center-tablet middle">
+            <h3 class="space-none">Ready to get started?</h3>
+          </div>
+          <div class="col-one-third middle">
+            <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="signup.html" class="button button-primary"
+              role="button">Get Started</a>
+          </div>
+        </form>
+      </div>
+      <div class="row center-desktop max-width-l">
+        <div class="col-one-half">
+          <h4>Brototype</h4>
+          <p>Brototype is Kerala's #1 tech-career YouTube channel for students looking to build a career in the tech
+            industry. We help you develop coding skills for free by providing various programming tutorials &
+            tech-career topics in Malayalam, that help you achieve a job in the IT industry.</p>
+        </div>
+        <!-- <div class="col-one-half">
+          <h4>Connect</h4>
+          <ul class="blank">
+            <li><a href="https://www.youtube.com/c/BrototypeMalayalam">YouTube</a></li>
+            <li><a href="https://www.instagram.com/brototype.malayalam/">Instagram</a></li>
+            <li><a href="https://in.linkedin.com/company/brototype">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/brototypemalayalam">Facebook</a></li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+    <p class="copyright"><span>Copyright © </span><a href="https://brototype.in/" target="_blank">Packapeer
+        Academy</a><span> -
+        Pvt Ltd 2022</span></p>
+  </footer>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="./js/select2.min.js"></script> -->
+  <script src="./js/ajax.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
