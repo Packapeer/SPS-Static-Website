@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Brototype Full Stack Learning Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn Full Stack Development in Malayalam with tutorials and clear your doubts 24/7 for FREE" />
+    <meta content="Themesdesign" name="author" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" />
+    <!-- Google fonts -->
+    <link href="./mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="./font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+
+
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="stylesheet" href="./select2/select2.min.css">
+    <link rel="stylesheet" href="./css/materialdesignicons.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/form.css">
+
+</head>
+
+<body>
+
+
+    <!-- Navbar STart -->
+    <header id="topnav" class="defaultscroll sticky bg-white">
+        <div class="container">
+            <!-- Logo container-->
+            <div>
+                <a class="logo" href="index.html"><img class="img-Logo" src="./images/logo-black.png"
+                        alt="BROTOTYPE"></a>
+            </div>
+
+        </div><!--end container-->
+    </header><!--end header-->
+    <!-- Navbar End -->
+    <div class="modal fade text-start" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="mr-3 ms-auto p-3" onclick="$('#staticBackdrop').modal('hide');" style="cursor: pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                    </svg>
+                </div>
+                <div class="form-card border-0 p-3 scroll-y">
+                    <div class="card-body">
+                        <h4 class="title text-center">Registration Form</h4>
+                        <form id="registration-form-1">
+                            <div class="row row-space m-0">
+                                <div class="col-2 m-0">
+                                    <div class="input-group">
+                                        <input class="input--style-2" type="text" placeholder="Name" name="Name"
+                                            required>
+                                    </div>
+                                </div>
+                                <div class="col-2 m-0">
+                                    <div class="input-group">
+                                        <input class="input--style-2" type="email" placeholder="Email" name="Email"
+                                            required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-space m-0">
+                                <div class="col-2 m-0">
+                                    <div class="mobilefield input-group">
+                                        <input type="text" placeholder="Mobile" name="Mobile" id="mobileInput">
+                                    </div>
+                                    <div class="text-danger" id="error"></div>
+                                </div>
+                                <div class="col-2 m-0  pt-2 pt-md-0 mt-md-0">
+                                    <div class="input-group">
+                                        <div class="rs-select2 js-select-simple select--no-search w-100">
+                                            <select name="EmploymentStatus">
+                                                <option disabled="disabled" selected="selected">Employment Status
+                                                </option>
+                                                <option value="Student">Student</option>
+                                                <option value="Employed">Employed</option>
+                                                <option value="Fresher">Fresher</option>
+                                            </select>
+                                            <div class="select-dropdown"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-space m-0">
+                                <div class="col-2 m-0">
+                                    <div class="input-group">
+                                        <div class="rs-select2 js-select-simple select--no-search w-100">
+                                            <select name="EducationalQualification">
+                                                <option disabled="disabled" selected="selected">Educational
+                                                    Qualification</option>
+                                                <option value="B. Tech">B. Tech</option>
+                                                <option value="M. Tech">M. Tech</option>
+                                                <option value="BCA/MCA">BCA/MCA</option>
+                                                <option value="B.Sc/M.Sc">B.Sc/M.Sc</option>
+                                                <option value="Diploma">Diploma</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                            <div class="select-dropdown"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 m-0">
+                                    <div class="input-group">
+                                        <div class="rs-select2 js-select-simple select--no-search w-100">
+                                            <select name="Source">
+                                                <option disabled="disabled" selected="selected">How did you know about
+                                                    learning club</option>
+                                                <option value="Youtube">Youtube</option>
+                                                <option value="Instagram">Instagram</option>
+                                                <option value="Facebook">Facebook</option>
+                                                <option value="LinkedIn">LinkedIn</option>
+                                                <option value="WhatsApp">WhatsApp</option>
+                                                <option value="Referred by a friend">
+                                                    Referred by a friend
+                                                </option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                            <div class="select-dropdown"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="px-2">
+                                <div class="input-group">
+                                    <input class="input--style-2" type="text" placeholder="Tell us about you"
+                                        name="About">
+                                </div>
+                                <div class="p-t-30">
+                                    <button class="btn btn--radius btn-primary" type="submit"
+                                        id="form-submit-1">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Start -->
+    <section class="bg-home d-flex align-items-center" style="height: auto;" id="home">
+        <div class="bg-overlay"></div>
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center mt-0 mt-md-5 pt-0 pt-md-5">
+                    <div class="title-heading margin-top-100">
+                        <h1 class="heading text-white mb-3">Your fastest way to become a Full Stack Developer</h1>
+                        <p class="para-desc mx-auto text-light">Free Full Stack Development course in just 60 days</p>
+                        <div class="watch-video mt-4 pt-2">
+                            <a href="#registration" class="btn btn-primary btn-block mb-2" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">Join for Free </a>
+
+                        </div>
+                    </div>
+
+                    <div class="home-dashboard">
+                        <img src="./images/img.png" alt="" class="img-fluid">
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+    </section><!--end section-->
+    <!-- Hero End -->
+
+
+
+
+
+    <!-- Section Start -->
+    <section class="section">
+        <!-- Feature Start -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <div class="feature p-3 py-5 rounded text-center">
+                        <i class="ti-ruler-pencil border-icon"></i>
+                        <div class="content">
+                            <h4 class="title mt-3">Designed for Beginners</h4>
+                            <p class="text-muted mt-2 mb-0">We are your perfect destination to start from scratch.
+                                Whether you have little or no experience we will help you to achieve your dream IT
+                                career.</p>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-md-4 col-12">
+                    <div class="feature p-3 py-5 rounded text-center">
+                        <i class="ti-layers-alt border-icon"></i>
+                        <div class="content">
+                            <h4 class="title mt-3">Build in-demand skills</h4>
+                            <p class="text-muted mt-2 mb-0">Discover the latest frameworks, technologies and best
+                                practices on demand. Learning materials Includes JavaScript, Node.JS, MongoDB,
+                                Express.JS,
+                                and more...</p>
+                        </div>
+                    </div>
+                </div><!--end col-->
+
+                <div class="col-md-4 col-12">
+                    <div class="feature p-3 py-5 rounded text-center">
+                        <i class="ti-desktop border-icon"></i>
+                        <div class="content">
+                            <h4 class="title mt-3">Project Portfolio</h4>
+                            <p class="text-muted mt-2 mb-0">Work on multiple projects and build project portfolio to
+                                make your resume stand out in front of potential employers.</p>
+                        </div>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+
+        <div class="container mt-100 mt-60">
+            <div class="row align-items-center">
+
+
+                <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0 order-1 order-md-2">
+                    <div class="section-title mt-5 md-mt-0">
+                        <span class="badge badge-primary"> New </span>
+                        <h4 class="title mt-3">Learn Full Stack development concepts from scratch</h4>
+                        <!-- <p class="text-muted para-desc mb-4">Build responsive, mobile-first projects on the web with the
+                            world's most popular front-end component library.</p> -->
+                        <ul class="list-inline mb-0">
+                            <li class="h6"><i class="mdi mdi-plus text-primary h5 mb-0 me-2"></i> Learn at your
+                                own
+                                pace and on your own schedule.</li>
+                            <li class="h6"><i class="mdi mdi-plus text-primary h5 mb-0 me-2"></i> Opportunity
+                                to get in
+                                touch with tech experts at your beginning stage itself</li>
+                            <li class="h6"><i class="mdi mdi-plus text-primary h5 mb-0 me-2"></i> Decide if
+                                it’s for
+                                you or not before getting into a more expensive course.</li>
+
+                        </ul>
+                        <!-- <div class="mt-4">
+                            <a href="javascript:void(0)" class="text-primary">Learn More <i
+                                    class="mdi mdi-chevron-right"></i></a>
+                        </div> -->
+                    </div>
+                </div><!--end col-->
+                <div class="col-lg-5 col-md-6 order-2 order-md-1">
+                    <img src="./images/software/Programming.png" class="img-fluid rounded shadow" alt="">
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+
+        <div class="container mt-100 mt-60">
+            <div class="bg-light rounded p-md-5 p-4 p-sm-0 shadow">
+                <div class="row reg-hurry-box align-items-center p-4 p-md-0">
+                    <div class="col-sm-7">
+                        <div class="text-sm-start">
+                            <h4>Join Our Telegram Group , To get 24/7 support </h4>
+                            <!-- <p class="text-muted para-desc mb-0">Build responsive, mobile-first projects on the web with
+                                the world's most popular front-end component library.</p> -->
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-sm-5 mt-2 mt-sm-0">
+                        <div class="text-sm-end">
+                            <a data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                class="btn hurry-btn btn-outline-primary" role="button">Join now</a>
+                        </div>
+                        <!-- <button class="btn hurry-btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop2"><i class="mdi mdi-bookmark"></i> Register Now</button>
+
+                        </div> -->
+                    </div><!--end col-->
+                </div><!--end row -->
+            </div><!--end div-->
+        </div><!--end container-->
+        <!-- <div class="py-3"> -->
+
+
+        <div class="container mt-100 mt-60">
+            <div class="row align-items-center">
+
+
+                <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <div class="section-title mt-5 mt-md-0">
+                        <h4 class="title mt-3">7 benefits of becoming a Full Stack developer.</h4>
+                        <ul class="list-inline mb-0">
+                            <li class="h6"><i class="mdi mdi-plus h5 text-primary mb-0 me-2"></i> Highest salary
+                                packages
+                            </li>
+                            <li class="h6"><i class="mdi mdi-plus h5 text-primary mb-0 me-2"></i> High demand 
+                            </li>
+                            <li class="h6"><i class="mdi mdi-plus h5 text-primary mb-0 me-2"></i> Multiple career
+                                opportunities
+
+                            </li>
+                            <li class="h6"><i class="mdi mdi-plus h5 text-primary mb-0 me-2"></i> Career
+                                flexibility
+                            </li>
+                            <li class="h6"><i class="mdi mdi-plus h5 text-primary mb-0 me-2"></i> Better
+                                productivity
+                            </li>
+                            <li class="h6"><i class="mdi mdi-plus h5 text-primary mb-0 me-2"></i> Fast paced
+                                growth
+                            </li>
+                            <li class="h6"><i class="mdi mdi-plus h5 text-primary mb-0 me-2"></i> Wide range of
+                                scope
+                            </li>
+                        </ul>
+                        <!-- <div class="mt-4">
+                            <a href="javascript:void(0)" class="text-primary">Read More <i
+                                    class="mdi mdi-chevron-right"></i></a>
+                        </div> -->
+                    </div>
+                </div><!--end col-->
+                <div class="col-lg-5 col-md-6 text-right">
+                    <img src="./images/software/44.jpg" class="img-fluid rounded shadow" alt="">
+                </div><!--end col-->
+            </div><!--end row-->
+        </div><!--end container-->
+        <!-- Feature End -->
+
+        <div class="container mt-100 mt-60">
+            <div class="row align-items-center">
+
+
+                <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0 order-1 order-md-2">
+                    <div class="section-title mt-5 md-mt-0">
+                        <!-- <span class="badge badge-primary"> New </span> -->
+                        <h4 class="title mt-3">Why us?</h4>
+                        <!-- <p class="text-muted para-desc mb-4">Build responsive, mobile-first projects on the web with the
+                            world's most popular front-end component library.</p> -->
+                        <ul class="list-inline mb-0">
+                            <li class="h6"><i class="mdi mdi-plus text-primary h5 mb-0 me-2"></i> 60000+
+                                successful
+                                learning club members.</li>
+                            <li class="h6"><i class="mdi mdi-plus text-primary h5 mb-0 me-2"></i> Expert
+                                Training
+                                and
+                                Doubt Clearing in Malayalam
+                            </li>
+                            <li class="h6"><i class="mdi mdi-plus text-primary h5 mb-0 me-2"></i> 24/7 tech
+                                support
+                            </li>
+                            <li class="h6"><i class="mdi mdi-plus text-primary h5 mb-0 me-2"></i> Doubt clearing at any
+                                time and within seconds.
+
+                            </li>
+
+                        </ul>
+                        <!-- <div class="mt-4">
+                            <a href="javascript:void(0)" class="text-primary">Learn More <i
+                                    class="mdi mdi-chevron-right"></i></a>
+                        </div> -->
+                    </div>
+                </div><!--end col-->
+                <div class="col-lg-5 col-md-6 order-2 order-md-1">
+                    <img src="./images/software/33.jpg" class="img-fluid rounded shadow" alt="">
+                </div><!--end col-->
+            </div><!--end row-->
+
+        </div><!--end container-->
+
+
+        <!-- Subscribe Start -->
+        <div class="container mt-100 mt-60">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title mb-4 pb-2">
+                        <h4 class="title mt-4">Registration form</h4>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
+
+
+            <div class="px-5 scroll-y">
+                <div class="card-body">
+
+                    <form id="registration-form-2">
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-2" type="text" placeholder="Name" name="Name" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-2" type="text" placeholder="Email" name="Email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <input class="input--style-2" type="text" placeholder="Mobile" name="Mobile"
+                                        id="mobileInputt" required>
+                                </div>
+                                <div class="text-danger" id="errorr"></div>
+
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search w-100">
+                                        <select name="EmploymentStatus">
+                                            <option disabled="disabled" selected="selected">Employment Status
+                                            </option>
+                                            <option value="Student">Student</option>
+                                            <option value="Employed">Employed</option>
+                                            <option value="Fresher">Fresher</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search w-100">
+                                        <select name="EducationalQualification">
+                                            <option disabled="disabled" selected="selected">Educational
+                                                Qualification</option>
+                                            <option value="B. Tech">B. Tech</option>
+                                            <option value="M. Tech">M. Tech</option>
+                                            <option value="BCA/MCA">BCA/MCA</option>
+                                            <option value="B.Sc/M.Sc">B.Sc/M.Sc</option>
+                                            <option value="Diploma">Diploma</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search w-100">
+                                        <select name="Source">
+                                            <option disabled="disabled" selected="selected">How did you know about
+                                                learning club</option>
+                                            <option value="Youtube">Youtube</option>
+                                            <option value="Instagram">Instagram</option>
+                                            <option value="Facebook">Facebook</option>
+                                            <option value="LinkedIn">LinkedIn</option>
+                                            <option value="WhatsApp">WhatsApp</option>
+                                            <option value="Referred by a friend">
+                                                Referred by a friend
+                                            </option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-2" type="text" placeholder="Tell us about you" name="About">
+                        </div>
+                        <div class="p-t-30">
+                            <button class="btn btn--radius btn-primary" type="submit" id="form-submit-2">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div><!--end container-->
+        <!-- Subscribe End -->
+    </section><!--end section-->
+    <!-- Section End -->
+
+
+    <footer class="footer bg-dark footer-bar">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="text-sm-start">
+                        <p class="mb-0">©
+                            Copyright © <span><a style="text-decoration: none;color: aliceblue;"
+                                    href="https://brototype.in/" target="_blank">Packapeer
+                                    Academy</a></span><span> -
+                                Pvt Ltd
+                                <script>document.write(new Date().getFullYear())</script>
+                            </span>
+                        </p>
+                    </div>
+                </div><!--end col-->
+
+            </div><!--end row-->
+        </div><!--end container-->
+    </footer><!--end footer-->
+    <!-- Footer End -->
+
+    <!-- Back to top -->
+    <a href="javascript:void(0)" class="back-to-top rounded text-center" id="back-to-top">
+        <i class="mdi mdi-chevron-up d-block"> </i>
+    </a>
+    <!-- Back to top -->
+
+    <!-- javascript -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/select2.min.js"></script>
+    <script src="./js/global.js"></script>
+    <script src="./js/scrollspy.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/form.js"></script>
+
+</body>
+
+</html>
