@@ -349,6 +349,14 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+	$('#vidbt5').on('click', function (ev) {
+		$("#vid5")[0].src += "&autoplay=1";
+		ev.preventDefault();
+
+	});
+});
+
+$(document).ready(function () {
 	$('#vidbt6').on('click', function (ev) {
 
 		$("#vid6")[0].src += "&autoplay=1";
@@ -361,7 +369,7 @@ $(document).ready(function () {
 
 
 // global variable for the player
-let vid1, vid2, vid3, vid4, vid5;
+let vid1, vid2, vid3, vid4, vid5, vid6;
 
 // // this function gets called when API is ready to use
 // function onYouTubePlayerAPIReady() {
@@ -438,7 +446,7 @@ function onYouTubeIframeAPIReady() {
 	});
 	vid6 = new YT.Player('vid6', {
 		events: {
-			'onStateChange': onPlayer5StateChange
+			'onStateChange': onPlayer6StateChange
 		}
 	});
 }
@@ -469,6 +477,7 @@ function onPlayer1click() {
 	vid3.stopVideo();
 	vid4.stopVideo();
 	vid5.stopVideo();
+	vid6.stopVideo();
 }
 
 function onPlayer2StateChange(event) {
@@ -497,6 +506,7 @@ function onPlayer2click() {
 	vid3.stopVideo();
 	vid4.stopVideo();
 	vid5.stopVideo();
+	vid6.stopVideo();
 }
 
 
@@ -526,6 +536,7 @@ function onPlayer3click() {
 	vid3.playVideo();
 	vid4.stopVideo();
 	vid5.stopVideo();
+	vid6.stopVideo();
 }
 
 
@@ -560,6 +571,7 @@ function onPlayer4click() {
 	vid3.stopVideo();
 	vid4.playVideo();
 	vid5.stopVideo();
+	vid6.stopVideo();
 }
 
 
@@ -588,6 +600,35 @@ function onPlayer5click() {
 	vid3.stopVideo();
 	vid4.stopVideo();
 	vid5.playVideo();
+	vid6.stopVideo();
+}
+
+function onPlayer6StateChange(event) {
+
+	playerStatus = event.data;
+	if (playerStatus == -1) {
+		// unstarted
+	} else if (playerStatus == 0) {
+		// ended
+	} else if (playerStatus == 1) {
+		// playing
+		onPlayer6click();
+	} else if (playerStatus == 2) {
+		// paused
+	} else if (playerStatus == 3) {
+		// buffering
+	} else if (playerStatus == 5) {
+		// video cued
+	}
+}
+
+function onPlayer6click() {
+	vid1.stopVideo();
+	vid2.stopVideo();
+	vid3.stopVideo();
+	vid4.stopVideo();
+	vid5.stopVideo();
+	vid6.playVideo();
 }
 
 //videoplayer-END---------------------------------------------------------------------------------------------------------------------------
