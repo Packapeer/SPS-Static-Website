@@ -110,7 +110,7 @@ const postToSheet = function (formButton, data, f2) {
     data: data,
     method: "post",
     success: function (response) {
-      location.href = "https://t.me/brototype_fullstack_learningclub";
+      location.href = "../fullstack4/registered/";
       $("#staticBackdrop").modal("hide");
       formButton.innerText = "SUBMIT";
       formButton.setAttribute("disabled", false);
