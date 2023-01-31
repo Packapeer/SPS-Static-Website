@@ -2014,7 +2014,7 @@
       if (new URLSearchParams(window.location.search).get('ref')) {
         referral = new URLSearchParams(window.location.search).get('ref');
       } else {
-        referral = "Direct";
+        referral = "Direct(brototype.in)";
       }
 
 
@@ -2125,7 +2125,7 @@
 
       // sumbit data to DB
       $.ajax({
-        url: "http://157.245.98.112/api/v1/forms/submitData",
+        url: "https://brototype.com/api/v1/forms/submitData",
         type: "POST",
         data: {
           "name": field1,
