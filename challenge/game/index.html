@@ -1,7 +1,3 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
--->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +5,8 @@ Author URL: http://w3layouts.com
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="Learn Python in Malayalam with tutorials and clear your doubts 24/7 for FREE" />
+  <meta name="description"
+    content="Learn Game Development in Malayalam with tutorials and clear your doubts 24/7 for FREE" />
   <title>Brototype Game Development Challenge</title>
 
   <!-- Google fonts -->
@@ -49,7 +46,7 @@ Author URL: http://w3layouts.com
             </h1>
             <h5 class="subtitle-banner pt-5">Create Your Own Games with Us Even if you don’t have coding skill and
               Jumpstart Your Career to a High Paying Job.
-            </h5 class="pt-5">
+            </h5>
             <div class="py-3">
               <button class="btn btn-style btn-primary mt-2 mt-md-5" data-bs-toggle="modal"
                 data-bs-target="#staticBackdrop">Register Now</button>
@@ -69,15 +66,17 @@ Author URL: http://w3layouts.com
                             </div>
                             <div class="col-2">
                               <div class="input-group">
-                                <input class="input--style-2" type="text" placeholder="Email" name="Email" required>
+                                <input class="input--style-2" type="email" placeholder="Email" name="Email" required>
                               </div>
                             </div>
                           </div>
                           <div class="row row-space">
                             <div class="col-2">
                               <div class="input-group">
-                                <input class="input--style-2" type="text" placeholder="Mobile" name="Mobile" required>
+                                <input id="mobileInput" class="input--style-2" type="text" placeholder="Mobile"
+                                  name="Mobile" required>
                               </div>
+                              <div class="text-danger" id="error"></div>
                             </div>
                             <div class="col-2">
                               <div class="input-group">
@@ -244,15 +243,18 @@ Author URL: http://w3layouts.com
                     </div>
                     <div class="col-2">
                       <div class="input-group">
-                        <input class="input--style-2" type="text" placeholder="Email" name="Email" required>
+                        <input class="input--style-2" type="email" placeholder="Email" name="Email" required>
                       </div>
                     </div>
                   </div>
                   <div class="row row-space">
                     <div class="col-2">
                       <div class="input-group">
-                        <input class="input--style-2" type="text" placeholder="Mobile" name="Mobile" required>
+                        <input id="mobileInputt" class="input--style-2" type="text" placeholder="Mobile" name="Mobile"
+                          required>
                       </div>
+                      <div class="text-danger" id="errorr"></div>
+
                     </div>
                     <div class="col-2">
                       <div class="input-group">
@@ -372,15 +374,18 @@ Author URL: http://w3layouts.com
             </div>
             <div class="col-2">
               <div class="input-group">
-                <input class="input--style-2" type="text" placeholder="Email" name="Email" required>
+                <input class="input--style-2" type="email" placeholder="Email" name="Email" required>
               </div>
             </div>
           </div>
           <div class="row row-space">
             <div class="col-2">
               <div class="input-group">
-                <input class="input--style-2" type="text" placeholder="Mobile" name="Mobile" required>
+                <input id="mobileInputtt" class="input--style-2" type="text" placeholder="Mobile" name="Mobile"
+                  required>
               </div>
+              <div class="text-danger" id="errorrr"></div>
+
             </div>
             <div class="col-2">
               <div class="input-group">
@@ -452,7 +457,7 @@ Author URL: http://w3layouts.com
     <button onclick="topFunction()" id="movetop" title="Go to top">
       <span>⇪</span>
     </button>
-    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script>
       const form1 = document.querySelector("#registration-form-1");
       const form2 = document.querySelector("#registration-form-2");
@@ -460,9 +465,54 @@ Author URL: http://w3layouts.com
       const formButton1 = document.querySelector("#form-submit-1");
       const formButton2 = document.querySelector("#form-submit-2");
       const formButton3 = document.querySelector("#form-submit-3");
-
-      const postToSheet = (formButton, data) => {
-        const url = "https://script.google.com/macros/s/AKfycbyVNQ4S_KG1_cHhhhVyprZOsAwi8ltt4MOIJXusmNshIvF3LWNzxCfa3QrsKnJNTFsZYw/exec";
+      document.getElementById('mobileInput').addEventListener("keyup", (e) => {
+        if (form1.elements['Mobile'].value.length != 10) {
+          document.getElementById("error").innerText =
+            "Mobile number must contain 10 numbers";
+        } else {
+          document.getElementById("error").innerText = "";
+        }
+      })
+      document.getElementById('mobileInputt').addEventListener("keyup", (e) => {
+        if (form2.elements['Mobile'].value.length != 10) {
+          document.getElementById("errorr").innerText =
+            "Mobile number must contain 10 numbers";
+        } else {
+          document.getElementById("errorr").innerText = "";
+        }
+      })
+      document.getElementById('mobileInputtt').addEventListener("keyup", (e) => {
+        if (form3.elements['Mobile'].value.length != 10) {
+          document.getElementById("errorrr").innerText =
+            "Mobile number must contain 10 numbers";
+        } else {
+          document.getElementById("errorrr").innerText = "";
+        }
+      })
+      const postToSheet = (formButton, data, f) => {
+        if (f == 1) {
+          if (data.Mobile.length !== 10) {
+            return (document.getElementById("error").innerText =
+              "Mobile number must contain 10 numbers");
+          } else {
+            document.getElementById("error").innerText = "";
+          }
+        } else if (f == 2) {
+          if (data.Mobile.length !== 10) {
+            return (document.getElementById("errorr").innerText =
+              "Mobile number must contain 10 numbers");
+          } else {
+            document.getElementById("errorr").innerText = "";
+          }
+        } else if (f == 3) {
+          if (data.Mobile.length !== 10) {
+            return (document.getElementById("errorrr").innerText =
+              "Mobile number must contain 10 numbers");
+          } else {
+            document.getElementById("errorrr").innerText = "";
+          }
+        }
+        const url = "https://script.google.com/macros/s/AKfycbyLjY-nrTQ5HRjEKSbdZMYmM5qraeBuAXdKLPgyniIkcKklT1vENkl-A81ootpVqtG2Cw/exec";
 
         formButton.innerText = "SUBMITING PLEASE WAIT";
         formButton.setAttribute("disabled", true);
@@ -471,10 +521,13 @@ Author URL: http://w3layouts.com
           data: data,
           method: "post",
           success: function (response) {
-            location.href = "https://t.me/+Lxul8-bGI5o0MWM1";
+            location.href = "../game/registered";
+            $("#staticBackdrop").modal("hide");
             formButton.innerText = "SUBMIT";
             formButton.setAttribute("disabled", false);
-            form.reset();
+            form1.reset();
+            form2.reset();
+            form3.reset();
           },
           error: function (err) {
             alert("Something went wrong please try again.");
@@ -484,23 +537,23 @@ Author URL: http://w3layouts.com
 
       form1.addEventListener("submit", (e) => {
         e.preventDefault();
-
+        f = 1;
         const data = Object.fromEntries(new FormData(e.target).entries());
-        postToSheet(formButton1, data);
+        postToSheet(formButton1, data, f);
       });
 
       form2.addEventListener("submit", (e) => {
         e.preventDefault();
-
+        f = 2;
         const data = Object.fromEntries(new FormData(e.target).entries());
-        postToSheet(formButton2, data);
+        postToSheet(formButton2, data, f);
       });
 
       form3.addEventListener("submit", (e) => {
         e.preventDefault();
-
+        f = 3;
         const data = Object.fromEntries(new FormData(e.target).entries());
-        postToSheet(formButton3, data);
+        postToSheet(formButton3, data, f);
       });
     </script>
     <script>
@@ -569,6 +622,7 @@ Author URL: http://w3layouts.com
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/select2.min.js"></script>
   <script src="assets/js/global.js"></script>
+  <!-- <script src="assets/js/form.js"></script> -->
 </body>
 
 </html>
