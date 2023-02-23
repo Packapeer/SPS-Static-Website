@@ -6,6 +6,11 @@
 @font-face {
   font-family: "Muli-SemiBold";
   src: url("../fonts/muli/Muli-SemiBold.ttf"); }
+
+  html{
+    scroll-behavior: smooth;
+  }
+
 body {
   line-height: 1.7;
   color: gray;
